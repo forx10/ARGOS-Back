@@ -1,0 +1,61 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+    provider = "prisma-client-js"
+    binaryTargets = ["native", "linux-musl-arm64-openssl-3.0.x"]
+    output = "/home/ubuntu/argos_backend/nodejs_space/node_modules/.prisma/client"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+// Tabla de turnos rotativos del usuario
+model turno {
+  id                  Int       @id @default(autoincrement())
+  usuario_id          String    @db.VarChar(255)
+  hora_inicio         String    @db.VarChar(5)   // Formato "HH:MM"
+  hora_fin            String    @db.VarChar(5)   // Formato "HH:MM"
+  tipo_turno          String    @db.VarChar(50)  // "6AM-2PM", "2PM-10PM", "10PM-6AM"
+  fecha               DateTime  @db.Date
+  activo              Boolean   @default(true)
+  creado_en           DateTime  @default(now())
+  actualizado_en      DateTime  @updatedAt
+
+  @@index([usuario_id])
+  @@index([fecha])
+}
+
+// Tabla de bloqueos activos
+model bloqueo_activo {
+  id                  Int       @id @default(autoincrement())
+  usuario_id          String    @db.VarChar(255)
+  apps_bloqueadas     String[]  @default([])     // Array de nombres de apps
+  sitios_bloqueados   String[]  @default([])     // Array de URLs/patrones
+  tiempo_inicio       DateTime  @default(now())
+  tiempo_fin          DateTime
+  estado              String    @db.VarChar(50)  // "activo", "pausado", "completado"
+  razon               String    @db.VarChar(255) // "turno", "manual", etc
+  creado_en           DateTime  @default(now())
+  actualizado_en      DateTime  @updatedAt
+
+  @@index([usuario_id])
+  @@index([estado])
+  @@index([tiempo_fin])
+}
+
+// Tabla de sitios bloqueados por categoría
+model sitio_bloqueado {
+  id                  Int       @id @default(autoincrement())
+  patron_url          String    @db.VarChar(500) // Patrón o URL exacta
+  categoria           String    @db.VarChar(100) // "pornografia", "redes_sociales", etc
+  descripcion         String?   @db.VarChar(255)
+  activo              Boolean   @default(true)
+  creado_en           DateTime  @default(now())
+  actualizado_en      DateTime  @updatedAt
+
+  @@index([categoria])
+  @@unique([patron_url])
+}
