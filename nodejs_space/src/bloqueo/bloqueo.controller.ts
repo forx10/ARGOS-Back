@@ -1,7 +1,7 @@
 import { Controller, Post, Get, Delete, Body, Param, Logger, ParseIntPipe } from '@nestjs/common';
-import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
+import { ApiTags, ApiOperation, ApiResponse, ApiBody } from '@nestjs/swagger';
 import { BloqueoService } from './bloqueo.service';
-import { CreateBloqueoDto } from './dto/create-bloqueo.dto';
+import { CreateBloqueoDto, TriggerType } from './dto/create-bloqueo.dto';
 
 @ApiTags('Bloqueo')
 @Controller('api/bloqueo')
@@ -11,7 +11,47 @@ export class BloqueoController {
   constructor(private readonly bloqueoService: BloqueoService) {}
 
   @Post()
-  @ApiOperation({ summary: 'Crear bloqueo de apps/sitios' })
+  @ApiOperation({
+    summary: 'Crear bloqueo de apps/sitios',
+    description: 'Soporta: comando de voz, contexto (app abierta), turno rotativo, bloqueo manual',
+  })
+  @ApiBody({
+    schema: {
+      properties: {
+        usuarioId: { type: 'string', example: 'user123' },
+        appsBloquear: {
+          type: 'array',
+          items: { type: 'string' },
+          example: ['com.instagram.android', 'com.tiktok.android'],
+        },
+        sitiosBloquear: {
+          type: 'array',
+          items: { type: 'string' },
+          example: ['pornhub.com', 'xvideos.com'],
+        },
+        duracion: {
+          type: 'number',
+          example: 3600,
+          description: 'Duración en segundos (3600 = 1 hora)',
+        },
+        trigger: {
+          type: 'string',
+          enum: Object.values(TriggerType),
+          example: TriggerType.COMANDO_VOZ,
+        },
+        comandoVoz: {
+          type: 'string',
+          example: 'bloquea Instagram una hora',
+        },
+        appTrigger: {
+          type: 'string',
+          example: 'com.duolingo.android',
+          description: 'Para contexto: app que fue abierta',
+        },
+      },
+      required: ['usuarioId', 'appsBloquear', 'duracion'],
+    },
+  })
   @ApiResponse({
     status: 201,
     description: 'Bloqueo creado exitosamente',
@@ -24,11 +64,14 @@ export class BloqueoController {
             taskerStatus: { type: 'string' },
           },
         },
+        message: { type: 'string' },
       },
     },
   })
   async crearBloqueo(@Body() createBloqueoDto: CreateBloqueoDto) {
-    this.logger.log(`POST /api/bloqueo - Usuario: ${createBloqueoDto.usuario_id}`);
+    this.logger.log(
+      `[${createBloqueoDto.trigger || 'MANUAL'}] POST /api/bloqueo - Usuario: ${createBloqueoDto.usuarioId}`,
+    );
     const resultado = await this.bloqueoService.crearBloqueo(createBloqueoDto);
     return {
       success: true,
@@ -38,7 +81,7 @@ export class BloqueoController {
   }
 
   @Delete(':bloqueoId')
-  @ApiOperation({ summary: 'Desbloquear (terminar bloqueo)' })
+  @ApiOperation({ summary: 'Desbloquear (terminar bloqueo antes de tiempo)' })
   @ApiResponse({
     status: 200,
     description: 'Bloqueo completado',
@@ -72,6 +115,7 @@ export class BloqueoController {
           type: 'array',
           items: { type: 'object' },
         },
+        message: { type: 'string' },
       },
     },
   })
@@ -81,6 +125,7 @@ export class BloqueoController {
     return {
       success: true,
       data: bloqueos,
+      message: `${bloqueos.length} bloqueos activos encontrados`,
     };
   }
 }

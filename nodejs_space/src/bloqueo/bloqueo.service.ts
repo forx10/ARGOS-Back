@@ -1,6 +1,6 @@
 import { Injectable, Logger, BadRequestException } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
-import { CreateBloqueoDto } from './dto/create-bloqueo.dto';
+import { CreateBloqueoDto, TriggerType } from './dto/create-bloqueo.dto';
 import { bloqueo_activo } from '@prisma/client';
 import axios from 'axios';
 
@@ -13,36 +13,44 @@ export class BloqueoService {
 
   /**
    * Crear bloqueo y enviar comando a Tasker
+   * Soporta: Comando de voz, Contexto (app abierta), Turno rotativo, Bloqueo manual
    */
   async crearBloqueo(createBloqueoDto: CreateBloqueoDto): Promise<{
     bloqueo: bloqueo_activo;
     taskerStatus: string;
   }> {
-    if (!createBloqueoDto.duracion_minutos || createBloqueoDto.duracion_minutos <= 0) {
-      throw new BadRequestException('La duración debe ser mayor a 0 minutos');
+    if (!createBloqueoDto.duracion || createBloqueoDto.duracion <= 0) {
+      throw new BadRequestException('La duración debe ser mayor a 0 segundos');
     }
 
+    const trigger = createBloqueoDto.trigger || TriggerType.BLOQUEO_MANUAL;
+
     this.logger.log(
-      `Creando bloqueo para usuario ${createBloqueoDto.usuario_id}: ${createBloqueoDto.apps_bloqueadas.join(', ')}`,
+      `[${trigger}] Creando bloqueo para usuario ${createBloqueoDto.usuarioId}: ${createBloqueoDto.appsBloquear.join(', ')}`,
     );
 
+    // Calcular tiempo final basado en duración
     const tiempoFin = new Date();
-    tiempoFin.setMinutes(tiempoFin.getMinutes() + createBloqueoDto.duracion_minutos);
+    tiempoFin.setSeconds(tiempoFin.getSeconds() + createBloqueoDto.duracion);
 
     // Crear registro en BD
     const bloqueo = await this.prisma.bloqueo_activo.create({
       data: {
-        usuario_id: createBloqueoDto.usuario_id,
-        apps_bloqueadas: createBloqueoDto.apps_bloqueadas,
-        sitios_bloqueados: createBloqueoDto.sitios_bloqueados,
+        usuario_id: createBloqueoDto.usuarioId,
+        apps_bloqueadas: createBloqueoDto.appsBloquear,
+        sitios_bloqueados: createBloqueoDto.sitiosBloquear || [],
         tiempo_fin: tiempoFin,
         estado: 'activo',
-        razon: createBloqueoDto.razon || 'manual',
+        razon: createBloqueoDto.razon || trigger,
       },
     });
 
-    // Enviar comando a Tasker
+    // Enviar comando a Tasker con detalles del trigger
     const taskerStatus = await this.enviarComandoTasker(createBloqueoDto, bloqueo.id);
+
+    this.logger.log(
+      `Bloqueo creado: ${bloqueo.id} | Tasker Status: ${taskerStatus} | Fin: ${tiempoFin.toISOString()}`,
+    );
 
     return {
       bloqueo,
@@ -51,7 +59,7 @@ export class BloqueoService {
   }
 
   /**
-   * Enviar payload a Tasker vía AutoRemote webhook
+   * Enviar payload a Tasker vía AutoRemote webhook con contexto del trigger
    */
   private async enviarComandoTasker(
     createBloqueoDto: CreateBloqueoDto,
@@ -63,27 +71,32 @@ export class BloqueoService {
     }
 
     try {
+      const trigger = createBloqueoDto.trigger || TriggerType.BLOQUEO_MANUAL;
       const payload = {
         accion: 'bloquear',
-        usuario_id: createBloqueoDto.usuario_id,
+        usuario_id: createBloqueoDto.usuarioId,
         bloqueo_id: bloqueoId,
-        apps: createBloqueoDto.apps_bloqueadas,
-        sitios: createBloqueoDto.sitios_bloqueados,
-        duracion_minutos: createBloqueoDto.duracion_minutos,
+        trigger: trigger,
+        apps: createBloqueoDto.appsBloquear,
+        sitios: createBloqueoDto.sitiosBloquear || [],
+        duracion_segundos: createBloqueoDto.duracion,
+        app_trigger: createBloqueoDto.appTrigger, // Para contexto: app que fue abierta
+        comando_voz: createBloqueoDto.comandoVoz, // Para voz: comando que dijo el usuario
+        razon: createBloqueoDto.razon,
         timestamp: new Date().toISOString(),
       };
 
-      this.logger.log(`Enviando comando a Tasker: ${JSON.stringify(payload)}`);
+      this.logger.debug(`Payload para Tasker: ${JSON.stringify(payload)}`);
 
       const response = await axios.post(this.taskerWebhookUrl, payload, {
         timeout: 5000,
       });
 
-      this.logger.log(`Respuesta de Tasker: ${response.status}`);
+      this.logger.log(`✓ Comando enviado a Tasker (Status: ${response.status})`);
       return 'enviado';
     } catch (error) {
       this.logger.error(
-        `Error al enviar comando a Tasker: ${error instanceof Error ? error.message : 'Unknown error'}`,
+        `✗ Error al enviar comando a Tasker: ${error instanceof Error ? error.message : 'Unknown error'}`,
       );
       return 'error_envio';
     }

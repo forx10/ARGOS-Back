@@ -54,3 +54,164 @@ Starting server...
 [32m[Nest] 687  - [39m04/07/2026, 4:17:28 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +405ms[39m
 ✅ ARGOS Backend running on http://0.0.0.0:3000
 📚 API Documentation: http://localhost:3000/api-docs
+[2J[3J[H[[90m4:19:31 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/bloqueo/bloqueo.controller.ts[0m:[93m31[0m:[93m70[0m - [91merror[0m[90m TS2551: [0mProperty 'usuario_id' does not exist on type 'CreateBloqueoDto'. Did you mean 'usuarioId'?
+
+[7m31[0m     this.logger.log(`POST /api/bloqueo - Usuario: ${createBloqueoDto.usuario_id}`);
+[7m  [0m [91m                                                                     ~~~~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m12[0m:[93m3[0m
+    [7m12[0m   usuarioId: string;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    'usuarioId' is declared here.
+
+[96msrc/bloqueo/bloqueo.service.ts[0m:[93m21[0m:[93m27[0m - [91merror[0m[90m TS2339: [0mProperty 'duracion_minutos' does not exist on type 'CreateBloqueoDto'.
+
+[7m21[0m     if (!createBloqueoDto.duracion_minutos || createBloqueoDto.duracion_minutos <= 0) {
+[7m  [0m [91m                          ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/bloqueo/bloqueo.service.ts[0m:[93m21[0m:[93m64[0m - [91merror[0m[90m TS2339: [0mProperty 'duracion_minutos' does not exist on type 'CreateBloqueoDto'.
+
+[7m21[0m     if (!createBloqueoDto.duracion_minutos || createBloqueoDto.duracion_minutos <= 0) {
+[7m  [0m [91m                                                               ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/bloqueo/bloqueo.service.ts[0m:[93m26[0m:[93m56[0m - [91merror[0m[90m TS2551: [0mProperty 'usuario_id' does not exist on type 'CreateBloqueoDto'. Did you mean 'usuarioId'?
+
+[7m26[0m       `Creando bloqueo para usuario ${createBloqueoDto.usuario_id}: ${createBloqueoDto.apps_bloqueadas.join(', ')}`,
+[7m  [0m [91m                                                       ~~~~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m12[0m:[93m3[0m
+    [7m12[0m   usuarioId: string;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    'usuarioId' is declared here.
+
+[96msrc/bloqueo/bloqueo.service.ts[0m:[93m26[0m:[93m88[0m - [91merror[0m[90m TS2551: [0mProperty 'apps_bloqueadas' does not exist on type 'CreateBloqueoDto'. Did you mean 'appsBloquear'?
+
+[7m26[0m       `Creando bloqueo para usuario ${createBloqueoDto.usuario_id}: ${createBloqueoDto.apps_bloqueadas.join(', ')}`,
+[7m  [0m [91m                                                                                       ~~~~~~~~~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m15[0m:[93m3[0m
+    [7m15[0m   appsBloquear: string[]; // ["com.instagram.android", "com.tiktok.android", "com.google.android.youtube"]
+    [7m  [0m [96m  ~~~~~~~~~~~~[0m
+    'appsBloquear' is declared here.
+
+[96msrc/bloqueo/bloqueo.service.ts[0m:[93m30[0m:[93m68[0m - [91merror[0m[90m TS2339: [0mProperty 'duracion_minutos' does not exist on type 'CreateBloqueoDto'.
+
+[7m30[0m     tiempoFin.setMinutes(tiempoFin.getMinutes() + createBloqueoDto.duracion_minutos);
+[7m  [0m [91m                                                                   ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/bloqueo/bloqueo.service.ts[0m:[93m35[0m:[93m38[0m - [91merror[0m[90m TS2551: [0mProperty 'usuario_id' does not exist on type 'CreateBloqueoDto'. Did you mean 'usuarioId'?
+
+[7m35[0m         usuario_id: createBloqueoDto.usuario_id,
+[7m  [0m [91m                                     ~~~~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m12[0m:[93m3[0m
+    [7m12[0m   usuarioId: string;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    'usuarioId' is declared here.
+
+[96msrc/bloqueo/bloqueo.service.ts[0m:[93m36[0m:[93m43[0m - [91merror[0m[90m TS2551: [0mProperty 'apps_bloqueadas' does not exist on type 'CreateBloqueoDto'. Did you mean 'appsBloquear'?
+
+[7m36[0m         apps_bloqueadas: createBloqueoDto.apps_bloqueadas,
+[7m  [0m [91m                                          ~~~~~~~~~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m15[0m:[93m3[0m
+    [7m15[0m   appsBloquear: string[]; // ["com.instagram.android", "com.tiktok.android", "com.google.android.youtube"]
+    [7m  [0m [96m  ~~~~~~~~~~~~[0m
+    'appsBloquear' is declared here.
+
+[96msrc/bloqueo/bloqueo.service.ts[0m:[93m37[0m:[93m45[0m - [91merror[0m[90m TS2551: [0mProperty 'sitios_bloqueados' does not exist on type 'CreateBloqueoDto'. Did you mean 'sitiosBloquear'?
+
+[7m37[0m         sitios_bloqueados: createBloqueoDto.sitios_bloqueados,
+[7m  [0m [91m                                            ~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m19[0m:[93m3[0m
+    [7m19[0m   sitiosBloquear: string[]; // ["pornhub.com", "xvideos.com"]
+    [7m  [0m [96m  ~~~~~~~~~~~~~~[0m
+    'sitiosBloquear' is declared here.
+
+[96msrc/bloqueo/bloqueo.service.ts[0m:[93m68[0m:[93m38[0m - [91merror[0m[90m TS2551: [0mProperty 'usuario_id' does not exist on type 'CreateBloqueoDto'. Did you mean 'usuarioId'?
+
+[7m68[0m         usuario_id: createBloqueoDto.usuario_id,
+[7m  [0m [91m                                     ~~~~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m12[0m:[93m3[0m
+    [7m12[0m   usuarioId: string;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    'usuarioId' is declared here.
+
+[96msrc/bloqueo/bloqueo.service.ts[0m:[93m70[0m:[93m32[0m - [91merror[0m[90m TS2551: [0mProperty 'apps_bloqueadas' does not exist on type 'CreateBloqueoDto'. Did you mean 'appsBloquear'?
+
+[7m70[0m         apps: createBloqueoDto.apps_bloqueadas,
+[7m  [0m [91m                               ~~~~~~~~~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m15[0m:[93m3[0m
+    [7m15[0m   appsBloquear: string[]; // ["com.instagram.android", "com.tiktok.android", "com.google.android.youtube"]
+    [7m  [0m [96m  ~~~~~~~~~~~~[0m
+    'appsBloquear' is declared here.
+
+[96msrc/bloqueo/bloqueo.service.ts[0m:[93m71[0m:[93m34[0m - [91merror[0m[90m TS2551: [0mProperty 'sitios_bloqueados' does not exist on type 'CreateBloqueoDto'. Did you mean 'sitiosBloquear'?
+
+[7m71[0m         sitios: createBloqueoDto.sitios_bloqueados,
+[7m  [0m [91m                                 ~~~~~~~~~~~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m19[0m:[93m3[0m
+    [7m19[0m   sitiosBloquear: string[]; // ["pornhub.com", "xvideos.com"]
+    [7m  [0m [96m  ~~~~~~~~~~~~~~[0m
+    'sitiosBloquear' is declared here.
+
+[96msrc/bloqueo/bloqueo.service.ts[0m:[93m72[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'duracion_minutos' does not exist on type 'CreateBloqueoDto'.
+
+[7m72[0m         duracion_minutos: createBloqueoDto.duracion_minutos,
+[7m  [0m [91m                                           ~~~~~~~~~~~~~~~~[0m
+
+[[90m4:19:31 PM[0m] Found 13 errors. Watching for file changes.
+
+[2J[3J[H[[90m4:19:45 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/bloqueo/bloqueo.controller.ts[0m:[93m31[0m:[93m70[0m - [91merror[0m[90m TS2551: [0mProperty 'usuario_id' does not exist on type 'CreateBloqueoDto'. Did you mean 'usuarioId'?
+
+[7m31[0m     this.logger.log(`POST /api/bloqueo - Usuario: ${createBloqueoDto.usuario_id}`);
+[7m  [0m [91m                                                                     ~~~~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m12[0m:[93m3[0m
+    [7m12[0m   usuarioId: string;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    'usuarioId' is declared here.
+
+[[90m4:19:45 PM[0m] Found 1 error. Watching for file changes.
+
+[2J[3J[H[[90m4:19:58 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m4:19:58 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:58 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +15ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTurnosModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEstadoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBloqueoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:58 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebhookModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:59 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +179ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:59 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTurnosController {/api/turnos}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId/analizar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:59 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBloqueoController {/api/bloqueo}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:bloqueoId, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:usuarioId/activos, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:59 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mWebhookController {/api/webhook}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker/estado/:bloqueoId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:59 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEstadoController {/api/estado}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/bloqueos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/turnos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:59 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/sitios/bloqueados, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1054  - [39m04/07/2026, 4:19:59 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +269ms[39m
+✅ ARGOS Backend running on http://0.0.0.0:3000
+📚 API Documentation: http://localhost:3000/api-docs
