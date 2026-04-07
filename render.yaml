@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: argos-backend
+    env: node
+    buildCommand: cd nodejs_space && yarn install && yarn build
+    startCommand: cd nodejs_space && yarn start:prod
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: APP_ORIGIN
+        fromService:
+          name: argos-backend
+          property: url
+      - key: DATABASE_URL
+        fromDatabase:
+          name: argos-db
+          property: connectionString
+      - key: TASKER_WEBHOOK_URL
+        sync: false
+
+  - type: pserv
+    name: argos-db
+    ipAllowList: []
+    plan: starter

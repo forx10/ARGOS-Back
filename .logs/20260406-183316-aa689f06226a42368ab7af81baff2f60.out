@@ -1,0 +1,39 @@
+[master (root-commit) 9652ea9] ARGOS Phase 1 complete backend
+ 36 files changed, 1768 insertions(+)
+ create mode 100644 .abacus.donotdelete
+ create mode 100644 .gitignore
+ create mode 100644 .project_instructions.md
+ create mode 100644 nodejs_space/.env
+ create mode 100644 nodejs_space/.prettierrc
+ create mode 100644 nodejs_space/.yarnrc.yml
+ create mode 100644 nodejs_space/README.md
+ create mode 100644 nodejs_space/eslint.config.mjs
+ create mode 100644 nodejs_space/nest-cli.json
+ create mode 100644 nodejs_space/package.json
+ create mode 100644 nodejs_space/prisma/schema.prisma
+ create mode 100644 nodejs_space/src/app.controller.spec.ts
+ create mode 100644 nodejs_space/src/app.controller.ts
+ create mode 100644 nodejs_space/src/app.module.ts
+ create mode 100644 nodejs_space/src/app.service.ts
+ create mode 100644 nodejs_space/src/bloqueo/bloqueo.controller.ts
+ create mode 100644 nodejs_space/src/bloqueo/bloqueo.module.ts
+ create mode 100644 nodejs_space/src/bloqueo/bloqueo.service.ts
+ create mode 100644 nodejs_space/src/bloqueo/dto/create-bloqueo.dto.ts
+ create mode 100644 nodejs_space/src/estado/estado.controller.ts
+ create mode 100644 nodejs_space/src/estado/estado.module.ts
+ create mode 100644 nodejs_space/src/estado/estado.service.ts
+ create mode 100644 nodejs_space/src/main.ts
+ create mode 100644 nodejs_space/src/prisma/prisma.service.ts
+ create mode 100644 nodejs_space/src/turnos/dto/create-turno.dto.ts
+ create mode 100644 nodejs_space/src/turnos/turnos.controller.ts
+ create mode 100644 nodejs_space/src/turnos/turnos.module.ts
+ create mode 100644 nodejs_space/src/turnos/turnos.service.ts
+ create mode 100644 nodejs_space/src/webhook/webhook.controller.ts
+ create mode 100644 nodejs_space/src/webhook/webhook.module.ts
+ create mode 100644 nodejs_space/src/webhook/webhook.service.ts
+ create mode 100644 nodejs_space/test/app.e2e-spec.ts
+ create mode 100644 nodejs_space/test/jest-e2e.json
+ create mode 100644 nodejs_space/tsconfig.build.json
+ create mode 100644 nodejs_space/tsconfig.json
+ create mode 120000 nodejs_space/yarn.lock
+###9652ea9cb6216af5ede0dadebcd14fa165364277###

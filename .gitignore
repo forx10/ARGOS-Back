@@ -1,20 +1,45 @@
-**/node_modules
-.next
-.cache
-.build
-*.nfs*
-**/.yarn/
-!**/.yarn/patches
-!**/.yarn/plugins
-!**/.yarn/releases
-!**/.yarn/sdks
-!**/.yarn/versions
-!**/.yarn/cache
-**/.yarn/build-state.yml
-**/.yarn/install-state.gz
-dist
-target
-out
-.deploy
-.logs
-*.tsbuildinfo
+# Dependencies
+node_modules/
+.yarn/
+yarn-error.log
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.production
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+coverage/
+.nyc_output/
+
+# Database
+prisma/migrations/
+*.db
+*.sqlite
+
+# Miscellaneous
+.env.example
+.cache/
