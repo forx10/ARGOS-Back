@@ -5,12 +5,12 @@ RUN corepack enable
 
 WORKDIR /app
 
-# Copiar código fuente
-COPY nodejs_space ./nodejs_space
+# Copiar código fuente (seguir symlinks)
+COPY --link nodejs_space ./nodejs_space
 
 # Instalar dependencias
 WORKDIR /app/nodejs_space
-RUN yarn install --frozen-lockfile
+RUN yarn install
 
 # Construir aplicación
 RUN yarn build
