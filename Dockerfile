@@ -2,21 +2,21 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-# Copiar archivos raíz
-COPY package.json yarn.lock ./
+# Copiar código fuente
 COPY nodejs_space ./nodejs_space
 
 # Instalar dependencias
+WORKDIR /app/nodejs_space
 RUN yarn install --frozen-lockfile
 
 # Construir aplicación
-RUN cd nodejs_space && yarn build
+RUN yarn build
 
 # Generar Prisma Client
-RUN cd nodejs_space && yarn prisma generate
+RUN yarn prisma generate
 
 # Exponer puerto
 EXPOSE 3000
 
 # Comando de inicio
-CMD ["node", "nodejs_space/dist/main"]
+CMD ["node", "dist/main"]
