@@ -1,5 +1,8 @@
 FROM node:18-alpine
 
+# Habilitar Corepack para usar Yarn 4.x
+RUN corepack enable
+
 WORKDIR /app
 
 # Copiar código fuente
