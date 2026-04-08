@@ -176,3 +176,291 @@ Starting server...
 [32m[Nest] 1045  - [39m04/08/2026, 5:41:15 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +389ms[39m
 ✅ ARGOS Backend running on http://0.0.0.0:3000
 📚 API Documentation: http://localhost:3000/api-docs
+[2J[3J[H[[90m5:42:33 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/content-filter/content-filter.service.ts[0m:[93m56[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'bloqueos' does not exist on type 'PrismaService'.
+
+[7m56[0m           const exists = await this.prisma.bloqueos.findFirst({
+[7m  [0m [91m                                           ~~~~~~~~[0m
+
+[96msrc/content-filter/content-filter.service.ts[0m:[93m66[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'bloqueos' does not exist on type 'PrismaService'.
+
+[7m66[0m             await this.prisma.bloqueos.create({
+[7m  [0m [91m                              ~~~~~~~~[0m
+
+[96msrc/content-filter/content-filter.service.ts[0m:[93m105[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'bloqueos' does not exist on type 'PrismaService'.
+
+[7m105[0m       const result = await this.prisma.bloqueos.updateMany({
+[7m   [0m [91m                                       ~~~~~~~~[0m
+
+[96msrc/content-filter/content-filter.service.ts[0m:[93m137[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'bloqueos' does not exist on type 'PrismaService'.
+
+[7m137[0m       const blockedCount = await this.prisma.bloqueos.count({
+[7m   [0m [91m                                             ~~~~~~~~[0m
+
+[96msrc/content-filter/content-filter.service.ts[0m:[93m167[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'bloqueos' does not exist on type 'PrismaService'.
+
+[7m167[0m       const blocked = await this.prisma.bloqueos.findMany({
+[7m   [0m [91m                                        ~~~~~~~~[0m
+
+[96msrc/content-filter/content-filter.service.ts[0m:[93m186[0m:[93m31[0m - [91merror[0m[90m TS7006: [0mParameter 'b' implicitly has an 'any' type.
+
+[7m186[0m         domains: blocked.map((b) => b.valor),
+[7m   [0m [91m                              ~[0m
+
+[[90m5:42:34 PM[0m] Found 6 errors. Watching for file changes.
+
+[2J[3J[H[[90m5:42:40 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/content-filter/content-filter.service.ts[0m:[93m56[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'bloqueos' does not exist on type 'PrismaService'.
+
+[7m56[0m           const exists = await this.prisma.bloqueos.findFirst({
+[7m  [0m [91m                                           ~~~~~~~~[0m
+
+[96msrc/content-filter/content-filter.service.ts[0m:[93m66[0m:[93m31[0m - [91merror[0m[90m TS2339: [0mProperty 'bloqueos' does not exist on type 'PrismaService'.
+
+[7m66[0m             await this.prisma.bloqueos.create({
+[7m  [0m [91m                              ~~~~~~~~[0m
+
+[96msrc/content-filter/content-filter.service.ts[0m:[93m105[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'bloqueos' does not exist on type 'PrismaService'.
+
+[7m105[0m       const result = await this.prisma.bloqueos.updateMany({
+[7m   [0m [91m                                       ~~~~~~~~[0m
+
+[96msrc/content-filter/content-filter.service.ts[0m:[93m137[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'bloqueos' does not exist on type 'PrismaService'.
+
+[7m137[0m       const blockedCount = await this.prisma.bloqueos.count({
+[7m   [0m [91m                                             ~~~~~~~~[0m
+
+[96msrc/content-filter/content-filter.service.ts[0m:[93m167[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'bloqueos' does not exist on type 'PrismaService'.
+
+[7m167[0m       const blocked = await this.prisma.bloqueos.findMany({
+[7m   [0m [91m                                        ~~~~~~~~[0m
+
+[96msrc/content-filter/content-filter.service.ts[0m:[93m186[0m:[93m31[0m - [91merror[0m[90m TS7006: [0mParameter 'b' implicitly has an 'any' type.
+
+[7m186[0m         domains: blocked.map((b) => b.valor),
+[7m   [0m [91m                              ~[0m
+
+[[90m5:42:40 PM[0m] Found 6 errors. Watching for file changes.
+
+[2J[3J[H[[90m5:43:31 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/content-filter/content-filter.service.ts[0m:[93m109[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'bloqueos' does not exist on type 'PrismaService'.
+
+[7m109[0m       const result = await this.prisma.bloqueos.updateMany({
+[7m   [0m [91m                                       ~~~~~~~~[0m
+
+[96msrc/content-filter/content-filter.service.ts[0m:[93m141[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'bloqueos' does not exist on type 'PrismaService'.
+
+[7m141[0m       const blockedCount = await this.prisma.bloqueos.count({
+[7m   [0m [91m                                             ~~~~~~~~[0m
+
+[96msrc/content-filter/content-filter.service.ts[0m:[93m171[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'bloqueos' does not exist on type 'PrismaService'.
+
+[7m171[0m       const blocked = await this.prisma.bloqueos.findMany({
+[7m   [0m [91m                                        ~~~~~~~~[0m
+
+[96msrc/content-filter/content-filter.service.ts[0m:[93m190[0m:[93m31[0m - [91merror[0m[90m TS7006: [0mParameter 'b' implicitly has an 'any' type.
+
+[7m190[0m         domains: blocked.map((b) => b.valor),
+[7m   [0m [91m                              ~[0m
+
+[[90m5:43:31 PM[0m] Found 4 errors. Watching for file changes.
+
+[2J[3J[H[[90m5:43:39 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/content-filter/content-filter.service.ts[0m:[93m140[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'bloqueos' does not exist on type 'PrismaService'.
+
+[7m140[0m       const blockedCount = await this.prisma.bloqueos.count({
+[7m   [0m [91m                                             ~~~~~~~~[0m
+
+[96msrc/content-filter/content-filter.service.ts[0m:[93m170[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'bloqueos' does not exist on type 'PrismaService'.
+
+[7m170[0m       const blocked = await this.prisma.bloqueos.findMany({
+[7m   [0m [91m                                        ~~~~~~~~[0m
+
+[96msrc/content-filter/content-filter.service.ts[0m:[93m189[0m:[93m31[0m - [91merror[0m[90m TS7006: [0mParameter 'b' implicitly has an 'any' type.
+
+[7m189[0m         domains: blocked.map((b) => b.valor),
+[7m   [0m [91m                              ~[0m
+
+[[90m5:43:39 PM[0m] Found 3 errors. Watching for file changes.
+
+[2J[3J[H[[90m5:43:50 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:43:50 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +14ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTurnosModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEstadoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAlarmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMusicModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mContentFilterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mComandoVozModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBloqueoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebhookModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mIntelligenceModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +160ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTurnosController {/api/turnos}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId/analizar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBloqueoController {/api/bloqueo}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:bloqueoId, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:usuarioId/activos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mWebhookController {/api/webhook}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker/estado/:bloqueoId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEstadoController {/api/estado}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/bloqueos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/turnos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/sitios/bloqueados, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mComandoVozController {/api/comando-voz}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/comando-voz, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAlarmController {/api/alarmas}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/pendientes/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/verificar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mIntelligenceController {/api/v1/intelligence}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/search, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/answer, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/chat, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mMusicController {/api/v1/music}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/play, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/pause, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/next, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/previous, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/volume, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mContentFilterController {/api/v1/content-filter}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/blocked-domains, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1284  - [39m04/08/2026, 5:43:51 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +412ms[39m
+[2J[3J[H[[90m5:44:16 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:44:16 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +13ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTurnosModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEstadoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAlarmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMusicModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mContentFilterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mComandoVozModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBloqueoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebhookModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mIntelligenceModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +163ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTurnosController {/api/turnos}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId/analizar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBloqueoController {/api/bloqueo}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:bloqueoId, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:usuarioId/activos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mWebhookController {/api/webhook}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker/estado/:bloqueoId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEstadoController {/api/estado}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/bloqueos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/turnos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/sitios/bloqueados, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mComandoVozController {/api/comando-voz}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/comando-voz, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAlarmController {/api/alarmas}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/pendientes/:usuarioId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/verificar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mIntelligenceController {/api/v1/intelligence}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/search, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/answer, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/chat, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mMusicController {/api/v1/music}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/play, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/pause, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/next, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/previous, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/volume, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mContentFilterController {/api/v1/content-filter}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/blocked-domains, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1405  - [39m04/08/2026, 5:44:17 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +456ms[39m
+[2J[3J[H[[90m5:44:18 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:44:18 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +14ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTurnosModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEstadoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAlarmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMusicModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mContentFilterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mComandoVozModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBloqueoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebhookModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mIntelligenceModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +162ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTurnosController {/api/turnos}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId/analizar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBloqueoController {/api/bloqueo}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:bloqueoId, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:usuarioId/activos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mWebhookController {/api/webhook}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker/estado/:bloqueoId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEstadoController {/api/estado}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/bloqueos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/turnos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/sitios/bloqueados, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mComandoVozController {/api/comando-voz}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/comando-voz, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAlarmController {/api/alarmas}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/pendientes/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/verificar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mIntelligenceController {/api/v1/intelligence}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/search, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/answer, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/chat, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mMusicController {/api/v1/music}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/play, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/pause, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/next, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/previous, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/volume, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mContentFilterController {/api/v1/content-filter}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/activate, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/blocked-domains, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +430ms[39m
