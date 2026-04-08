@@ -1,0 +1,36 @@
+[31m[Nest] 913  - [39m04/08/2026, 5:40:11 PM [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39mUnknownDependenciesException [Error]: Nest can't resolve dependencies of the MusicService (?). Please make sure that the argument PrismaService at index [0] is available in the MusicModule module.
+
+Potential solutions:
+- Is MusicModule a valid NestJS module?
+- If PrismaService is a provider, is it part of the current MusicModule?
+- If PrismaService is exported from a separate @Module, is that module imported within MusicModule?
+  @Module({
+    imports: [ /* the Module containing PrismaService */ ]
+  })
+
+For more common dependency resolution issues, see: https://docs.nestjs.com/faq/common-errors
+    at Injector.lookupComponentInParentModules (/opt/hostedapp/node/root/nodejs/node_modules/[4m@nestjs[24m/core/injector/injector.js:290:19)
+    at async resolveParam (/opt/hostedapp/node/root/nodejs/node_modules/[4m@nestjs[24m/core/injector/injector.js:140:38)
+    at async Promise.all (index 0)
+    at async Injector.resolveConstructorParams (/opt/hostedapp/node/root/nodejs/node_modules/[4m@nestjs[24m/core/injector/injector.js:169:27)
+    at async Injector.loadInstance (/opt/hostedapp/node/root/nodejs/node_modules/[4m@nestjs[24m/core/injector/injector.js:75:13)
+    at async Injector.loadProvider (/opt/hostedapp/node/root/nodejs/node_modules/[4m@nestjs[24m/core/injector/injector.js:103:9)
+    at async /opt/hostedapp/node/root/nodejs/node_modules/[4m@nestjs[24m/core/injector/instance-loader.js:56:13
+    at async Promise.all (index 3)
+    at async InstanceLoader.createInstancesOfProviders (/opt/hostedapp/node/root/nodejs/node_modules/[4m@nestjs[24m/core/injector/instance-loader.js:55:9)
+    at async /opt/hostedapp/node/root/nodejs/node_modules/[4m@nestjs[24m/core/injector/instance-loader.js:40:13 {
+  type: [32m'MusicService'[39m,
+  context: {
+    index: [33m0[39m,
+    dependencies: [
+      [36m[class PrismaService extends r][39m
+    ],
+    name: [36m[class PrismaService extends r][39m
+  },
+  metadata: {
+    id: [32m'878563792908cb9b6f0bc'[39m
+  },
+  moduleRef: {
+    id: [32m'7f2284d491d62b69b1f54'[39m
+  }
+}
