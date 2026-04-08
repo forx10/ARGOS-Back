@@ -59,3 +59,32 @@ model sitio_bloqueado {
   @@index([categoria])
   @@unique([patron_url])
 }
+
+// Tabla de alarmas programadas
+model alarmas {
+  id           Int      @id @default(autoincrement())
+  usuario_id   String   @db.VarChar(255)
+  timestamp    DateTime // Cuando se debe ejecutar
+  tipo         String   @db.VarChar(50) // "recordatorio", "bloqueo", "turno"
+  mensaje      String?  @db.Text
+  metadata     Json?    // Datos adicionales: apps, sitios, turno_id, etc.
+  ejecutada    Boolean  @default(false)
+  created_at   DateTime @default(now())
+
+  @@index([usuario_id])
+  @@index([timestamp])
+  @@index([ejecutada])
+}
+
+// Tabla de historial de comandos de voz
+model comandos_voz {
+  id           Int      @id @default(autoincrement())
+  usuario_id   String   @db.VarChar(255)
+  texto        String   @db.Text
+  audio_base64 String?  @db.Text
+  parsed_data  Json?    // Resultado del parseo con LLM
+  timestamp    DateTime @default(now())
+
+  @@index([usuario_id])
+  @@index([timestamp])
+}

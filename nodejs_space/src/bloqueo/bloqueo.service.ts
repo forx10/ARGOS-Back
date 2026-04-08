@@ -182,4 +182,59 @@ export class BloqueoService {
       where: { id: bloqueoId },
     });
   }
+
+  /**
+   * Desbloquear TODO - quitar todos los bloqueos activos del usuario
+   */
+  async desbloquearTodo(usuarioId: string): Promise<{
+    bloqueosDesactivados: number;
+  }> {
+    this.logger.log(`Desbloqueando TODO para usuario: ${usuarioId}`);
+
+    // Obtener bloqueos activos
+    const bloqueosActivos = await this.prisma.bloqueo_activo.findMany({
+      where: {
+        usuario_id: usuarioId,
+        estado: 'activo',
+      },
+    });
+
+    // Actualizar todos a completado
+    await this.prisma.bloqueo_activo.updateMany({
+      where: {
+        usuario_id: usuarioId,
+        estado: 'activo',
+      },
+      data: {
+        estado: 'completado',
+        tiempo_fin: new Date(),
+      },
+    });
+
+    // Enviar comando de desbloqueo global a Tasker
+    if (this.taskerWebhookUrl && bloqueosActivos.length > 0) {
+      try {
+        const payload = {
+          accion: 'desbloquear_todo',
+          usuario_id: usuarioId,
+          bloqueos_desactivados: bloqueosActivos.length,
+          timestamp: new Date().toISOString(),
+        };
+
+        await axios.post(this.taskerWebhookUrl, payload, {
+          timeout: 5000,
+        });
+
+        this.logger.log(`Comando desbloquear_todo enviado a Tasker`);
+      } catch (error) {
+        this.logger.error(
+          `Error al enviar desbloquear_todo a Tasker: ${error instanceof Error ? error.message : 'Unknown error'}`,
+        );
+      }
+    }
+
+    return {
+      bloqueosDesactivados: bloqueosActivos.length,
+    };
+  }
 }

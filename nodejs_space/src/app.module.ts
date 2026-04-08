@@ -5,6 +5,8 @@ import { TurnosModule } from './turnos/turnos.module';
 import { BloqueoModule } from './bloqueo/bloqueo.module';
 import { WebhookModule } from './webhook/webhook.module';
 import { EstadoModule } from './estado/estado.module';
+import { ComandoVozModule } from './comando-voz/comando-voz.module';
+import { AlarmModule } from './alarmas/alarm.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
@@ -17,6 +19,8 @@ import { AppService } from './app.service';
     BloqueoModule,
     WebhookModule,
     EstadoModule,
+    ComandoVozModule,
+    AlarmModule,
   ],
   controllers: [AppController],
   providers: [AppService, PrismaService],

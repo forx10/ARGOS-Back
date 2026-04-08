@@ -1,0 +1,1843 @@
+➤ YN0000: · Yarn 4.13.0
+➤ YN0000: ┌ Resolution step
+➤ YN0085: │ + axios@npm:1.14.0, follow-redirects@npm:1.15.11, proxy-from-env@npm:2.1.0
+➤ YN0000: └ Completed in 0s 240ms
+➤ YN0000: ┌ Post-resolution validation
+➤ YN0002: │ nodejs_space@workspace:. doesn't provide webpack (p687b73), requested by ts-loader.
+➤ YN0086: │ Some peer dependencies are incorrectly met by your project; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code.
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Fetch step
+➤ YN0000: └ Completed in 0s 454ms
+➤ YN0000: ┌ Link step
+➤ YN0000: └ Completed in 0s 678ms
+➤ YN0000: · Done with warnings in 1s 474ms
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+
+✔ Generated Prisma Client (v6.7.0) to ./node_modules/.prisma/client in 62ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Interested in query caching in just a few lines of code? Try Accelerate today! https://pris.ly/tip-3-accelerate
+
+Starting server...
+[2J[3J[H[[90m3:47:38 PM[0m] Starting compilation in watch mode...
+
+[[90m3:47:40 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +11ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTurnosModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEstadoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBloqueoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebhookModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +157ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTurnosController {/api/turnos}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId/analizar, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBloqueoController {/api/bloqueo}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:bloqueoId, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:usuarioId/activos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mWebhookController {/api/webhook}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker/estado/:bloqueoId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEstadoController {/api/estado}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/bloqueos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/turnos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/sitios/bloqueados, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 678  - [39m04/08/2026, 3:47:40 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +243ms[39m
+✅ ARGOS Backend running on http://0.0.0.0:3000
+📚 API Documentation: http://localhost:3000/api-docs
+[2J[3J[H[[90m3:53:49 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/comando-voz/comando-voz.module.ts[0m:[93m5[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module '../alarmas/alarm.service' or its corresponding type declarations.
+
+[7m5[0m import { AlarmService } from '../alarmas/alarm.service';
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.module.ts[0m:[93m7[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module '../turnos/turno.service' or its corresponding type declarations.
+
+[7m7[0m import { TurnoService } from '../turnos/turno.service';
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m3[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module '../alarmas/alarm.service' or its corresponding type declarations.
+
+[7m3[0m import { AlarmService } from '../alarmas/alarm.service';
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m5[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module '../turnos/turno.service' or its corresponding type declarations.
+
+[7m5[0m import { TurnoService } from '../turnos/turno.service';
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m49[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'comandos_voz' does not exist on type 'PrismaService'.
+
+[7m49[0m     await this.prisma.comandos_voz.create({
+[7m  [0m [91m                      ~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m170[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m170[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m176[0m:[93m40[0m - [91merror[0m[90m TS18048: [0m'parsed.duracion' is possibly 'undefined'.
+
+[7m176[0m       mensaje: `Bloqueo activado por ${parsed.duracion / 60} minutos`,
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m199[0m:[93m43[0m - [91merror[0m[90m TS18048: [0m'parsed.timestamp' is possibly 'undefined'.
+
+[7m199[0m       mensaje: `Bloqueo programado para ${parsed.timestamp.toLocaleString('es-ES')}`,
+[7m   [0m [91m                                          ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m218[0m:[93m38[0m - [91merror[0m[90m TS18048: [0m'parsed.timestamp' is possibly 'undefined'.
+
+[7m218[0m       mensaje: `Alarma creada para ${parsed.timestamp.toLocaleString('es-ES')}`,
+[7m   [0m [91m                                     ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m242[0m:[93m31[0m - [91merror[0m[90m TS2551: [0mProperty 'desbloquearTodo' does not exist on type 'BloqueoService'. Did you mean 'desbloquear'?
+
+[7m242[0m     await this.bloqueoService.desbloquearTodo(usuarioId);
+[7m   [0m [91m                              ~~~~~~~~~~~~~~~[0m
+
+  [96msrc/bloqueo/bloqueo.service.ts[0m:[93m108[0m:[93m9[0m
+    [7m108[0m   async desbloquear(bloqueoId: number): Promise<bloqueo_activo> {
+    [7m   [0m [96m        ~~~~~~~~~~~[0m
+    'desbloquear' is declared here.
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m257[0m:[93m15[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m257[0m       nombre: parsed.turno_config.nombre,
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m258[0m:[93m19[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m258[0m       horaInicio: parsed.turno_config.hora_inicio,
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m259[0m:[93m16[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m259[0m       horaFin: parsed.turno_config.hora_fin,
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m260[0m:[93m21[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m260[0m       appsBloquear: parsed.turno_config.apps,
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m261[0m:[93m23[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m261[0m       sitiosBloquear: parsed.turno_config.sitios,
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m266[0m:[93m26[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m266[0m       mensaje: `Turno "${parsed.turno_config.nombre}" creado`,
+[7m   [0m [91m                         ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m273[0m:[93m31[0m - [91merror[0m[90m TS2551: [0mProperty 'desbloquearTodo' does not exist on type 'BloqueoService'. Did you mean 'desbloquear'?
+
+[7m273[0m     await this.bloqueoService.desbloquearTodo(usuarioId);
+[7m   [0m [91m                              ~~~~~~~~~~~~~~~[0m
+
+  [96msrc/bloqueo/bloqueo.service.ts[0m:[93m108[0m:[93m9[0m
+    [7m108[0m   async desbloquear(bloqueoId: number): Promise<bloqueo_activo> {
+    [7m   [0m [96m        ~~~~~~~~~~~[0m
+    'desbloquear' is declared here.
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m305[0m:[93m31[0m - [91merror[0m[90m TS2538: [0mType 'undefined' cannot be used as an index type.
+
+[7m305[0m     const sitios = categorias[parsed.categoria] || [];
+[7m   [0m [91m                              ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m312[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m312[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[[90m3:53:49 PM[0m] Found 19 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:54:21 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m12[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m12[0m     const alarma = await this.prisma.alarmas.create({
+[7m  [0m [91m                                     ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m31[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m31[0m     return this.prisma.alarmas.findMany({
+[7m  [0m [91m                       ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m46[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m46[0m     await this.prisma.alarmas.delete({
+[7m  [0m [91m                      ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m62[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m62[0m     const alarmasVencidas = await this.prisma.alarmas.findMany({
+[7m  [0m [91m                                              ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m80[0m:[93m27[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m80[0m         await this.prisma.alarmas.update({
+[7m  [0m [91m                          ~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.module.ts[0m:[93m7[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module '../turnos/turno.service' or its corresponding type declarations.
+
+[7m7[0m import { TurnoService } from '../turnos/turno.service';
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m5[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module '../turnos/turno.service' or its corresponding type declarations.
+
+[7m5[0m import { TurnoService } from '../turnos/turno.service';
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m49[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'comandos_voz' does not exist on type 'PrismaService'.
+
+[7m49[0m     await this.prisma.comandos_voz.create({
+[7m  [0m [91m                      ~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m170[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m170[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m176[0m:[93m40[0m - [91merror[0m[90m TS18048: [0m'parsed.duracion' is possibly 'undefined'.
+
+[7m176[0m       mensaje: `Bloqueo activado por ${parsed.duracion / 60} minutos`,
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m188[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'Date | undefined' is not assignable to type 'Date'.
+  Type 'undefined' is not assignable to type 'Date'.
+
+[7m188[0m       timestamp: parsed.timestamp,
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+  [96msrc/alarmas/dto/crear-alarma.dto.ts[0m:[93m17[0m:[93m3[0m
+    [7m17[0m   timestamp: Date;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    The expected type comes from property 'timestamp' which is declared here on type 'CrearAlarmaDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m199[0m:[93m43[0m - [91merror[0m[90m TS18048: [0m'parsed.timestamp' is possibly 'undefined'.
+
+[7m199[0m       mensaje: `Bloqueo programado para ${parsed.timestamp.toLocaleString('es-ES')}`,
+[7m   [0m [91m                                          ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m208[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'Date | undefined' is not assignable to type 'Date'.
+  Type 'undefined' is not assignable to type 'Date'.
+
+[7m208[0m       timestamp: parsed.timestamp,
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+  [96msrc/alarmas/dto/crear-alarma.dto.ts[0m:[93m17[0m:[93m3[0m
+    [7m17[0m   timestamp: Date;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    The expected type comes from property 'timestamp' which is declared here on type 'CrearAlarmaDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m218[0m:[93m38[0m - [91merror[0m[90m TS18048: [0m'parsed.timestamp' is possibly 'undefined'.
+
+[7m218[0m       mensaje: `Alarma creada para ${parsed.timestamp.toLocaleString('es-ES')}`,
+[7m   [0m [91m                                     ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m242[0m:[93m31[0m - [91merror[0m[90m TS2551: [0mProperty 'desbloquearTodo' does not exist on type 'BloqueoService'. Did you mean 'desbloquear'?
+
+[7m242[0m     await this.bloqueoService.desbloquearTodo(usuarioId);
+[7m   [0m [91m                              ~~~~~~~~~~~~~~~[0m
+
+  [96msrc/bloqueo/bloqueo.service.ts[0m:[93m108[0m:[93m9[0m
+    [7m108[0m   async desbloquear(bloqueoId: number): Promise<bloqueo_activo> {
+    [7m   [0m [96m        ~~~~~~~~~~~[0m
+    'desbloquear' is declared here.
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m257[0m:[93m15[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m257[0m       nombre: parsed.turno_config.nombre,
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m258[0m:[93m19[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m258[0m       horaInicio: parsed.turno_config.hora_inicio,
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m259[0m:[93m16[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m259[0m       horaFin: parsed.turno_config.hora_fin,
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m260[0m:[93m21[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m260[0m       appsBloquear: parsed.turno_config.apps,
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m261[0m:[93m23[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m261[0m       sitiosBloquear: parsed.turno_config.sitios,
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m266[0m:[93m26[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m266[0m       mensaje: `Turno "${parsed.turno_config.nombre}" creado`,
+[7m   [0m [91m                         ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m273[0m:[93m31[0m - [91merror[0m[90m TS2551: [0mProperty 'desbloquearTodo' does not exist on type 'BloqueoService'. Did you mean 'desbloquear'?
+
+[7m273[0m     await this.bloqueoService.desbloquearTodo(usuarioId);
+[7m   [0m [91m                              ~~~~~~~~~~~~~~~[0m
+
+  [96msrc/bloqueo/bloqueo.service.ts[0m:[93m108[0m:[93m9[0m
+    [7m108[0m   async desbloquear(bloqueoId: number): Promise<bloqueo_activo> {
+    [7m   [0m [96m        ~~~~~~~~~~~[0m
+    'desbloquear' is declared here.
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m305[0m:[93m31[0m - [91merror[0m[90m TS2538: [0mType 'undefined' cannot be used as an index type.
+
+[7m305[0m     const sitios = categorias[parsed.categoria] || [];
+[7m   [0m [91m                              ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m312[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m312[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[[90m3:54:21 PM[0m] Found 24 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:55:05 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m12[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m12[0m     const alarma = await this.prisma.alarmas.create({
+[7m  [0m [91m                                     ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m31[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m31[0m     return this.prisma.alarmas.findMany({
+[7m  [0m [91m                       ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m46[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m46[0m     await this.prisma.alarmas.delete({
+[7m  [0m [91m                      ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m62[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m62[0m     const alarmasVencidas = await this.prisma.alarmas.findMany({
+[7m  [0m [91m                                              ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m80[0m:[93m27[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m80[0m         await this.prisma.alarmas.update({
+[7m  [0m [91m                          ~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.module.ts[0m:[93m7[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module '../turnos/turno.service' or its corresponding type declarations.
+
+[7m7[0m import { TurnoService } from '../turnos/turno.service';
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m5[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module '../turnos/turno.service' or its corresponding type declarations.
+
+[7m5[0m import { TurnoService } from '../turnos/turno.service';
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m49[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'comandos_voz' does not exist on type 'PrismaService'.
+
+[7m49[0m     await this.prisma.comandos_voz.create({
+[7m  [0m [91m                      ~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m170[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m170[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m176[0m:[93m40[0m - [91merror[0m[90m TS18048: [0m'parsed.duracion' is possibly 'undefined'.
+
+[7m176[0m       mensaje: `Bloqueo activado por ${parsed.duracion / 60} minutos`,
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m188[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'Date | undefined' is not assignable to type 'Date'.
+  Type 'undefined' is not assignable to type 'Date'.
+
+[7m188[0m       timestamp: parsed.timestamp,
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+  [96msrc/alarmas/dto/crear-alarma.dto.ts[0m:[93m17[0m:[93m3[0m
+    [7m17[0m   timestamp: Date;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    The expected type comes from property 'timestamp' which is declared here on type 'CrearAlarmaDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m199[0m:[93m43[0m - [91merror[0m[90m TS18048: [0m'parsed.timestamp' is possibly 'undefined'.
+
+[7m199[0m       mensaje: `Bloqueo programado para ${parsed.timestamp.toLocaleString('es-ES')}`,
+[7m   [0m [91m                                          ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m208[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'Date | undefined' is not assignable to type 'Date'.
+  Type 'undefined' is not assignable to type 'Date'.
+
+[7m208[0m       timestamp: parsed.timestamp,
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+  [96msrc/alarmas/dto/crear-alarma.dto.ts[0m:[93m17[0m:[93m3[0m
+    [7m17[0m   timestamp: Date;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    The expected type comes from property 'timestamp' which is declared here on type 'CrearAlarmaDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m218[0m:[93m38[0m - [91merror[0m[90m TS18048: [0m'parsed.timestamp' is possibly 'undefined'.
+
+[7m218[0m       mensaje: `Alarma creada para ${parsed.timestamp.toLocaleString('es-ES')}`,
+[7m   [0m [91m                                     ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m257[0m:[93m15[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m257[0m       nombre: parsed.turno_config.nombre,
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m258[0m:[93m19[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m258[0m       horaInicio: parsed.turno_config.hora_inicio,
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m259[0m:[93m16[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m259[0m       horaFin: parsed.turno_config.hora_fin,
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m260[0m:[93m21[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m260[0m       appsBloquear: parsed.turno_config.apps,
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m261[0m:[93m23[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m261[0m       sitiosBloquear: parsed.turno_config.sitios,
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m266[0m:[93m26[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m266[0m       mensaje: `Turno "${parsed.turno_config.nombre}" creado`,
+[7m   [0m [91m                         ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m305[0m:[93m31[0m - [91merror[0m[90m TS2538: [0mType 'undefined' cannot be used as an index type.
+
+[7m305[0m     const sitios = categorias[parsed.categoria] || [];
+[7m   [0m [91m                              ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m312[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m312[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[[90m3:55:06 PM[0m] Found 22 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:55:32 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m12[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m12[0m     const alarma = await this.prisma.alarmas.create({
+[7m  [0m [91m                                     ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m31[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m31[0m     return this.prisma.alarmas.findMany({
+[7m  [0m [91m                       ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m46[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m46[0m     await this.prisma.alarmas.delete({
+[7m  [0m [91m                      ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m62[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m62[0m     const alarmasVencidas = await this.prisma.alarmas.findMany({
+[7m  [0m [91m                                              ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m80[0m:[93m27[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m80[0m         await this.prisma.alarmas.update({
+[7m  [0m [91m                          ~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.module.ts[0m:[93m7[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module '../turnos/turno.service' or its corresponding type declarations.
+
+[7m7[0m import { TurnoService } from '../turnos/turno.service';
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m5[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module '../turnos/turno.service' or its corresponding type declarations.
+
+[7m5[0m import { TurnoService } from '../turnos/turno.service';
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m49[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'comandos_voz' does not exist on type 'PrismaService'.
+
+[7m49[0m     await this.prisma.comandos_voz.create({
+[7m  [0m [91m                      ~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m170[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m170[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m176[0m:[93m40[0m - [91merror[0m[90m TS18048: [0m'parsed.duracion' is possibly 'undefined'.
+
+[7m176[0m       mensaje: `Bloqueo activado por ${parsed.duracion / 60} minutos`,
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m188[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'Date | undefined' is not assignable to type 'Date'.
+  Type 'undefined' is not assignable to type 'Date'.
+
+[7m188[0m       timestamp: parsed.timestamp,
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+  [96msrc/alarmas/dto/crear-alarma.dto.ts[0m:[93m17[0m:[93m3[0m
+    [7m17[0m   timestamp: Date;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    The expected type comes from property 'timestamp' which is declared here on type 'CrearAlarmaDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m199[0m:[93m43[0m - [91merror[0m[90m TS18048: [0m'parsed.timestamp' is possibly 'undefined'.
+
+[7m199[0m       mensaje: `Bloqueo programado para ${parsed.timestamp.toLocaleString('es-ES')}`,
+[7m   [0m [91m                                          ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m208[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'Date | undefined' is not assignable to type 'Date'.
+  Type 'undefined' is not assignable to type 'Date'.
+
+[7m208[0m       timestamp: parsed.timestamp,
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+  [96msrc/alarmas/dto/crear-alarma.dto.ts[0m:[93m17[0m:[93m3[0m
+    [7m17[0m   timestamp: Date;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    The expected type comes from property 'timestamp' which is declared here on type 'CrearAlarmaDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m218[0m:[93m38[0m - [91merror[0m[90m TS18048: [0m'parsed.timestamp' is possibly 'undefined'.
+
+[7m218[0m       mensaje: `Alarma creada para ${parsed.timestamp.toLocaleString('es-ES')}`,
+[7m   [0m [91m                                     ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m257[0m:[93m15[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m257[0m       nombre: parsed.turno_config.nombre,
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m258[0m:[93m19[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m258[0m       horaInicio: parsed.turno_config.hora_inicio,
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m259[0m:[93m16[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m259[0m       horaFin: parsed.turno_config.hora_fin,
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m260[0m:[93m21[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m260[0m       appsBloquear: parsed.turno_config.apps,
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m261[0m:[93m23[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m261[0m       sitiosBloquear: parsed.turno_config.sitios,
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m266[0m:[93m26[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m266[0m       mensaje: `Turno "${parsed.turno_config.nombre}" creado`,
+[7m   [0m [91m                         ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m305[0m:[93m31[0m - [91merror[0m[90m TS2538: [0mType 'undefined' cannot be used as an index type.
+
+[7m305[0m     const sitios = categorias[parsed.categoria] || [];
+[7m   [0m [91m                              ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m312[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m312[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[[90m3:55:32 PM[0m] Found 22 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:55:47 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m12[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m12[0m     const alarma = await this.prisma.alarmas.create({
+[7m  [0m [91m                                     ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m31[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m31[0m     return this.prisma.alarmas.findMany({
+[7m  [0m [91m                       ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m46[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m46[0m     await this.prisma.alarmas.delete({
+[7m  [0m [91m                      ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m62[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m62[0m     const alarmasVencidas = await this.prisma.alarmas.findMany({
+[7m  [0m [91m                                              ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m80[0m:[93m27[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m80[0m         await this.prisma.alarmas.update({
+[7m  [0m [91m                          ~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.module.ts[0m:[93m7[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module '../turnos/turno.service' or its corresponding type declarations.
+
+[7m7[0m import { TurnoService } from '../turnos/turno.service';
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m5[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module '../turnos/turno.service' or its corresponding type declarations.
+
+[7m5[0m import { TurnoService } from '../turnos/turno.service';
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m49[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'comandos_voz' does not exist on type 'PrismaService'.
+
+[7m49[0m     await this.prisma.comandos_voz.create({
+[7m  [0m [91m                      ~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m170[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m170[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m176[0m:[93m40[0m - [91merror[0m[90m TS18048: [0m'parsed.duracion' is possibly 'undefined'.
+
+[7m176[0m       mensaje: `Bloqueo activado por ${parsed.duracion / 60} minutos`,
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m188[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'Date | undefined' is not assignable to type 'Date'.
+  Type 'undefined' is not assignable to type 'Date'.
+
+[7m188[0m       timestamp: parsed.timestamp,
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+  [96msrc/alarmas/dto/crear-alarma.dto.ts[0m:[93m17[0m:[93m3[0m
+    [7m17[0m   timestamp: Date;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    The expected type comes from property 'timestamp' which is declared here on type 'CrearAlarmaDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m199[0m:[93m43[0m - [91merror[0m[90m TS18048: [0m'parsed.timestamp' is possibly 'undefined'.
+
+[7m199[0m       mensaje: `Bloqueo programado para ${parsed.timestamp.toLocaleString('es-ES')}`,
+[7m   [0m [91m                                          ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m208[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'Date | undefined' is not assignable to type 'Date'.
+  Type 'undefined' is not assignable to type 'Date'.
+
+[7m208[0m       timestamp: parsed.timestamp,
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+  [96msrc/alarmas/dto/crear-alarma.dto.ts[0m:[93m17[0m:[93m3[0m
+    [7m17[0m   timestamp: Date;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    The expected type comes from property 'timestamp' which is declared here on type 'CrearAlarmaDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m218[0m:[93m38[0m - [91merror[0m[90m TS18048: [0m'parsed.timestamp' is possibly 'undefined'.
+
+[7m218[0m       mensaje: `Alarma creada para ${parsed.timestamp.toLocaleString('es-ES')}`,
+[7m   [0m [91m                                     ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m257[0m:[93m15[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m257[0m       nombre: parsed.turno_config.nombre,
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m258[0m:[93m19[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m258[0m       horaInicio: parsed.turno_config.hora_inicio,
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m259[0m:[93m16[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m259[0m       horaFin: parsed.turno_config.hora_fin,
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m260[0m:[93m21[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m260[0m       appsBloquear: parsed.turno_config.apps,
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m261[0m:[93m23[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m261[0m       sitiosBloquear: parsed.turno_config.sitios,
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m266[0m:[93m26[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m266[0m       mensaje: `Turno "${parsed.turno_config.nombre}" creado`,
+[7m   [0m [91m                         ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m305[0m:[93m31[0m - [91merror[0m[90m TS2538: [0mType 'undefined' cannot be used as an index type.
+
+[7m305[0m     const sitios = categorias[parsed.categoria] || [];
+[7m   [0m [91m                              ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m312[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m312[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[[90m3:55:47 PM[0m] Found 22 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:55:54 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m12[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m12[0m     const alarma = await this.prisma.alarmas.create({
+[7m  [0m [91m                                     ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m31[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m31[0m     return this.prisma.alarmas.findMany({
+[7m  [0m [91m                       ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m46[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m46[0m     await this.prisma.alarmas.delete({
+[7m  [0m [91m                      ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m62[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m62[0m     const alarmasVencidas = await this.prisma.alarmas.findMany({
+[7m  [0m [91m                                              ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m80[0m:[93m27[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m80[0m         await this.prisma.alarmas.update({
+[7m  [0m [91m                          ~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.module.ts[0m:[93m7[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module '../turnos/turno.service' or its corresponding type declarations.
+
+[7m7[0m import { TurnoService } from '../turnos/turno.service';
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m42[0m:[93m27[0m - [91merror[0m[90m TS2552: [0mCannot find name 'TurnoService'. Did you mean 'TurnosService'?
+
+[7m42[0m     private turnoService: TurnoService,
+[7m  [0m [91m                          ~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m49[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'comandos_voz' does not exist on type 'PrismaService'.
+
+[7m49[0m     await this.prisma.comandos_voz.create({
+[7m  [0m [91m                      ~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m170[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m170[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m176[0m:[93m40[0m - [91merror[0m[90m TS18048: [0m'parsed.duracion' is possibly 'undefined'.
+
+[7m176[0m       mensaje: `Bloqueo activado por ${parsed.duracion / 60} minutos`,
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m188[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'Date | undefined' is not assignable to type 'Date'.
+  Type 'undefined' is not assignable to type 'Date'.
+
+[7m188[0m       timestamp: parsed.timestamp,
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+  [96msrc/alarmas/dto/crear-alarma.dto.ts[0m:[93m17[0m:[93m3[0m
+    [7m17[0m   timestamp: Date;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    The expected type comes from property 'timestamp' which is declared here on type 'CrearAlarmaDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m199[0m:[93m43[0m - [91merror[0m[90m TS18048: [0m'parsed.timestamp' is possibly 'undefined'.
+
+[7m199[0m       mensaje: `Bloqueo programado para ${parsed.timestamp.toLocaleString('es-ES')}`,
+[7m   [0m [91m                                          ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m208[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'Date | undefined' is not assignable to type 'Date'.
+  Type 'undefined' is not assignable to type 'Date'.
+
+[7m208[0m       timestamp: parsed.timestamp,
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+  [96msrc/alarmas/dto/crear-alarma.dto.ts[0m:[93m17[0m:[93m3[0m
+    [7m17[0m   timestamp: Date;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    The expected type comes from property 'timestamp' which is declared here on type 'CrearAlarmaDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m218[0m:[93m38[0m - [91merror[0m[90m TS18048: [0m'parsed.timestamp' is possibly 'undefined'.
+
+[7m218[0m       mensaje: `Alarma creada para ${parsed.timestamp.toLocaleString('es-ES')}`,
+[7m   [0m [91m                                     ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m257[0m:[93m15[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m257[0m       nombre: parsed.turno_config.nombre,
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m258[0m:[93m19[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m258[0m       horaInicio: parsed.turno_config.hora_inicio,
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m259[0m:[93m16[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m259[0m       horaFin: parsed.turno_config.hora_fin,
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m260[0m:[93m21[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m260[0m       appsBloquear: parsed.turno_config.apps,
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m261[0m:[93m23[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m261[0m       sitiosBloquear: parsed.turno_config.sitios,
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m266[0m:[93m26[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m266[0m       mensaje: `Turno "${parsed.turno_config.nombre}" creado`,
+[7m   [0m [91m                         ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m305[0m:[93m31[0m - [91merror[0m[90m TS2538: [0mType 'undefined' cannot be used as an index type.
+
+[7m305[0m     const sitios = categorias[parsed.categoria] || [];
+[7m   [0m [91m                              ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m312[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m312[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[[90m3:55:54 PM[0m] Found 22 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:56:00 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m12[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m12[0m     const alarma = await this.prisma.alarmas.create({
+[7m  [0m [91m                                     ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m31[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m31[0m     return this.prisma.alarmas.findMany({
+[7m  [0m [91m                       ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m46[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m46[0m     await this.prisma.alarmas.delete({
+[7m  [0m [91m                      ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m62[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m62[0m     const alarmasVencidas = await this.prisma.alarmas.findMany({
+[7m  [0m [91m                                              ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m80[0m:[93m27[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m80[0m         await this.prisma.alarmas.update({
+[7m  [0m [91m                          ~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.module.ts[0m:[93m7[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module '../turnos/turno.service' or its corresponding type declarations.
+
+[7m7[0m import { TurnoService } from '../turnos/turno.service';
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m49[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'comandos_voz' does not exist on type 'PrismaService'.
+
+[7m49[0m     await this.prisma.comandos_voz.create({
+[7m  [0m [91m                      ~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m170[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m170[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m176[0m:[93m40[0m - [91merror[0m[90m TS18048: [0m'parsed.duracion' is possibly 'undefined'.
+
+[7m176[0m       mensaje: `Bloqueo activado por ${parsed.duracion / 60} minutos`,
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m188[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'Date | undefined' is not assignable to type 'Date'.
+  Type 'undefined' is not assignable to type 'Date'.
+
+[7m188[0m       timestamp: parsed.timestamp,
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+  [96msrc/alarmas/dto/crear-alarma.dto.ts[0m:[93m17[0m:[93m3[0m
+    [7m17[0m   timestamp: Date;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    The expected type comes from property 'timestamp' which is declared here on type 'CrearAlarmaDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m199[0m:[93m43[0m - [91merror[0m[90m TS18048: [0m'parsed.timestamp' is possibly 'undefined'.
+
+[7m199[0m       mensaje: `Bloqueo programado para ${parsed.timestamp.toLocaleString('es-ES')}`,
+[7m   [0m [91m                                          ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m208[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'Date | undefined' is not assignable to type 'Date'.
+  Type 'undefined' is not assignable to type 'Date'.
+
+[7m208[0m       timestamp: parsed.timestamp,
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+  [96msrc/alarmas/dto/crear-alarma.dto.ts[0m:[93m17[0m:[93m3[0m
+    [7m17[0m   timestamp: Date;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    The expected type comes from property 'timestamp' which is declared here on type 'CrearAlarmaDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m218[0m:[93m38[0m - [91merror[0m[90m TS18048: [0m'parsed.timestamp' is possibly 'undefined'.
+
+[7m218[0m       mensaje: `Alarma creada para ${parsed.timestamp.toLocaleString('es-ES')}`,
+[7m   [0m [91m                                     ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m228[0m:[93m30[0m - [91merror[0m[90m TS2551: [0mProperty 'turnoService' does not exist on type 'ComandoVozService'. Did you mean 'turnosService'?
+
+[7m228[0m     const turno = await this.turnoService.activarTurno(
+[7m   [0m [91m                             ~~~~~~~~~~~~[0m
+
+  [96msrc/comando-voz/comando-voz.service.ts[0m:[93m42[0m:[93m5[0m
+    [7m42[0m     private turnosService: TurnosService,
+    [7m  [0m [96m    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'turnosService' is declared here.
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m255[0m:[93m30[0m - [91merror[0m[90m TS2551: [0mProperty 'turnoService' does not exist on type 'ComandoVozService'. Did you mean 'turnosService'?
+
+[7m255[0m     const turno = await this.turnoService.crearTurno({
+[7m   [0m [91m                             ~~~~~~~~~~~~[0m
+
+  [96msrc/comando-voz/comando-voz.service.ts[0m:[93m42[0m:[93m5[0m
+    [7m42[0m     private turnosService: TurnosService,
+    [7m  [0m [96m    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'turnosService' is declared here.
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m257[0m:[93m15[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m257[0m       nombre: parsed.turno_config.nombre,
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m258[0m:[93m19[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m258[0m       horaInicio: parsed.turno_config.hora_inicio,
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m259[0m:[93m16[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m259[0m       horaFin: parsed.turno_config.hora_fin,
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m260[0m:[93m21[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m260[0m       appsBloquear: parsed.turno_config.apps,
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m261[0m:[93m23[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m261[0m       sitiosBloquear: parsed.turno_config.sitios,
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m266[0m:[93m26[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m266[0m       mensaje: `Turno "${parsed.turno_config.nombre}" creado`,
+[7m   [0m [91m                         ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m305[0m:[93m31[0m - [91merror[0m[90m TS2538: [0mType 'undefined' cannot be used as an index type.
+
+[7m305[0m     const sitios = categorias[parsed.categoria] || [];
+[7m   [0m [91m                              ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m312[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m312[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[[90m3:56:00 PM[0m] Found 23 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:56:07 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m12[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m12[0m     const alarma = await this.prisma.alarmas.create({
+[7m  [0m [91m                                     ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m31[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m31[0m     return this.prisma.alarmas.findMany({
+[7m  [0m [91m                       ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m46[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m46[0m     await this.prisma.alarmas.delete({
+[7m  [0m [91m                      ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m62[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m62[0m     const alarmasVencidas = await this.prisma.alarmas.findMany({
+[7m  [0m [91m                                              ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m80[0m:[93m27[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m80[0m         await this.prisma.alarmas.update({
+[7m  [0m [91m                          ~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.module.ts[0m:[93m7[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module '../turnos/turno.service' or its corresponding type declarations.
+
+[7m7[0m import { TurnoService } from '../turnos/turno.service';
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m49[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'comandos_voz' does not exist on type 'PrismaService'.
+
+[7m49[0m     await this.prisma.comandos_voz.create({
+[7m  [0m [91m                      ~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m170[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m170[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m176[0m:[93m40[0m - [91merror[0m[90m TS18048: [0m'parsed.duracion' is possibly 'undefined'.
+
+[7m176[0m       mensaje: `Bloqueo activado por ${parsed.duracion / 60} minutos`,
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m188[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'Date | undefined' is not assignable to type 'Date'.
+  Type 'undefined' is not assignable to type 'Date'.
+
+[7m188[0m       timestamp: parsed.timestamp,
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+  [96msrc/alarmas/dto/crear-alarma.dto.ts[0m:[93m17[0m:[93m3[0m
+    [7m17[0m   timestamp: Date;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    The expected type comes from property 'timestamp' which is declared here on type 'CrearAlarmaDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m199[0m:[93m43[0m - [91merror[0m[90m TS18048: [0m'parsed.timestamp' is possibly 'undefined'.
+
+[7m199[0m       mensaje: `Bloqueo programado para ${parsed.timestamp.toLocaleString('es-ES')}`,
+[7m   [0m [91m                                          ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m208[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'Date | undefined' is not assignable to type 'Date'.
+  Type 'undefined' is not assignable to type 'Date'.
+
+[7m208[0m       timestamp: parsed.timestamp,
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+  [96msrc/alarmas/dto/crear-alarma.dto.ts[0m:[93m17[0m:[93m3[0m
+    [7m17[0m   timestamp: Date;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    The expected type comes from property 'timestamp' which is declared here on type 'CrearAlarmaDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m218[0m:[93m38[0m - [91merror[0m[90m TS18048: [0m'parsed.timestamp' is possibly 'undefined'.
+
+[7m218[0m       mensaje: `Alarma creada para ${parsed.timestamp.toLocaleString('es-ES')}`,
+[7m   [0m [91m                                     ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m230[0m:[93m7[0m - [91merror[0m[90m TS2345: [0mArgument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+[7m230[0m       parsed.turno_id,
+[7m   [0m [91m      ~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m255[0m:[93m30[0m - [91merror[0m[90m TS2551: [0mProperty 'turnoService' does not exist on type 'ComandoVozService'. Did you mean 'turnosService'?
+
+[7m255[0m     const turno = await this.turnoService.crearTurno({
+[7m   [0m [91m                             ~~~~~~~~~~~~[0m
+
+  [96msrc/comando-voz/comando-voz.service.ts[0m:[93m42[0m:[93m5[0m
+    [7m42[0m     private turnosService: TurnosService,
+    [7m  [0m [96m    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    'turnosService' is declared here.
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m257[0m:[93m15[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m257[0m       nombre: parsed.turno_config.nombre,
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m258[0m:[93m19[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m258[0m       horaInicio: parsed.turno_config.hora_inicio,
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m259[0m:[93m16[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m259[0m       horaFin: parsed.turno_config.hora_fin,
+[7m   [0m [91m               ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m260[0m:[93m21[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m260[0m       appsBloquear: parsed.turno_config.apps,
+[7m   [0m [91m                    ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m261[0m:[93m23[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m261[0m       sitiosBloquear: parsed.turno_config.sitios,
+[7m   [0m [91m                      ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m266[0m:[93m26[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m266[0m       mensaje: `Turno "${parsed.turno_config.nombre}" creado`,
+[7m   [0m [91m                         ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m305[0m:[93m31[0m - [91merror[0m[90m TS2538: [0mType 'undefined' cannot be used as an index type.
+
+[7m305[0m     const sitios = categorias[parsed.categoria] || [];
+[7m   [0m [91m                              ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m312[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m312[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[[90m3:56:07 PM[0m] Found 23 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:56:15 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m12[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m12[0m     const alarma = await this.prisma.alarmas.create({
+[7m  [0m [91m                                     ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m31[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m31[0m     return this.prisma.alarmas.findMany({
+[7m  [0m [91m                       ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m46[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m46[0m     await this.prisma.alarmas.delete({
+[7m  [0m [91m                      ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m62[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m62[0m     const alarmasVencidas = await this.prisma.alarmas.findMany({
+[7m  [0m [91m                                              ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m80[0m:[93m27[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m80[0m         await this.prisma.alarmas.update({
+[7m  [0m [91m                          ~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.module.ts[0m:[93m7[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module '../turnos/turno.service' or its corresponding type declarations.
+
+[7m7[0m import { TurnoService } from '../turnos/turno.service';
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m49[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'comandos_voz' does not exist on type 'PrismaService'.
+
+[7m49[0m     await this.prisma.comandos_voz.create({
+[7m  [0m [91m                      ~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m170[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m170[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m176[0m:[93m40[0m - [91merror[0m[90m TS18048: [0m'parsed.duracion' is possibly 'undefined'.
+
+[7m176[0m       mensaje: `Bloqueo activado por ${parsed.duracion / 60} minutos`,
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m188[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'Date | undefined' is not assignable to type 'Date'.
+  Type 'undefined' is not assignable to type 'Date'.
+
+[7m188[0m       timestamp: parsed.timestamp,
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+  [96msrc/alarmas/dto/crear-alarma.dto.ts[0m:[93m17[0m:[93m3[0m
+    [7m17[0m   timestamp: Date;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    The expected type comes from property 'timestamp' which is declared here on type 'CrearAlarmaDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m199[0m:[93m43[0m - [91merror[0m[90m TS18048: [0m'parsed.timestamp' is possibly 'undefined'.
+
+[7m199[0m       mensaje: `Bloqueo programado para ${parsed.timestamp.toLocaleString('es-ES')}`,
+[7m   [0m [91m                                          ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m208[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'Date | undefined' is not assignable to type 'Date'.
+  Type 'undefined' is not assignable to type 'Date'.
+
+[7m208[0m       timestamp: parsed.timestamp,
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+  [96msrc/alarmas/dto/crear-alarma.dto.ts[0m:[93m17[0m:[93m3[0m
+    [7m17[0m   timestamp: Date;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    The expected type comes from property 'timestamp' which is declared here on type 'CrearAlarmaDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m218[0m:[93m38[0m - [91merror[0m[90m TS18048: [0m'parsed.timestamp' is possibly 'undefined'.
+
+[7m218[0m       mensaje: `Alarma creada para ${parsed.timestamp.toLocaleString('es-ES')}`,
+[7m   [0m [91m                                     ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m230[0m:[93m7[0m - [91merror[0m[90m TS2345: [0mArgument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+[7m230[0m       parsed.turno_id,
+[7m   [0m [91m      ~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m257[0m:[93m20[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m257[0m       hora_inicio: parsed.turno_config.hora_inicio,
+[7m   [0m [91m                   ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m258[0m:[93m17[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m258[0m       hora_fin: parsed.turno_config.hora_fin,
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m259[0m:[93m19[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m259[0m       tipo_turno: parsed.turno_config.nombre,
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m265[0m:[93m26[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m265[0m       mensaje: `Turno "${parsed.turno_config.nombre}" creado`,
+[7m   [0m [91m                         ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m304[0m:[93m31[0m - [91merror[0m[90m TS2538: [0mType 'undefined' cannot be used as an index type.
+
+[7m304[0m     const sitios = categorias[parsed.categoria] || [];
+[7m   [0m [91m                              ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m311[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m311[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[[90m3:56:15 PM[0m] Found 20 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:56:22 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m12[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m12[0m     const alarma = await this.prisma.alarmas.create({
+[7m  [0m [91m                                     ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m31[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m31[0m     return this.prisma.alarmas.findMany({
+[7m  [0m [91m                       ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m46[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m46[0m     await this.prisma.alarmas.delete({
+[7m  [0m [91m                      ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m62[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m62[0m     const alarmasVencidas = await this.prisma.alarmas.findMany({
+[7m  [0m [91m                                              ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m80[0m:[93m27[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m80[0m         await this.prisma.alarmas.update({
+[7m  [0m [91m                          ~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m49[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'comandos_voz' does not exist on type 'PrismaService'.
+
+[7m49[0m     await this.prisma.comandos_voz.create({
+[7m  [0m [91m                      ~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m170[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m170[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m176[0m:[93m40[0m - [91merror[0m[90m TS18048: [0m'parsed.duracion' is possibly 'undefined'.
+
+[7m176[0m       mensaje: `Bloqueo activado por ${parsed.duracion / 60} minutos`,
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m188[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'Date | undefined' is not assignable to type 'Date'.
+  Type 'undefined' is not assignable to type 'Date'.
+
+[7m188[0m       timestamp: parsed.timestamp,
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+  [96msrc/alarmas/dto/crear-alarma.dto.ts[0m:[93m17[0m:[93m3[0m
+    [7m17[0m   timestamp: Date;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    The expected type comes from property 'timestamp' which is declared here on type 'CrearAlarmaDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m199[0m:[93m43[0m - [91merror[0m[90m TS18048: [0m'parsed.timestamp' is possibly 'undefined'.
+
+[7m199[0m       mensaje: `Bloqueo programado para ${parsed.timestamp.toLocaleString('es-ES')}`,
+[7m   [0m [91m                                          ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m208[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'Date | undefined' is not assignable to type 'Date'.
+  Type 'undefined' is not assignable to type 'Date'.
+
+[7m208[0m       timestamp: parsed.timestamp,
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+  [96msrc/alarmas/dto/crear-alarma.dto.ts[0m:[93m17[0m:[93m3[0m
+    [7m17[0m   timestamp: Date;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    The expected type comes from property 'timestamp' which is declared here on type 'CrearAlarmaDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m218[0m:[93m38[0m - [91merror[0m[90m TS18048: [0m'parsed.timestamp' is possibly 'undefined'.
+
+[7m218[0m       mensaje: `Alarma creada para ${parsed.timestamp.toLocaleString('es-ES')}`,
+[7m   [0m [91m                                     ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m230[0m:[93m7[0m - [91merror[0m[90m TS2345: [0mArgument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+[7m230[0m       parsed.turno_id,
+[7m   [0m [91m      ~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m257[0m:[93m20[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m257[0m       hora_inicio: parsed.turno_config.hora_inicio,
+[7m   [0m [91m                   ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m258[0m:[93m17[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m258[0m       hora_fin: parsed.turno_config.hora_fin,
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m259[0m:[93m19[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m259[0m       tipo_turno: parsed.turno_config.nombre,
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m265[0m:[93m26[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m265[0m       mensaje: `Turno "${parsed.turno_config.nombre}" creado`,
+[7m   [0m [91m                         ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m304[0m:[93m31[0m - [91merror[0m[90m TS2538: [0mType 'undefined' cannot be used as an index type.
+
+[7m304[0m     const sitios = categorias[parsed.categoria] || [];
+[7m   [0m [91m                              ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m311[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m311[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[[90m3:56:22 PM[0m] Found 19 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:56:37 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m12[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m12[0m     const alarma = await this.prisma.alarmas.create({
+[7m  [0m [91m                                     ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m31[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m31[0m     return this.prisma.alarmas.findMany({
+[7m  [0m [91m                       ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m46[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m46[0m     await this.prisma.alarmas.delete({
+[7m  [0m [91m                      ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m62[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m62[0m     const alarmasVencidas = await this.prisma.alarmas.findMany({
+[7m  [0m [91m                                              ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m80[0m:[93m27[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m80[0m         await this.prisma.alarmas.update({
+[7m  [0m [91m                          ~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m49[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'comandos_voz' does not exist on type 'PrismaService'.
+
+[7m49[0m     await this.prisma.comandos_voz.create({
+[7m  [0m [91m                      ~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m170[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m170[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m176[0m:[93m40[0m - [91merror[0m[90m TS18048: [0m'parsed.duracion' is possibly 'undefined'.
+
+[7m176[0m       mensaje: `Bloqueo activado por ${parsed.duracion / 60} minutos`,
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m212[0m:[93m7[0m - [91merror[0m[90m TS2322: [0mType 'Date | undefined' is not assignable to type 'Date'.
+  Type 'undefined' is not assignable to type 'Date'.
+
+[7m212[0m       timestamp: parsed.timestamp,
+[7m   [0m [91m      ~~~~~~~~~[0m
+
+  [96msrc/alarmas/dto/crear-alarma.dto.ts[0m:[93m17[0m:[93m3[0m
+    [7m17[0m   timestamp: Date;
+    [7m  [0m [96m  ~~~~~~~~~[0m
+    The expected type comes from property 'timestamp' which is declared here on type 'CrearAlarmaDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m222[0m:[93m38[0m - [91merror[0m[90m TS18048: [0m'parsed.timestamp' is possibly 'undefined'.
+
+[7m222[0m       mensaje: `Alarma creada para ${parsed.timestamp.toLocaleString('es-ES')}`,
+[7m   [0m [91m                                     ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m234[0m:[93m7[0m - [91merror[0m[90m TS2345: [0mArgument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+[7m234[0m       parsed.turno_id,
+[7m   [0m [91m      ~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m261[0m:[93m20[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m261[0m       hora_inicio: parsed.turno_config.hora_inicio,
+[7m   [0m [91m                   ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m262[0m:[93m17[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m262[0m       hora_fin: parsed.turno_config.hora_fin,
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m263[0m:[93m19[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m263[0m       tipo_turno: parsed.turno_config.nombre,
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m269[0m:[93m26[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m269[0m       mensaje: `Turno "${parsed.turno_config.nombre}" creado`,
+[7m   [0m [91m                         ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m308[0m:[93m31[0m - [91merror[0m[90m TS2538: [0mType 'undefined' cannot be used as an index type.
+
+[7m308[0m     const sitios = categorias[parsed.categoria] || [];
+[7m   [0m [91m                              ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m315[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m315[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[[90m3:56:37 PM[0m] Found 17 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:56:48 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m12[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m12[0m     const alarma = await this.prisma.alarmas.create({
+[7m  [0m [91m                                     ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m31[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m31[0m     return this.prisma.alarmas.findMany({
+[7m  [0m [91m                       ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m46[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m46[0m     await this.prisma.alarmas.delete({
+[7m  [0m [91m                      ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m62[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m62[0m     const alarmasVencidas = await this.prisma.alarmas.findMany({
+[7m  [0m [91m                                              ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m80[0m:[93m27[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m80[0m         await this.prisma.alarmas.update({
+[7m  [0m [91m                          ~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m49[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'comandos_voz' does not exist on type 'PrismaService'.
+
+[7m49[0m     await this.prisma.comandos_voz.create({
+[7m  [0m [91m                      ~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m170[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m170[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m176[0m:[93m40[0m - [91merror[0m[90m TS18048: [0m'parsed.duracion' is possibly 'undefined'.
+
+[7m176[0m       mensaje: `Bloqueo activado por ${parsed.duracion / 60} minutos`,
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m269[0m:[93m20[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m269[0m       hora_inicio: parsed.turno_config.hora_inicio,
+[7m   [0m [91m                   ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m270[0m:[93m17[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m270[0m       hora_fin: parsed.turno_config.hora_fin,
+[7m   [0m [91m                ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m271[0m:[93m19[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m271[0m       tipo_turno: parsed.turno_config.nombre,
+[7m   [0m [91m                  ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m277[0m:[93m26[0m - [91merror[0m[90m TS18048: [0m'parsed.turno_config' is possibly 'undefined'.
+
+[7m277[0m       mensaje: `Turno "${parsed.turno_config.nombre}" creado`,
+[7m   [0m [91m                         ~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m316[0m:[93m31[0m - [91merror[0m[90m TS2538: [0mType 'undefined' cannot be used as an index type.
+
+[7m316[0m     const sitios = categorias[parsed.categoria] || [];
+[7m   [0m [91m                              ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m323[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m323[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[[90m3:56:48 PM[0m] Found 14 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:56:56 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m12[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m12[0m     const alarma = await this.prisma.alarmas.create({
+[7m  [0m [91m                                     ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m31[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m31[0m     return this.prisma.alarmas.findMany({
+[7m  [0m [91m                       ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m46[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m46[0m     await this.prisma.alarmas.delete({
+[7m  [0m [91m                      ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m62[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m62[0m     const alarmasVencidas = await this.prisma.alarmas.findMany({
+[7m  [0m [91m                                              ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m80[0m:[93m27[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m80[0m         await this.prisma.alarmas.update({
+[7m  [0m [91m                          ~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m49[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'comandos_voz' does not exist on type 'PrismaService'.
+
+[7m49[0m     await this.prisma.comandos_voz.create({
+[7m  [0m [91m                      ~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m170[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m170[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m176[0m:[93m40[0m - [91merror[0m[90m TS18048: [0m'parsed.duracion' is possibly 'undefined'.
+
+[7m176[0m       mensaje: `Bloqueo activado por ${parsed.duracion / 60} minutos`,
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m320[0m:[93m31[0m - [91merror[0m[90m TS2538: [0mType 'undefined' cannot be used as an index type.
+
+[7m320[0m     const sitios = categorias[parsed.categoria] || [];
+[7m   [0m [91m                              ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m327[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m327[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[[90m3:56:56 PM[0m] Found 10 errors. Watching for file changes.
+
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +13ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTurnosModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEstadoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAlarmModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mComandoVozModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBloqueoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebhookModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +165ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTurnosController {/api/turnos}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId/analizar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBloqueoController {/api/bloqueo}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:bloqueoId, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:usuarioId/activos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mWebhookController {/api/webhook}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker/estado/:bloqueoId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEstadoController {/api/estado}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/bloqueos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/turnos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/sitios/bloqueados, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mComandoVozController {/api/comando-voz}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/comando-voz, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAlarmController {/api/alarmas}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/pendientes/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/verificar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 966  - [39m04/08/2026, 3:56:56 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +326ms[39m
+✅ ARGOS Backend running on http://0.0.0.0:3000
+📚 API Documentation: http://localhost:3000/api-docs
+[2J[3J[H[[90m3:57:08 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m12[0m:[93m38[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m12[0m     const alarma = await this.prisma.alarmas.create({
+[7m  [0m [91m                                     ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m31[0m:[93m24[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m31[0m     return this.prisma.alarmas.findMany({
+[7m  [0m [91m                       ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m46[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m46[0m     await this.prisma.alarmas.delete({
+[7m  [0m [91m                      ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m62[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m62[0m     const alarmasVencidas = await this.prisma.alarmas.findMany({
+[7m  [0m [91m                                              ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m80[0m:[93m27[0m - [91merror[0m[90m TS2339: [0mProperty 'alarmas' does not exist on type 'PrismaService'.
+
+[7m80[0m         await this.prisma.alarmas.update({
+[7m  [0m [91m                          ~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m49[0m:[93m23[0m - [91merror[0m[90m TS2339: [0mProperty 'comandos_voz' does not exist on type 'PrismaService'.
+
+[7m49[0m     await this.prisma.comandos_voz.create({
+[7m  [0m [91m                      ~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m170[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m170[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m176[0m:[93m40[0m - [91merror[0m[90m TS18048: [0m'parsed.duracion' is possibly 'undefined'.
+
+[7m176[0m       mensaje: `Bloqueo activado por ${parsed.duracion / 60} minutos`,
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+
+[[90m3:57:08 PM[0m] Found 8 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:57:20 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m170[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m170[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m176[0m:[93m40[0m - [91merror[0m[90m TS18048: [0m'parsed.duracion' is possibly 'undefined'.
+
+[7m176[0m       mensaje: `Bloqueo activado por ${parsed.duracion / 60} minutos`,
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+
+[[90m3:57:21 PM[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:57:22 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m170[0m:[93m7[0m - [91merror[0m[90m TS2820: [0mType '"COMANDO_VOZ"' is not assignable to type 'TriggerType'. Did you mean 'TriggerType.COMANDO_VOZ'?
+
+[7m170[0m       trigger: 'COMANDO_VOZ',
+[7m   [0m [91m      ~~~~~~~[0m
+
+  [96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m26[0m:[93m3[0m
+    [7m26[0m   trigger: TriggerType = TriggerType.BLOQUEO_MANUAL;
+    [7m  [0m [96m  ~~~~~~~[0m
+    The expected type comes from property 'trigger' which is declared here on type 'CreateBloqueoDto'
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m176[0m:[93m40[0m - [91merror[0m[90m TS18048: [0m'parsed.duracion' is possibly 'undefined'.
+
+[7m176[0m       mensaje: `Bloqueo activado por ${parsed.duracion / 60} minutos`,
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+
+[[90m3:57:22 PM[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:57:29 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m3:57:29 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:29 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:29 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +12ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:29 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:29 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:29 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTurnosModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:29 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEstadoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:29 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAlarmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:29 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mComandoVozModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:29 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBloqueoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:29 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebhookModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +157ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTurnosController {/api/turnos}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId/analizar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBloqueoController {/api/bloqueo}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:bloqueoId, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:usuarioId/activos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mWebhookController {/api/webhook}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker/estado/:bloqueoId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEstadoController {/api/estado}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/bloqueos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/turnos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/sitios/bloqueados, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mComandoVozController {/api/comando-voz}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/comando-voz, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAlarmController {/api/alarmas}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/pendientes/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/verificar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1062  - [39m04/08/2026, 3:57:30 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +323ms[39m
+✅ ARGOS Backend running on http://0.0.0.0:3000
+📚 API Documentation: http://localhost:3000/api-docs

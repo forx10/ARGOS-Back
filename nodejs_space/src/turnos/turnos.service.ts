@@ -185,4 +185,56 @@ export class TurnosService {
       },
     });
   }
+
+  /**
+   * Activar turno manualmente (por comando de voz)
+   */
+  async activarTurno(usuarioId: string, turnoId: number): Promise<{
+    turno: turno;
+    bloqueo: bloqueo_activo;
+    mensaje: string;
+  }> {
+    const turno = await this.prisma.turno.findFirst({
+      where: {
+        id: turnoId,
+        usuario_id: usuarioId,
+      },
+    });
+
+    if (!turno) {
+      throw new Error(`Turno ${turnoId} no encontrado para usuario ${usuarioId}`);
+    }
+
+    this.logger.log(`Activando turno ${turnoId} manualmente para usuario ${usuarioId}`);
+
+    // Calcular tiempo de fin basado en la hora_fin del turno
+    const ahora = new Date();
+    const [horasFin, minutosFin] = turno.hora_fin.split(':').map(Number);
+    const tiempoFin = new Date(ahora);
+    tiempoFin.setHours(horasFin, minutosFin, 0, 0);
+
+    // Si la hora de fin ya pasó hoy, usar mañana
+    if (tiempoFin < ahora) {
+      tiempoFin.setDate(tiempoFin.getDate() + 1);
+    }
+
+    // Crear bloqueo basado en el turno
+    // Nota: Por ahora usamos apps/sitios vacíos, se pueden configurar en el turno
+    const bloqueo = await this.prisma.bloqueo_activo.create({
+      data: {
+        usuario_id: usuarioId,
+        apps_bloqueadas: [],
+        sitios_bloqueados: [],
+        tiempo_fin: tiempoFin,
+        estado: 'activo',
+        razon: `turno_${turnoId}`,
+      },
+    });
+
+    return {
+      turno,
+      bloqueo,
+      mensaje: `Turno ${turno.tipo_turno} activado hasta las ${turno.hora_fin}`,
+    };
+  }
 }
