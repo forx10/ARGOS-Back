@@ -12,6 +12,9 @@ import { MusicModule } from './music/music.module';
 import { ContentFilterModule } from './content-filter/content-filter.module';
 import { LocationModule } from './location/location.module';
 import { AppBlockerModule } from './app-blocker/app-blocker.module';
+import { NotificationsModule } from './notifications/notifications.module';
+import { SdFilesModule } from './sd-files/sd-files.module';
+import { CameraModule } from './camera/camera.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
@@ -31,6 +34,9 @@ import { AppService } from './app.service';
     ContentFilterModule,
     LocationModule,
     AppBlockerModule,
+    NotificationsModule,
+    SdFilesModule,
+    CameraModule,
   ],
   controllers: [AppController],
   providers: [AppService, PrismaService],

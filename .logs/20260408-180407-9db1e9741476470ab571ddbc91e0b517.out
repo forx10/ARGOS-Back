@@ -70,3 +70,453 @@
 [32m[Nest] 1212  - [39m04/08/2026, 6:04:11 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +566ms[39m
 ✅ ARGOS Backend running on http://0.0.0.0:3000
 📚 API Documentation: http://localhost:3000/api-docs
+[2J[3J[H[[90m6:09:04 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/notifications/notifications.service.ts[0m:[93m47[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'notificacion' does not exist on type 'PrismaService'.
+
+[7m47[0m       const notification = await this.prisma.notificacion.create({
+[7m  [0m [91m                                             ~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m121[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'notificacion' does not exist on type 'PrismaService'.
+
+[7m121[0m       const notifications = await this.prisma.notificacion.findMany({
+[7m   [0m [91m                                              ~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m133[0m:[93m48[0m - [91merror[0m[90m TS7006: [0mParameter 'n' implicitly has an 'any' type.
+
+[7m133[0m       const voiceMessages = notifications.map((n) =>
+[7m   [0m [91m                                               ~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m144[0m:[93m43[0m - [91merror[0m[90m TS7006: [0mParameter 'n' implicitly has an 'any' type.
+
+[7m144[0m         notifications: notifications.map((n, index) => ({
+[7m   [0m [91m                                          ~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m144[0m:[93m46[0m - [91merror[0m[90m TS7006: [0mParameter 'index' implicitly has an 'any' type.
+
+[7m144[0m         notifications: notifications.map((n, index) => ({
+[7m   [0m [91m                                             ~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m165[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'notificacion' does not exist on type 'PrismaService'.
+
+[7m165[0m       await this.prisma.notificacion.update({
+[7m   [0m [91m                        ~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m186[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'configuracion' does not exist on type 'PrismaService'.
+
+[7m186[0m       await this.prisma.configuracion.upsert({
+[7m   [0m [91m                        ~~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m219[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'notificacion' does not exist on type 'PrismaService'.
+
+[7m219[0m       const notifications = await this.prisma.notificacion.findMany({
+[7m   [0m [91m                                              ~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m231[0m:[93m43[0m - [91merror[0m[90m TS7006: [0mParameter 'n' implicitly has an 'any' type.
+
+[7m231[0m         notifications: notifications.map((n) => ({
+[7m   [0m [91m                                          ~[0m
+
+[[90m6:09:04 PM[0m] Found 9 errors. Watching for file changes.
+
+[2J[3J[H[[90m6:09:33 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/notifications/notifications.service.ts[0m:[93m47[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'notificacion' does not exist on type 'PrismaService'.
+
+[7m47[0m       const notification = await this.prisma.notificacion.create({
+[7m  [0m [91m                                             ~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m121[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'notificacion' does not exist on type 'PrismaService'.
+
+[7m121[0m       const notifications = await this.prisma.notificacion.findMany({
+[7m   [0m [91m                                              ~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m133[0m:[93m48[0m - [91merror[0m[90m TS7006: [0mParameter 'n' implicitly has an 'any' type.
+
+[7m133[0m       const voiceMessages = notifications.map((n) =>
+[7m   [0m [91m                                               ~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m144[0m:[93m43[0m - [91merror[0m[90m TS7006: [0mParameter 'n' implicitly has an 'any' type.
+
+[7m144[0m         notifications: notifications.map((n, index) => ({
+[7m   [0m [91m                                          ~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m144[0m:[93m46[0m - [91merror[0m[90m TS7006: [0mParameter 'index' implicitly has an 'any' type.
+
+[7m144[0m         notifications: notifications.map((n, index) => ({
+[7m   [0m [91m                                             ~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m165[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'notificacion' does not exist on type 'PrismaService'.
+
+[7m165[0m       await this.prisma.notificacion.update({
+[7m   [0m [91m                        ~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m186[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'configuracion' does not exist on type 'PrismaService'.
+
+[7m186[0m       await this.prisma.configuracion.upsert({
+[7m   [0m [91m                        ~~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m219[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'notificacion' does not exist on type 'PrismaService'.
+
+[7m219[0m       const notifications = await this.prisma.notificacion.findMany({
+[7m   [0m [91m                                              ~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m231[0m:[93m43[0m - [91merror[0m[90m TS7006: [0mParameter 'n' implicitly has an 'any' type.
+
+[7m231[0m         notifications: notifications.map((n) => ({
+[7m   [0m [91m                                          ~[0m
+
+[[90m6:09:33 PM[0m] Found 9 errors. Watching for file changes.
+
+[2J[3J[H[[90m6:10:20 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/notifications/notifications.service.ts[0m:[93m47[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'notificacion' does not exist on type 'PrismaService'.
+
+[7m47[0m       const notification = await this.prisma.notificacion.create({
+[7m  [0m [91m                                             ~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m121[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'notificacion' does not exist on type 'PrismaService'.
+
+[7m121[0m       const notifications = await this.prisma.notificacion.findMany({
+[7m   [0m [91m                                              ~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m133[0m:[93m48[0m - [91merror[0m[90m TS7006: [0mParameter 'n' implicitly has an 'any' type.
+
+[7m133[0m       const voiceMessages = notifications.map((n) =>
+[7m   [0m [91m                                               ~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m144[0m:[93m43[0m - [91merror[0m[90m TS7006: [0mParameter 'n' implicitly has an 'any' type.
+
+[7m144[0m         notifications: notifications.map((n, index) => ({
+[7m   [0m [91m                                          ~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m144[0m:[93m46[0m - [91merror[0m[90m TS7006: [0mParameter 'index' implicitly has an 'any' type.
+
+[7m144[0m         notifications: notifications.map((n, index) => ({
+[7m   [0m [91m                                             ~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m165[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'notificacion' does not exist on type 'PrismaService'.
+
+[7m165[0m       await this.prisma.notificacion.update({
+[7m   [0m [91m                        ~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m186[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'configuracion' does not exist on type 'PrismaService'.
+
+[7m186[0m       await this.prisma.configuracion.upsert({
+[7m   [0m [91m                        ~~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m219[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'notificacion' does not exist on type 'PrismaService'.
+
+[7m219[0m       const notifications = await this.prisma.notificacion.findMany({
+[7m   [0m [91m                                              ~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m231[0m:[93m43[0m - [91merror[0m[90m TS7006: [0mParameter 'n' implicitly has an 'any' type.
+
+[7m231[0m         notifications: notifications.map((n) => ({
+[7m   [0m [91m                                          ~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m29[0m:[93m43[0m - [91merror[0m[90m TS2339: [0mProperty 'archivo_sd' does not exist on type 'PrismaService'.
+
+[7m29[0m         const created = await this.prisma.archivo_sd.create({
+[7m  [0m [91m                                          ~~~~~~~~~~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m74[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'archivo_sd' does not exist on type 'PrismaService'.
+
+[7m74[0m       const files = await this.prisma.archivo_sd.findMany({
+[7m  [0m [91m                                      ~~~~~~~~~~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m84[0m:[93m27[0m - [91merror[0m[90m TS7006: [0mParameter 'f' implicitly has an 'any' type.
+
+[7m84[0m         files: files.map((f) => ({
+[7m  [0m [91m                          ~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m104[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'archivo_sd' does not exist on type 'PrismaService'.
+
+[7m104[0m       const files = await this.prisma.archivo_sd.findMany({
+[7m   [0m [91m                                      ~~~~~~~~~~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m118[0m:[93m27[0m - [91merror[0m[90m TS7006: [0mParameter 'f' implicitly has an 'any' type.
+
+[7m118[0m         files: files.map((f) => ({
+[7m   [0m [91m                          ~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m138[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'archivo_sd' does not exist on type 'PrismaService'.
+
+[7m138[0m       const total = await this.prisma.archivo_sd.count({
+[7m   [0m [91m                                      ~~~~~~~~~~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m142[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'archivo_sd' does not exist on type 'PrismaService'.
+
+[7m142[0m       const byType = await this.prisma.archivo_sd.groupBy({
+[7m   [0m [91m                                       ~~~~~~~~~~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m150[0m:[93m29[0m - [91merror[0m[90m TS7006: [0mParameter 't' implicitly has an 'any' type.
+
+[7m150[0m         byType: byType.map((t) => ({
+[7m   [0m [91m                            ~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m166[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'archivo_sd' does not exist on type 'PrismaService'.
+
+[7m166[0m       const result = await this.prisma.archivo_sd.deleteMany({
+[7m   [0m [91m                                       ~~~~~~~~~~[0m
+
+[[90m6:10:20 PM[0m] Found 18 errors. Watching for file changes.
+
+[2J[3J[H[[90m6:10:55 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/camera/camera.service.ts[0m:[93m27[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'foto_camara' does not exist on type 'PrismaService'.
+
+[7m27[0m       const photo = await this.prisma.foto_camara.create({
+[7m  [0m [91m                                      ~~~~~~~~~~~[0m
+
+[96msrc/camera/camera.service.ts[0m:[93m59[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'foto_camara' does not exist on type 'PrismaService'.
+
+[7m59[0m       const photos = await this.prisma.foto_camara.findMany({
+[7m  [0m [91m                                       ~~~~~~~~~~~[0m
+
+[96msrc/camera/camera.service.ts[0m:[93m67[0m:[93m29[0m - [91merror[0m[90m TS7006: [0mParameter 'p' implicitly has an 'any' type.
+
+[7m67[0m         photos: photos.map((p) => ({
+[7m  [0m [91m                            ~[0m
+
+[96msrc/camera/camera.service.ts[0m:[93m88[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'foto_camara' does not exist on type 'PrismaService'.
+
+[7m88[0m       await this.prisma.foto_camara.delete({
+[7m  [0m [91m                        ~~~~~~~~~~~[0m
+
+[96msrc/camera/camera.service.ts[0m:[93m107[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'foto_camara' does not exist on type 'PrismaService'.
+
+[7m107[0m       const total = await this.prisma.foto_camara.count({
+[7m   [0m [91m                                      ~~~~~~~~~~~[0m
+
+[96msrc/camera/camera.service.ts[0m:[93m111[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'foto_camara' does not exist on type 'PrismaService'.
+
+[7m111[0m       const byCamera = await this.prisma.foto_camara.groupBy({
+[7m   [0m [91m                                         ~~~~~~~~~~~[0m
+
+[96msrc/camera/camera.service.ts[0m:[93m119[0m:[93m33[0m - [91merror[0m[90m TS7006: [0mParameter 'c' implicitly has an 'any' type.
+
+[7m119[0m         byCamera: byCamera.map((c) => ({
+[7m   [0m [91m                                ~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m47[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'notificacion' does not exist on type 'PrismaService'.
+
+[7m47[0m       const notification = await this.prisma.notificacion.create({
+[7m  [0m [91m                                             ~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m121[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'notificacion' does not exist on type 'PrismaService'.
+
+[7m121[0m       const notifications = await this.prisma.notificacion.findMany({
+[7m   [0m [91m                                              ~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m133[0m:[93m48[0m - [91merror[0m[90m TS7006: [0mParameter 'n' implicitly has an 'any' type.
+
+[7m133[0m       const voiceMessages = notifications.map((n) =>
+[7m   [0m [91m                                               ~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m144[0m:[93m43[0m - [91merror[0m[90m TS7006: [0mParameter 'n' implicitly has an 'any' type.
+
+[7m144[0m         notifications: notifications.map((n, index) => ({
+[7m   [0m [91m                                          ~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m144[0m:[93m46[0m - [91merror[0m[90m TS7006: [0mParameter 'index' implicitly has an 'any' type.
+
+[7m144[0m         notifications: notifications.map((n, index) => ({
+[7m   [0m [91m                                             ~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m165[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'notificacion' does not exist on type 'PrismaService'.
+
+[7m165[0m       await this.prisma.notificacion.update({
+[7m   [0m [91m                        ~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m186[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'configuracion' does not exist on type 'PrismaService'.
+
+[7m186[0m       await this.prisma.configuracion.upsert({
+[7m   [0m [91m                        ~~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m219[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'notificacion' does not exist on type 'PrismaService'.
+
+[7m219[0m       const notifications = await this.prisma.notificacion.findMany({
+[7m   [0m [91m                                              ~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m231[0m:[93m43[0m - [91merror[0m[90m TS7006: [0mParameter 'n' implicitly has an 'any' type.
+
+[7m231[0m         notifications: notifications.map((n) => ({
+[7m   [0m [91m                                          ~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m29[0m:[93m43[0m - [91merror[0m[90m TS2339: [0mProperty 'archivo_sd' does not exist on type 'PrismaService'.
+
+[7m29[0m         const created = await this.prisma.archivo_sd.create({
+[7m  [0m [91m                                          ~~~~~~~~~~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m74[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'archivo_sd' does not exist on type 'PrismaService'.
+
+[7m74[0m       const files = await this.prisma.archivo_sd.findMany({
+[7m  [0m [91m                                      ~~~~~~~~~~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m84[0m:[93m27[0m - [91merror[0m[90m TS7006: [0mParameter 'f' implicitly has an 'any' type.
+
+[7m84[0m         files: files.map((f) => ({
+[7m  [0m [91m                          ~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m104[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'archivo_sd' does not exist on type 'PrismaService'.
+
+[7m104[0m       const files = await this.prisma.archivo_sd.findMany({
+[7m   [0m [91m                                      ~~~~~~~~~~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m118[0m:[93m27[0m - [91merror[0m[90m TS7006: [0mParameter 'f' implicitly has an 'any' type.
+
+[7m118[0m         files: files.map((f) => ({
+[7m   [0m [91m                          ~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m138[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'archivo_sd' does not exist on type 'PrismaService'.
+
+[7m138[0m       const total = await this.prisma.archivo_sd.count({
+[7m   [0m [91m                                      ~~~~~~~~~~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m142[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'archivo_sd' does not exist on type 'PrismaService'.
+
+[7m142[0m       const byType = await this.prisma.archivo_sd.groupBy({
+[7m   [0m [91m                                       ~~~~~~~~~~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m150[0m:[93m29[0m - [91merror[0m[90m TS7006: [0mParameter 't' implicitly has an 'any' type.
+
+[7m150[0m         byType: byType.map((t) => ({
+[7m   [0m [91m                            ~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m166[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'archivo_sd' does not exist on type 'PrismaService'.
+
+[7m166[0m       const result = await this.prisma.archivo_sd.deleteMany({
+[7m   [0m [91m                                       ~~~~~~~~~~[0m
+
+[[90m6:10:55 PM[0m] Found 25 errors. Watching for file changes.
+
+[2J[3J[H[[90m6:11:04 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/camera/camera.service.ts[0m:[93m27[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'foto_camara' does not exist on type 'PrismaService'.
+
+[7m27[0m       const photo = await this.prisma.foto_camara.create({
+[7m  [0m [91m                                      ~~~~~~~~~~~[0m
+
+[96msrc/camera/camera.service.ts[0m:[93m59[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'foto_camara' does not exist on type 'PrismaService'.
+
+[7m59[0m       const photos = await this.prisma.foto_camara.findMany({
+[7m  [0m [91m                                       ~~~~~~~~~~~[0m
+
+[96msrc/camera/camera.service.ts[0m:[93m67[0m:[93m29[0m - [91merror[0m[90m TS7006: [0mParameter 'p' implicitly has an 'any' type.
+
+[7m67[0m         photos: photos.map((p) => ({
+[7m  [0m [91m                            ~[0m
+
+[96msrc/camera/camera.service.ts[0m:[93m88[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'foto_camara' does not exist on type 'PrismaService'.
+
+[7m88[0m       await this.prisma.foto_camara.delete({
+[7m  [0m [91m                        ~~~~~~~~~~~[0m
+
+[96msrc/camera/camera.service.ts[0m:[93m107[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'foto_camara' does not exist on type 'PrismaService'.
+
+[7m107[0m       const total = await this.prisma.foto_camara.count({
+[7m   [0m [91m                                      ~~~~~~~~~~~[0m
+
+[96msrc/camera/camera.service.ts[0m:[93m111[0m:[93m42[0m - [91merror[0m[90m TS2339: [0mProperty 'foto_camara' does not exist on type 'PrismaService'.
+
+[7m111[0m       const byCamera = await this.prisma.foto_camara.groupBy({
+[7m   [0m [91m                                         ~~~~~~~~~~~[0m
+
+[96msrc/camera/camera.service.ts[0m:[93m119[0m:[93m33[0m - [91merror[0m[90m TS7006: [0mParameter 'c' implicitly has an 'any' type.
+
+[7m119[0m         byCamera: byCamera.map((c) => ({
+[7m   [0m [91m                                ~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m47[0m:[93m46[0m - [91merror[0m[90m TS2339: [0mProperty 'notificacion' does not exist on type 'PrismaService'.
+
+[7m47[0m       const notification = await this.prisma.notificacion.create({
+[7m  [0m [91m                                             ~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m121[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'notificacion' does not exist on type 'PrismaService'.
+
+[7m121[0m       const notifications = await this.prisma.notificacion.findMany({
+[7m   [0m [91m                                              ~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m133[0m:[93m48[0m - [91merror[0m[90m TS7006: [0mParameter 'n' implicitly has an 'any' type.
+
+[7m133[0m       const voiceMessages = notifications.map((n) =>
+[7m   [0m [91m                                               ~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m144[0m:[93m43[0m - [91merror[0m[90m TS7006: [0mParameter 'n' implicitly has an 'any' type.
+
+[7m144[0m         notifications: notifications.map((n, index) => ({
+[7m   [0m [91m                                          ~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m144[0m:[93m46[0m - [91merror[0m[90m TS7006: [0mParameter 'index' implicitly has an 'any' type.
+
+[7m144[0m         notifications: notifications.map((n, index) => ({
+[7m   [0m [91m                                             ~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m165[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'notificacion' does not exist on type 'PrismaService'.
+
+[7m165[0m       await this.prisma.notificacion.update({
+[7m   [0m [91m                        ~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m186[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'configuracion' does not exist on type 'PrismaService'.
+
+[7m186[0m       await this.prisma.configuracion.upsert({
+[7m   [0m [91m                        ~~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m219[0m:[93m47[0m - [91merror[0m[90m TS2339: [0mProperty 'notificacion' does not exist on type 'PrismaService'.
+
+[7m219[0m       const notifications = await this.prisma.notificacion.findMany({
+[7m   [0m [91m                                              ~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m231[0m:[93m43[0m - [91merror[0m[90m TS7006: [0mParameter 'n' implicitly has an 'any' type.
+
+[7m231[0m         notifications: notifications.map((n) => ({
+[7m   [0m [91m                                          ~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m29[0m:[93m43[0m - [91merror[0m[90m TS2339: [0mProperty 'archivo_sd' does not exist on type 'PrismaService'.
+
+[7m29[0m         const created = await this.prisma.archivo_sd.create({
+[7m  [0m [91m                                          ~~~~~~~~~~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m74[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'archivo_sd' does not exist on type 'PrismaService'.
+
+[7m74[0m       const files = await this.prisma.archivo_sd.findMany({
+[7m  [0m [91m                                      ~~~~~~~~~~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m84[0m:[93m27[0m - [91merror[0m[90m TS7006: [0mParameter 'f' implicitly has an 'any' type.
+
+[7m84[0m         files: files.map((f) => ({
+[7m  [0m [91m                          ~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m104[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'archivo_sd' does not exist on type 'PrismaService'.
+
+[7m104[0m       const files = await this.prisma.archivo_sd.findMany({
+[7m   [0m [91m                                      ~~~~~~~~~~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m118[0m:[93m27[0m - [91merror[0m[90m TS7006: [0mParameter 'f' implicitly has an 'any' type.
+
+[7m118[0m         files: files.map((f) => ({
+[7m   [0m [91m                          ~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m138[0m:[93m39[0m - [91merror[0m[90m TS2339: [0mProperty 'archivo_sd' does not exist on type 'PrismaService'.
+
+[7m138[0m       const total = await this.prisma.archivo_sd.count({
+[7m   [0m [91m                                      ~~~~~~~~~~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m142[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'archivo_sd' does not exist on type 'PrismaService'.
+
+[7m142[0m       const byType = await this.prisma.archivo_sd.groupBy({
+[7m   [0m [91m                                       ~~~~~~~~~~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m150[0m:[93m29[0m - [91merror[0m[90m TS7006: [0mParameter 't' implicitly has an 'any' type.
+
+[7m150[0m         byType: byType.map((t) => ({
+[7m   [0m [91m                            ~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m166[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'archivo_sd' does not exist on type 'PrismaService'.
+
+[7m166[0m       const result = await this.prisma.archivo_sd.deleteMany({
+[7m   [0m [91m                                       ~~~~~~~~~~[0m
+
+[[90m6:11:04 PM[0m] Found 25 errors. Watching for file changes.
+

@@ -88,3 +88,68 @@ model comandos_voz {
   @@index([usuario_id])
   @@index([timestamp])
 }
+
+// Tabla de notificaciones recibidas
+model notificacion {
+  id              Int      @id @default(autoincrement())
+  usuario_id      String   @db.VarChar(255)
+  app             String   @db.VarChar(100)   // WhatsApp, Telegram, etc
+  titulo          String   @db.VarChar(500)
+  texto           String   @db.Text
+  remitente       String   @db.VarChar(255)
+  timestamp       DateTime @default(now())
+  anunciada       Boolean  @default(false)    // Si ya se leyó en voz alta
+  voz_habilitada  Boolean  @default(false)    // Si esta app genera voz
+  created_at      DateTime @default(now())
+
+  @@index([usuario_id])
+  @@index([app])
+  @@index([anunciada])
+  @@index([timestamp])
+}
+
+// Tabla de configuración del usuario
+model configuracion {
+  id          Int      @id @default(autoincrement())
+  usuario_id  String   @db.VarChar(255)
+  clave       String   @db.VarChar(255)
+  valor       String   @db.Text
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+
+  @@unique([usuario_id, clave])
+  @@index([usuario_id])
+}
+
+// Tabla de archivos SD
+model archivo_sd {
+  id              Int      @id @default(autoincrement())
+  usuario_id      String   @db.VarChar(255)
+  nombre          String   @db.VarChar(500)
+  ruta_completa   String   @db.Text
+  tipo            String   @db.VarChar(100)   // imagen, video, audio, documento
+  tamano_bytes    BigInt?
+  extension       String   @db.VarChar(50)
+  fecha_creacion  DateTime?
+  fecha_modificacion DateTime?
+  indexado_en     DateTime @default(now())
+
+  @@index([usuario_id])
+  @@index([tipo])
+  @@index([extension])
+}
+
+// Tabla de fotos tomadas con cámara
+model foto_camara {
+  id              Int      @id @default(autoincrement())
+  usuario_id      String   @db.VarChar(255)
+  ruta_archivo    String   @db.Text
+  ruta_cloud      String?  @db.Text           // Si se sube a la nube
+  descripcion     String?  @db.Text
+  camara          String   @db.VarChar(50)    // frontal, trasera
+  resolucion      String?  @db.VarChar(50)
+  timestamp       DateTime @default(now())
+
+  @@index([usuario_id])
+  @@index([timestamp])
+}
