@@ -1,154 +1,338 @@
-# ARGOS - Sistema de Asistencia Personal Inteligente
+# 🤖 ARGOS Backend
 
-**ARGOS** es un ecosistema híbrido de productividad que combina un backend inteligente (NestJS) con automatización en Android (Tasker) para control de bloqueos, turnos rotativos, notificaciones de voz y gestión de contenido.
+**Sistema Híbrido de Asistente de IA** para Android con control por voz.
 
-## 🏗️ Arquitectura
+## 📊 Resumen Rápido
 
-```
-ARGOS/
-├── backend (NestJS + TypeScript)
-│   ├── API REST para gestión de turnos, bloqueos, webhooks
-│   └── Integración con Tasker vía AutoRemote
-├── tasker (Android Automation)
-│   ├── Profiles: Recepción de órdenes
-│   ├── Tasks: Ejecución de bloqueos, TTS, acceso a archivos
-│   └── Variables: Estado sincronizado
-└── docs (Guías de instalación y configuración)
-```
-
-## 📋 Requisitos Previos
-
-- **Node.js** 18+
-- **PostgreSQL** 14+
-- **Android** con Tasker + AutoRemote instalados
-- **Cuenta en Render.com o Railway.app** (despliegue en nube)
-
-## 🚀 Instalación Local
-
-### 1. Clonar y Configurar
-
-```bash
-git clone <tu-repo-github>
-cd argos_backend/nodejs_space
-yarn install
-```
-
-### 2. Variables de Entorno
-
-```bash
-# Copiar template
-cp .env.example .env
-
-# Completar con tus valores
-# DATABASE_URL=postgresql://user:pass@localhost:5432/argos
-# TASKER_WEBHOOK_URL=https://tu-autoremote-endpoint
-# APP_ORIGIN=http://localhost:3000
-```
-
-### 3. Base de Datos
-
-```bash
-# Crear BD y correr migraciones
-yarn prisma db push
-```
-
-### 4. Ejecutar Localmente
-
-```bash
-# Modo desarrollo
-yarn start:dev
-
-# Acceder a API docs
-http://localhost:3000/api-docs
-```
-
-## 📡 Despliegue en Render.com
-
-### 1. Crear Servicio Web
-
-1. Ir a [Render.com](https://render.com)
-2. Crear nuevo **Web Service**
-3. Conectar con tu repositorio GitHub
-4. Build Command: `cd nodejs_space && yarn install`
-5. Start Command: `cd nodejs_space && yarn start:prod`
-
-### 2. Variables de Entorno en Render
-
-En el dashboard de Render, agregar:
-
-```
-DATABASE_URL=postgresql://<user>:<pass>@<host>:<port>/<dbname>
-TASKER_WEBHOOK_URL=https://tu-autoremote-endpoint
-NODE_ENV=production
-APP_ORIGIN=https://tu-servicio.onrender.com/
-```
-
-### 3. PostgreSQL en Render
-
-1. Crear **PostgreSQL database** en Render
-2. Copiar DATABASE_URL a tu Web Service
-3. Conectar automáticamente
-
-## 🔌 Integración con Tasker
-
-### AutoRemote Webhook URL
-
-1. En Tasker, ir a: **Tasker > Preferences > AutoRemote**
-2. Anotar tu **Device ID**
-3. La URL será: `https://autoremote.rm.net/sendmessage?secretOrPassword=YOUR_SECRET&to=YOUR_DEVICE_ID&message=%s`
-4. Pegar en variable de entorno `TASKER_WEBHOOK_URL`
-
-### Primer Test
-
-```bash
-# Terminal - Enviar evento a Tasker
-curl -X POST http://localhost:3000/api/webhook/tasker \
-  -H "Content-Type: application/json" \
-  -d '{"usuarioId": "user123", "evento": "bloquear", "apps": ["com.instagram.android"]}'
-
-# Tasker debe recibir y procesar la orden
-```
-
-## 📝 API Endpoints (Fase 1)
-
-| Endpoint | Método | Descripción |
-|----------|--------|-------------|
-| `/api/turnos` | POST | Crear turno rotativo |
-| `/api/turnos/:usuarioId` | GET | Obtener turnos próximos |
-| `/api/turnos/:usuarioId/analizar` | GET | Analizar turnos + generar alarmas |
-| `/api/bloqueo` | POST | Crear bloqueo de apps/sitios |
-| `/api/bloqueo/:bloqueoId` | DELETE | Desbloquear |
-| `/api/bloqueo/:usuarioId/activos` | GET | Bloqueos activos |
-| `/api/webhook/tasker` | POST | Webhook listener (Tasker → Backend) |
-| `/api/estado/:usuarioId` | GET | Estado completo del usuario |
-
-## 🎯 Próximas Fases
-
-- **Fase 2**: Web app React + Control de música + WhatsApp por voz
-- **Fase 3**: Diagnostics de hardware + Limpieza automática
-- **Fase 4**: Modo Invitado + Sincronización multi-dispositivo
-
-## 📚 Documentación
-
-- [ARQUITECTURA.md](./docs/ARQUITECTURA.md) - Diseño técnico
-- [TASKER_SETUP.md](./docs/TASKER_SETUP.md) - Guía paso a paso Tasker
-- [API_SPEC.md](./docs/API_SPEC.md) - Especificación de endpoints
-
-## 🛠️ Troubleshooting
-
-**Problema**: Tasker no recibe órdenes del backend
-- Verificar `TASKER_WEBHOOK_URL` en variables de entorno
-- Comprobar que AutoRemote esté activo en Tasker
-- Revisar logs en `/logs`
-
-**Problema**: PostgreSQL no conecta
-- Verificar `DATABASE_URL` está correcta
-- Asegurar que BD está creada en Render
-
-## 📞 Soporte
-
-Para issues técnicos, revisar logs en Render dashboard o ejecutar localmente con `yarn start:dev`.
+**51 endpoints activos** | **13 módulos** | **PostgreSQL** | **NestJS + TypeScript**
 
 ---
 
-**Última actualización**: Abril 2026
+## ✨ Características Principales
+
+### 🔒 Bloqueos INNEGABLES
+La funcionalidad estrella: bloqueos que **NO se pueden desactivar** hasta que expire el tiempo.
+
+```bash
+# Bloquear apps por 3 horas (innegable)
+POST /api/v1/app-blocker/activate
+{"apps": ["Instagram", "TikTok"], "hours": 3}
+
+# Intentar desbloquear antes de tiempo
+POST /api/v1/app-blocker/deactivate
+→ ❌ "No puedes desbloquear aún, faltan 2 horas y 30 minutos"
+```
+
+### 🌐 Filtro de Contenido Adulto
+31 dominios pornográficos bloqueados de forma innegable.
+
+```bash
+POST /api/v1/content-filter/activate?hours=5
+→ ✅ "Listo, páginas bloqueadas por 5 horas"
+```
+
+### 🎤 Comandos de Voz (Ejemplos)
+
+```
+“ARGOS bloquea Instagram por 2 horas”
+“ARGOS bloquea páginas pornográficas por 5 horas”
+“ARGOS reproduce música”
+“ARGOS llévame al Parque Nacional”
+“ARGOS busca restaurantes italianos cerca”
+“ARGOS qué tiempo hace en Bogotá”
+“ARGOS crea una alarma para las 7 AM”
+```
+
+---
+
+## 📚 Módulos Disponibles
+
+| Módulo | Funcionalidad | Endpoints |
+|--------|---------------|----------|
+| 🔒 **Bloqueos Innegables** | Apps y sitios que NO se pueden desbloquear | 6 |
+| 🌐 **Contenido Adulto** | Bloqueo de 31 sitios pornográficos | 4 |
+| 🔄 **Turnos** | Turnos rotativos con bloqueos automáticos | 4 |
+| 🎵 **Música** | Play, pause, next, prev, volumen | 5 |
+| ⏰ **Alarmas** | Crear, listar, eliminar | 3 |
+| 🧠 **Inteligencia** | AI Search, respuestas, chat | 3 |
+| 📍 **Navegación** | GPS, Google Maps, lugares cercanos | 4 |
+| 📢 **Notificaciones** | WhatsApp, Telegram a voz | 5 |
+| 📁 **Archivos SD** | Indexar, buscar archivos | 5 |
+| 📸 **Cámara** | Registro de fotos | 4 |
+| 🔗 **Webhooks** | Integración con Tasker | 4 |
+| 📊 **Estado** | Monitoreo del sistema | 2 |
+
+**Total: 51 endpoints**
+
+---
+
+## 🚀 Quick Start
+
+### Instalación
+
+```bash
+cd nodejs_space
+yarn install
+yarn prisma migrate dev
+yarn build
+```
+
+### Desarrollo
+
+```bash
+yarn start:dev
+```
+
+Servidor: `http://localhost:3000`  
+Swagger: `http://localhost:3000/api-docs`
+
+### Producción
+```bash
+yarn build
+yarn start:prod
+```
+
+---
+
+## 🔧 Configuración
+
+### Variables de Entorno (`.env`)
+
+```env
+DATABASE_URL="postgresql://user:password@localhost:5432/argos"
+ABACUSAI_API_KEY="tu_api_key"
+APP_ORIGIN="https://tu-dominio.com/"
+NODE_ENV="production"
+```
+
+---
+
+## 📝 Documentación
+
+- **Documentación Completa**: Ver `DOCUMENTACION_COMPLETA.md`
+- **Swagger API**: `/api-docs` (cuando el servidor está corriendo)
+- **Repositorio**: https://github.com/forx10/ARGOS-Back.git
+
+---
+
+## 🎯 Ejemplos de Uso
+
+### 1. Bloqueo INNEGABLE de Apps
+
+```bash
+curl -X POST http://localhost:3000/api/v1/app-blocker/activate \
+  -H "Content-Type: application/json" \
+  -d '{"apps": ["Instagram", "Facebook"], "hours": 2}'
+
+# Respuesta:
+{
+  "success": true,
+  "message": "Listo, 2 apps bloqueadas por 2 horas",
+  "unbreakable": true
+}
+```
+
+### 2. Bloqueo de Páginas Pornográficas
+
+```bash
+curl -X POST "http://localhost:3000/api/v1/content-filter/activate?hours=3"
+
+# Respuesta:
+{
+  "message": "Listo, páginas bloqueadas por 3 horas",
+  "blockedDomains": 31,
+  "unbreakable": true
+}
+```
+
+### 3. Control de Música
+
+```bash
+# Reproducir
+curl -X POST http://localhost:3000/api/v1/music/play
+
+# Siguiente canción
+curl -X POST http://localhost:3000/api/v1/music/next
+
+# Volumen a 70%
+curl -X POST http://localhost:3000/api/v1/music/volume \
+  -H "Content-Type: application/json" \
+  -d '{"level": 70}'
+```
+
+### 4. Navegación GPS
+
+```bash
+curl -X POST http://localhost:3000/api/v1/location/navigate \
+  -H "Content-Type: application/json" \
+  -d '{"destination": "Parque Nacional Bogotá"}'
+
+# Respuesta:
+{
+  "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&destination=..."
+}
+```
+
+### 5. Búsqueda con IA
+
+```bash
+curl -X POST http://localhost:3000/api/v1/intelligence/answer \
+  -H "Content-Type: application/json" \
+  -d '{"question": "¿Qué tiempo hace en Bogotá?", "useWebSearch": true}'
+```
+
+### 6. Notificaciones de Voz
+
+```bash
+curl -X POST http://localhost:3000/api/v1/notifications/receive \
+  -H "Content-Type: application/json" \
+  -d '{
+    "app": "WhatsApp",
+    "title": "Juan Pérez",
+    "text": "Hola, cómo estás?",
+    "sender": "Juan Pérez"
+  }'
+
+# Respuesta:
+{
+  "voiceMessage": "Tienes un mensaje de Juan Pérez en WhatsApp"
+}
+```
+
+---
+
+## 📊 Estado del Proyecto
+
+✅ **Fase 1**: Turnos, Bloqueos, Webhooks  
+✅ **Fase 2**: Música, Alarmas, Navegación, Notificaciones, Archivos, Cámara  
+✅ **Fase 2.5**: Bloqueos INNEGABLES  
+✅ **Producción Ready**
+
+---
+
+## 🛡️ Seguridad
+
+### Bloqueos INNEGABLES
+⚠️ **IMPORTANTE**: Los bloqueos innegables son una característica de **autocontrol**. Una vez activados:
+- **NO** se pueden desactivar antes de tiempo
+- **NO** se pueden modificar
+- **SOLO** expiran cuando se cumple el tiempo establecido
+
+Perfecto para:
+- Evitar distracciones durante estudio/trabajo
+- Control parental
+- Autocontrol en momentos de debilidad
+
+---
+
+## 🧑‍💻 Arquitectura
+
+```
+ARGOS Sistema Híbrido
+│
+├── Backend (Este proyecto)
+│   ├── NestJS + TypeScript
+│   ├── PostgreSQL + Prisma ORM
+│   └── 51 Endpoints REST
+│
+├── Frontend de Ejecución
+│   ├── Tasker (Android Automation)
+│   └── AutoVoice (Voice Recognition)
+│
+└── Cerebro Lógico
+    └── Abacus AI Agent (LLM)
+```
+
+---
+
+## 🛠️ Stack Tecnológico
+
+- **Framework**: NestJS 11.x
+- **Lenguaje**: TypeScript 5.6
+- **Runtime**: Node.js 18+
+- **Base de Datos**: PostgreSQL
+- **ORM**: Prisma 6.7
+- **Package Manager**: Yarn 4.x
+- **Documentación**: Swagger/OpenAPI
+- **Despliegue**: Render.com / Railway.app
+
+---
+
+## 💻 Scripts Disponibles
+
+```bash
+# Desarrollo
+yarn start:dev          # Servidor con hot-reload
+
+# Producción
+yarn build             # Compilar TypeScript
+yarn start:prod        # Iniciar en producción
+
+# Base de Datos
+yarn prisma migrate dev    # Crear migración
+yarn prisma studio         # GUI para DB
+yarn prisma generate       # Generar cliente Prisma
+
+# Testing
+yarn test              # Unit tests
+yarn test:e2e          # End-to-end tests
+
+# Linting
+yarn lint              # ESLint
+yarn format            # Prettier
+```
+
+---
+
+## 🔗 Enlaces Útiles
+
+- **Repositorio**: https://github.com/forx10/ARGOS-Back.git
+- **Swagger Docs**: `/api-docs` (cuando el servidor corre)
+- **Documentación Completa**: `DOCUMENTACION_COMPLETA.md`
+
+---
+
+## 💬 Comandos de Voz Soportados
+
+### Bloqueos
+- "ARGOS bloquea Instagram por 2 horas"
+- "ARGOS bloquea páginas pornográficas por 5 horas"
+- "ARGOS desbloquea las apps" (solo si expiró)
+
+### Música
+- "ARGOS reproduce música"
+- "ARGOS pausa la música"
+- "ARGOS siguiente canción"
+- "ARGOS sube el volumen a 80"
+
+### Navegación
+- "ARGOS llévame al Parque Nacional"
+- "ARGOS busca restaurantes cerca"
+- "ARGOS dónde hay una farmacia"
+
+### Inteligencia
+- "ARGOS qué tiempo hace en Bogotá"
+- "ARGOS busca información sobre el cambio climático"
+- "ARGOS cuál es la capital de Japón"
+
+### Alarmas
+- "ARGOS crea una alarma para las 7 AM"
+- "ARGOS muestra mis alarmas"
+
+### Archivos
+- "ARGOS busca fotos de vacaciones"
+- "ARGOS muestra mis videos"
+
+---
+
+## ✨ Autor
+
+**ARGOS Backend v2.0**  
+Sistema Híbrido de Asistente de IA  
+© 2026 - Construido con ❤️ usando NestJS
+
+---
+
+## 📝 Licencia
+
+Este proyecto es de uso privado.
