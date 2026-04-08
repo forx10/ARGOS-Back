@@ -11,6 +11,7 @@ import { IntelligenceModule } from './intelligence/intelligence.module';
 import { MusicModule } from './music/music.module';
 import { ContentFilterModule } from './content-filter/content-filter.module';
 import { LocationModule } from './location/location.module';
+import { AppBlockerModule } from './app-blocker/app-blocker.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
@@ -29,6 +30,7 @@ import { AppService } from './app.service';
     MusicModule,
     ContentFilterModule,
     LocationModule,
+    AppBlockerModule,
   ],
   controllers: [AppController],
   providers: [AppService, PrismaService],
