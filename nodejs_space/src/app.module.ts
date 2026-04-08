@@ -7,6 +7,7 @@ import { WebhookModule } from './webhook/webhook.module';
 import { EstadoModule } from './estado/estado.module';
 import { ComandoVozModule } from './comando-voz/comando-voz.module';
 import { AlarmModule } from './alarmas/alarm.module';
+import { IntelligenceModule } from './intelligence/intelligence.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
@@ -21,6 +22,7 @@ import { AppService } from './app.service';
     EstadoModule,
     ComandoVozModule,
     AlarmModule,
+    IntelligenceModule,
   ],
   controllers: [AppController],
   providers: [AppService, PrismaService],
