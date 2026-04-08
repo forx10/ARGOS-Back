@@ -1,0 +1,67 @@
+[2J[3J[H[[90m5:46:24 PM[0m] Starting compilation in watch mode...
+
+[[90m5:46:26 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +20ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTurnosModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEstadoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAlarmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMusicModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mContentFilterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mLocationModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mComandoVozModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBloqueoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebhookModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mIntelligenceModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +182ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTurnosController {/api/turnos}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId/analizar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBloqueoController {/api/bloqueo}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:bloqueoId, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:usuarioId/activos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mWebhookController {/api/webhook}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker/estado/:bloqueoId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEstadoController {/api/estado}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/bloqueos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/turnos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/sitios/bloqueados, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mComandoVozController {/api/comando-voz}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/comando-voz, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAlarmController {/api/alarmas}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/pendientes/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/verificar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mIntelligenceController {/api/v1/intelligence}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/search, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/answer, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/chat, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mMusicController {/api/v1/music}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/play, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/pause, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/next, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:26 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/previous, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:27 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/volume, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:27 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:27 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mContentFilterController {/api/v1/content-filter}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:27 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:27 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:27 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:27 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/blocked-domains, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:27 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mLocationController {/api/v1/location}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:27 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/save, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:27 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/navigate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:27 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/search, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:27 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/nearby, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1956  - [39m04/08/2026, 5:46:27 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +473ms[39m
+✅ ARGOS Backend running on http://0.0.0.0:3000
+📚 API Documentation: http://localhost:3000/api-docs
