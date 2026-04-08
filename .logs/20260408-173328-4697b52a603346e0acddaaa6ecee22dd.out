@@ -464,3 +464,31 @@ Starting server...
 [32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/status, GET} route[39m[38;5;3m +0ms[39m
 [32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/blocked-domains, GET} route[39m[38;5;3m +0ms[39m
 [32m[Nest] 1424  - [39m04/08/2026, 5:44:19 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +430ms[39m
+[2J[3J[H[[90m5:45:05 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/location/location.controller.ts[0m:[93m67[0m:[93m56[0m - [91merror[0m[90m TS2322: [0mType 'boolean' is not assignable to type 'string[]'.
+
+[7m67[0m         currentLat: { type: 'number', example: 4.7110, required: false },
+[7m  [0m [91m                                                       ~~~~~~~~[0m
+
+[96msrc/location/location.controller.ts[0m:[93m68[0m:[93m58[0m - [91merror[0m[90m TS2322: [0mType 'boolean' is not assignable to type 'string[]'.
+
+[7m68[0m         currentLng: { type: 'number', example: -74.0721, required: false },
+[7m  [0m [91m                                                         ~~~~~~~~[0m
+
+[[90m5:45:05 PM[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m5:45:12 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/location/location.controller.ts[0m:[93m67[0m:[93m56[0m - [91merror[0m[90m TS2322: [0mType 'boolean' is not assignable to type 'string[]'.
+
+[7m67[0m         currentLat: { type: 'number', example: 4.7110, required: false },
+[7m  [0m [91m                                                       ~~~~~~~~[0m
+
+[96msrc/location/location.controller.ts[0m:[93m68[0m:[93m58[0m - [91merror[0m[90m TS2322: [0mType 'boolean' is not assignable to type 'string[]'.
+
+[7m68[0m         currentLng: { type: 'number', example: -74.0721, required: false },
+[7m  [0m [91m                                                         ~~~~~~~~[0m
+
+[[90m5:45:12 PM[0m] Found 2 errors. Watching for file changes.
+
