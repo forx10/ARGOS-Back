@@ -64,8 +64,8 @@ export class LocationController {
       type: 'object',
       properties: {
         destination: { type: 'string', example: 'Centro Comercial Andino, Bogotá' },
-        currentLat: { type: 'number', example: 4.7110, required: false },
-        currentLng: { type: 'number', example: -74.0721, required: false },
+        currentLat: { type: 'number', example: 4.7110 },
+        currentLng: { type: 'number', example: -74.0721 },
       },
       required: ['destination'],
     },

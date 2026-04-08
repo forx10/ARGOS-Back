@@ -1,0 +1,9 @@
+[96msrc/location/location.controller.ts[0m:[93m67[0m:[93m56[0m - [91merror[0m[90m TS2322: [0mType 'boolean' is not assignable to type 'string[]'.
+
+[7m67[0m         currentLat: { type: 'number', example: 4.7110, required: false },
+[7m  [0m [91m                                                       ~~~~~~~~[0m
+[96msrc/location/location.controller.ts[0m:[93m68[0m:[93m58[0m - [91merror[0m[90m TS2322: [0mType 'boolean' is not assignable to type 'string[]'.
+
+[7m68[0m         currentLng: { type: 'number', example: -74.0721, required: false },
+[7m  [0m [91m                                                         ~~~~~~~~[0m
+
