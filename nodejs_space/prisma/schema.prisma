@@ -188,3 +188,126 @@ model captura_pantalla {
   @@index([analizada])
   @@index([capturada_en])
 }
+
+// Tabla de contactos de emergencia
+model contacto_emergencia {
+  id              Int      @id @default(autoincrement())
+  usuario_id      String   @db.VarChar(255)
+  nombre          String   @db.VarChar(255)
+  telefono        String   @db.VarChar(20)
+  tipo            String   @db.VarChar(50)   // "policia", "familiar", "amigo", etc
+  activo          Boolean  @default(true)
+  creado_en       DateTime @default(now())
+  actualizado_en  DateTime @updatedAt
+
+  @@index([usuario_id])
+  @@index([tipo])
+}
+
+// Tabla de incidentes SOS
+model incidente_sos {
+  id              Int      @id @default(autoincrement())
+  usuario_id      String   @db.VarChar(255)
+  latitud         Float?
+  longitud        Float?
+  tipo_emergencia String   @db.VarChar(100)  // "policia", "emergencia medica", etc
+  contactos_contactados String[] @default([])  // Nombres de contactos llamados
+  llamadas_realizadas Int     @default(0)
+  mensajes_enviados Int     @default(0)
+  estado          String   @db.VarChar(50)   // "activo", "resuelto", "cancelado"
+  grabacion_audio Boolean  @default(false)
+  creado_en       DateTime @default(now())
+  resuelto_en     DateTime?
+
+  @@index([usuario_id])
+  @@index([estado])
+  @@index([creado_en])
+}
+
+// Tabla de geofences (ubicaciones)
+model geofence {
+  id              Int      @id @default(autoincrement())
+  usuario_id      String   @db.VarChar(255)
+  nombre          String   @db.VarChar(255)  // "Casa", "Gimnasio", "Trabajo"
+  latitud         Float
+  longitud        Float
+  radio           Float    @default(500)     // radio en metros
+  recordatorios   String[] @default([])      // tareas a recordar al llegar
+  tipo_bloqueo    String?  @db.VarChar(100) // "focus", "ninguno", etc
+  duracion_bloqueo Int?                       // en minutos
+  activo          Boolean  @default(true)
+  creado_en       DateTime @default(now())
+  actualizado_en  DateTime @updatedAt
+
+  @@index([usuario_id])
+  @@index([nombre])
+}
+
+// Tabla de sesiones de Focus Mode
+model sesion_focus {
+  id              Int      @id @default(autoincrement())
+  usuario_id      String   @db.VarChar(255)
+  hora_inicio     DateTime @default(now())
+  hora_fin        DateTime
+  apps_bloqueadas String[] @default([])
+  sitios_bloqueados String[] @default([])
+  motivo          String?  @db.VarChar(255)  // "estudio", "trabajo", "descanso"
+  completado      Boolean  @default(false)
+  estadisticas    Json?    // {appsEvitadas: [], tiempoAhorrado: ""}
+
+  @@index([usuario_id])
+  @@index([hora_inicio])
+  @@index([completado])
+}
+
+// Tabla de tareas
+model tarea {
+  id              Int      @id @default(autoincrement())
+  usuario_id      String   @db.VarChar(255)
+  titulo          String   @db.VarChar(500)
+  descripcion     String?  @db.Text
+  prioridad       String   @db.VarChar(50)   // "baja", "media", "alta"
+  completada      Boolean  @default(false)
+  ubicacion       String?  @db.VarChar(255)  // geofence asociado
+  fecha_vencimiento DateTime?
+  creada_en       DateTime @default(now())
+  completada_en   DateTime?
+
+  @@index([usuario_id])
+  @@index([completada])
+  @@index([prioridad])
+}
+
+// Tabla de diagnósticos del dispositivo
+model diagnostico_dispositivo {
+  id              Int      @id @default(autoincrement())
+  usuario_id      String   @db.VarChar(255)
+  timestamp       DateTime @default(now())
+  ram_total_mb    Int?
+  ram_disponible_mb Int?
+  cpu_porcentaje  Float?
+  temperatura     Float?   // en grados Celsius
+  bateria_porcent Float?
+  almacenamiento_libre_mb BigInt?
+  problemas       String[] @default([])  // lista de problemas detectados
+  recomendaciones String[] @default([])
+
+  @@index([usuario_id])
+  @@index([timestamp])
+}
+
+// Tabla de monitoreo de red
+model monitor_red {
+  id              Int      @id @default(autoincrement())
+  usuario_id      String   @db.VarChar(255)
+  timestamp       DateTime @default(now())
+  nombre_wifi     String?  @db.VarChar(255)
+  seguridad_wifi  String?  @db.VarChar(100)  // "WPA3", "WPA2", "WEP", "Abierta"
+  es_seguro       Boolean  @default(false)
+  sitio_visitado  String?  @db.VarChar(500)
+  es_phishing     Boolean  @default(false)
+  recomendacion   String?  @db.Text
+
+  @@index([usuario_id])
+  @@index([timestamp])
+}

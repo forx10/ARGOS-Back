@@ -1,0 +1,1158 @@
+➤ YN0000: · Yarn 4.13.0
+➤ YN0000: ┌ Resolution step
+➤ YN0085: │ + axios@npm:1.15.0, follow-redirects@npm:1.15.11, proxy-from-env@npm:2.1.0
+➤ YN0000: └ Completed in 0s 277ms
+➤ YN0000: ┌ Post-resolution validation
+➤ YN0002: │ nodejs_space@workspace:. doesn't provide webpack (p687b73), requested by ts-loader.
+➤ YN0086: │ Some peer dependencies are incorrectly met by your project; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code.
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Fetch step
+➤ YN0013: │ A package was added to the project (+ 2.34 MiB).
+➤ YN0000: └ Completed in 0s 514ms
+➤ YN0000: ┌ Link step
+➤ YN0000: └ Completed in 0s 655ms
+➤ YN0000: · Done with warnings in 1s 541ms
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+
+✔ Generated Prisma Client (v6.7.0) to ./node_modules/.prisma/client in 92ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Want to react to database changes in your app as they happen? Discover how with Pulse: https://pris.ly/tip-1-pulse
+
+Starting server...
+[2J[3J[H[[90m3:39:07 PM[0m] Starting compilation in watch mode...
+
+[[90m3:39:10 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +18ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTurnosModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEstadoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAlarmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMusicModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mContentFilterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mLocationModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppBlockerModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mNotificationsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSdFilesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCameraModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSelfUpdateModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mScreenVisionModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mComandoVozModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBloqueoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebhookModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mIntelligenceModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +177ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTurnosController {/api/turnos}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId/analizar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBloqueoController {/api/bloqueo}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:bloqueoId, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:usuarioId/activos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mWebhookController {/api/webhook}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker/estado/:bloqueoId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEstadoController {/api/estado}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/bloqueos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/turnos, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/sitios/bloqueados, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mComandoVozController {/api/comando-voz}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/comando-voz, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAlarmController {/api/alarmas}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/pendientes/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/verificar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mIntelligenceController {/api/v1/intelligence}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/search, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/answer, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/chat, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mMusicController {/api/v1/music}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/play, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/pause, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/next, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/previous, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/volume, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mContentFilterController {/api/v1/content-filter}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/status, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/blocked-domains, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mLocationController {/api/v1/location}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/save, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/navigate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/search, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/nearby, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppBlockerController {/api/v1/app-blocker}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mNotificationsController {/api/v1/notifications}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/receive, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/unannounced, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/announce/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/configure-voice-apps, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSdFilesController {/api/v1/sd-files}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/index, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/search, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/list-by-type, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/statistics, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/clear, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCameraController {/api/v1/camera}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/register-photo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/recent-photos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/statistics, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSelfUpdateController {/api/v1/self-update}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/analyze-command, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/approve/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/reject/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/system-info, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mScreenVisionController {/api/v1/screen-vision}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/analyze, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/history, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:39:11 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +732ms[39m
+✅ ARGOS Backend running on http://0.0.0.0:3000
+📚 API Documentation: http://localhost:3000/api-docs
+[2J[3J[H[[90m3:39:50 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m3:39:50 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +19ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTurnosModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEstadoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAlarmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMusicModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mContentFilterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mLocationModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppBlockerModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mNotificationsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSdFilesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCameraModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSelfUpdateModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mScreenVisionModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mComandoVozModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBloqueoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebhookModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mIntelligenceModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +173ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTurnosController {/api/turnos}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId/analizar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBloqueoController {/api/bloqueo}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:bloqueoId, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:usuarioId/activos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mWebhookController {/api/webhook}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker/estado/:bloqueoId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEstadoController {/api/estado}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/bloqueos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/turnos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/sitios/bloqueados, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mComandoVozController {/api/comando-voz}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/comando-voz, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAlarmController {/api/alarmas}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/pendientes/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/verificar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mIntelligenceController {/api/v1/intelligence}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/search, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/answer, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/chat, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mMusicController {/api/v1/music}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/play, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/pause, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/next, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/previous, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/volume, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mContentFilterController {/api/v1/content-filter}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/blocked-domains, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mLocationController {/api/v1/location}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/save, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/navigate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/search, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/nearby, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppBlockerController {/api/v1/app-blocker}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mNotificationsController {/api/v1/notifications}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/receive, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/unannounced, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/announce/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/configure-voice-apps, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/history, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSdFilesController {/api/v1/sd-files}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/index, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/search, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/list-by-type, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/statistics, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/clear, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCameraController {/api/v1/camera}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/register-photo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/recent-photos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/statistics, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSelfUpdateController {/api/v1/self-update}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/analyze-command, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/approve/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/reject/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/system-info, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mScreenVisionController {/api/v1/screen-vision}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/analyze, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:51 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 818  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +716ms[39m
+✅ ARGOS Backend running on http://0.0.0.0:3000
+📚 API Documentation: http://localhost:3000/api-docs
+[2J[3J[H[[90m3:39:52 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m3:39:52 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +16ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTurnosModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEstadoModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAlarmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMusicModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mContentFilterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mLocationModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppBlockerModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mNotificationsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSdFilesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCameraModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSelfUpdateModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mScreenVisionModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mComandoVozModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBloqueoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebhookModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mIntelligenceModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +166ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTurnosController {/api/turnos}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId/analizar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBloqueoController {/api/bloqueo}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:bloqueoId, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:usuarioId/activos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mWebhookController {/api/webhook}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker/estado/:bloqueoId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEstadoController {/api/estado}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/bloqueos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/turnos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/sitios/bloqueados, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mComandoVozController {/api/comando-voz}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/comando-voz, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAlarmController {/api/alarmas}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/pendientes/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/verificar, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mIntelligenceController {/api/v1/intelligence}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/search, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/answer, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/chat, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mMusicController {/api/v1/music}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/play, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/pause, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/next, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/previous, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/volume, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mContentFilterController {/api/v1/content-filter}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/activate, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/blocked-domains, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mLocationController {/api/v1/location}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/save, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/navigate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/search, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/nearby, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppBlockerController {/api/v1/app-blocker}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mNotificationsController {/api/v1/notifications}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/receive, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/unannounced, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/announce/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/configure-voice-apps, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSdFilesController {/api/v1/sd-files}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/index, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/search, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/list-by-type, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/statistics, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/clear, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCameraController {/api/v1/camera}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/register-photo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/recent-photos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/statistics, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSelfUpdateController {/api/v1/self-update}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/analyze-command, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/approve/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/reject/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/system-info, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mScreenVisionController {/api/v1/screen-vision}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/analyze, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/history, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:52 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 838  - [39m04/09/2026, 3:39:53 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +731ms[39m
+✅ ARGOS Backend running on http://0.0.0.0:3000
+📚 API Documentation: http://localhost:3000/api-docs
+[2J[3J[H[[90m3:40:16 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m3:40:16 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +17ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTurnosModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEstadoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAlarmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMusicModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mContentFilterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mLocationModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppBlockerModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mNotificationsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSdFilesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCameraModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSelfUpdateModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mScreenVisionModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mComandoVozModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBloqueoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebhookModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mIntelligenceModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +177ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTurnosController {/api/turnos}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId/analizar, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBloqueoController {/api/bloqueo}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:bloqueoId, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:usuarioId/activos, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mWebhookController {/api/webhook}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker/estado/:bloqueoId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEstadoController {/api/estado}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/bloqueos, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/turnos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/sitios/bloqueados, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mComandoVozController {/api/comando-voz}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/comando-voz, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAlarmController {/api/alarmas}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/pendientes/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/verificar, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mIntelligenceController {/api/v1/intelligence}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/search, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/answer, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/chat, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mMusicController {/api/v1/music}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/play, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/pause, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/next, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/previous, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/volume, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mContentFilterController {/api/v1/content-filter}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/blocked-domains, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mLocationController {/api/v1/location}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/save, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/navigate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/search, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/nearby, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppBlockerController {/api/v1/app-blocker}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/deactivate, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mNotificationsController {/api/v1/notifications}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/receive, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/unannounced, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/announce/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/configure-voice-apps, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSdFilesController {/api/v1/sd-files}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/index, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/search, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/list-by-type, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/statistics, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/clear, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCameraController {/api/v1/camera}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/register-photo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/recent-photos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/statistics, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSelfUpdateController {/api/v1/self-update}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/analyze-command, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/approve/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/reject/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/system-info, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mScreenVisionController {/api/v1/screen-vision}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/analyze, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:17 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 875  - [39m04/09/2026, 3:40:18 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +757ms[39m
+✅ ARGOS Backend running on http://0.0.0.0:3000
+📚 API Documentation: http://localhost:3000/api-docs
+[2J[3J[H[[90m3:40:42 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m3:40:42 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +19ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTurnosModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEstadoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAlarmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMusicModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mContentFilterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mLocationModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppBlockerModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mNotificationsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSdFilesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCameraModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSelfUpdateModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mScreenVisionModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mComandoVozModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBloqueoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebhookModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mIntelligenceModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +185ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTurnosController {/api/turnos}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId/analizar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBloqueoController {/api/bloqueo}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:bloqueoId, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:usuarioId/activos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mWebhookController {/api/webhook}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker/estado/:bloqueoId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEstadoController {/api/estado}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/bloqueos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/turnos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/sitios/bloqueados, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mComandoVozController {/api/comando-voz}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/comando-voz, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAlarmController {/api/alarmas}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/pendientes/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/verificar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mIntelligenceController {/api/v1/intelligence}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/search, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/answer, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/chat, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mMusicController {/api/v1/music}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/play, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/pause, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/next, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/previous, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/volume, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mContentFilterController {/api/v1/content-filter}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/blocked-domains, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mLocationController {/api/v1/location}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/save, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/navigate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/search, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/nearby, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppBlockerController {/api/v1/app-blocker}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mNotificationsController {/api/v1/notifications}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/receive, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/unannounced, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/announce/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/configure-voice-apps, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSdFilesController {/api/v1/sd-files}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/index, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/search, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/list-by-type, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/statistics, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/clear, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCameraController {/api/v1/camera}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/register-photo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/recent-photos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/statistics, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSelfUpdateController {/api/v1/self-update}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/analyze-command, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/approve/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/reject/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/system-info, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mScreenVisionController {/api/v1/screen-vision}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/analyze, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:42 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 912  - [39m04/09/2026, 3:40:43 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +800ms[39m
+✅ ARGOS Backend running on http://0.0.0.0:3000
+📚 API Documentation: http://localhost:3000/api-docs
+[2J[3J[H[[90m3:41:11 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m3:41:11 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +17ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTurnosModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEstadoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAlarmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMusicModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mContentFilterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mLocationModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppBlockerModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mNotificationsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSdFilesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCameraModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSelfUpdateModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mScreenVisionModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mComandoVozModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBloqueoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebhookModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mIntelligenceModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +177ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTurnosController {/api/turnos}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId/analizar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBloqueoController {/api/bloqueo}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:bloqueoId, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:usuarioId/activos, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mWebhookController {/api/webhook}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker/estado/:bloqueoId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEstadoController {/api/estado}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/bloqueos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/turnos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/sitios/bloqueados, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mComandoVozController {/api/comando-voz}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/comando-voz, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAlarmController {/api/alarmas}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/pendientes/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/verificar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mIntelligenceController {/api/v1/intelligence}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/search, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/answer, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/chat, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mMusicController {/api/v1/music}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/play, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/pause, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/next, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/previous, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/volume, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mContentFilterController {/api/v1/content-filter}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/blocked-domains, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mLocationController {/api/v1/location}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/save, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/navigate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/search, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/nearby, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppBlockerController {/api/v1/app-blocker}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mNotificationsController {/api/v1/notifications}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/receive, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/unannounced, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/announce/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/configure-voice-apps, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSdFilesController {/api/v1/sd-files}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/index, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/search, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/list-by-type, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/statistics, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/clear, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCameraController {/api/v1/camera}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/register-photo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/recent-photos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/statistics, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSelfUpdateController {/api/v1/self-update}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/analyze-command, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/approve/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/reject/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/system-info, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mScreenVisionController {/api/v1/screen-vision}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/analyze, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:12 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 950  - [39m04/09/2026, 3:41:13 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +860ms[39m
+✅ ARGOS Backend running on http://0.0.0.0:3000
+📚 API Documentation: http://localhost:3000/api-docs
+[2J[3J[H[[90m3:41:39 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m3:41:39 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +20ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTurnosModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEstadoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAlarmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMusicModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mContentFilterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mLocationModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppBlockerModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mNotificationsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSdFilesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCameraModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSelfUpdateModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mScreenVisionModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mComandoVozModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBloqueoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebhookModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mIntelligenceModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +193ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTurnosController {/api/turnos}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId/analizar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBloqueoController {/api/bloqueo}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:bloqueoId, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:usuarioId/activos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mWebhookController {/api/webhook}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker/estado/:bloqueoId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEstadoController {/api/estado}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/bloqueos, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/turnos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/sitios/bloqueados, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mComandoVozController {/api/comando-voz}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/comando-voz, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAlarmController {/api/alarmas}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/pendientes/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/verificar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mIntelligenceController {/api/v1/intelligence}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/search, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/answer, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/chat, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mMusicController {/api/v1/music}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/play, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/pause, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/next, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/previous, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/volume, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mContentFilterController {/api/v1/content-filter}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/blocked-domains, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mLocationController {/api/v1/location}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/save, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/navigate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/search, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/nearby, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppBlockerController {/api/v1/app-blocker}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mNotificationsController {/api/v1/notifications}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/receive, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/unannounced, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/announce/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/configure-voice-apps, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSdFilesController {/api/v1/sd-files}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/index, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/search, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/list-by-type, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/statistics, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/clear, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCameraController {/api/v1/camera}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/register-photo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/recent-photos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/statistics, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSelfUpdateController {/api/v1/self-update}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/analyze-command, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/approve/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/reject/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/system-info, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mScreenVisionController {/api/v1/screen-vision}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/analyze, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:40 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 988  - [39m04/09/2026, 3:41:41 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +802ms[39m
+✅ ARGOS Backend running on http://0.0.0.0:3000
+📚 API Documentation: http://localhost:3000/api-docs
+[2J[3J[H[[90m3:42:07 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m3:42:07 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +17ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTurnosModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEstadoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAlarmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMusicModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mContentFilterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mLocationModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppBlockerModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mNotificationsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSdFilesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCameraModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSelfUpdateModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mScreenVisionModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mComandoVozModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBloqueoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebhookModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mIntelligenceModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +182ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTurnosController {/api/turnos}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId/analizar, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBloqueoController {/api/bloqueo}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:bloqueoId, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:usuarioId/activos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mWebhookController {/api/webhook}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker/estado/:bloqueoId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEstadoController {/api/estado}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/bloqueos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/turnos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/sitios/bloqueados, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mComandoVozController {/api/comando-voz}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/comando-voz, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAlarmController {/api/alarmas}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/pendientes/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/verificar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mIntelligenceController {/api/v1/intelligence}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/search, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/answer, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/chat, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mMusicController {/api/v1/music}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/play, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/pause, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/next, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/previous, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/volume, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mContentFilterController {/api/v1/content-filter}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/status, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/blocked-domains, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mLocationController {/api/v1/location}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/save, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/navigate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/search, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/nearby, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppBlockerController {/api/v1/app-blocker}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mNotificationsController {/api/v1/notifications}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/receive, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/unannounced, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/announce/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/configure-voice-apps, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSdFilesController {/api/v1/sd-files}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/index, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/search, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/list-by-type, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/statistics, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/clear, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCameraController {/api/v1/camera}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/register-photo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/recent-photos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/statistics, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSelfUpdateController {/api/v1/self-update}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/analyze-command, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/approve/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/reject/:id, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/system-info, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mScreenVisionController {/api/v1/screen-vision}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/analyze, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:08 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1028  - [39m04/09/2026, 3:42:09 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +848ms[39m
+✅ ARGOS Backend running on http://0.0.0.0:3000
+📚 API Documentation: http://localhost:3000/api-docs
+[2J[3J[H[[90m3:42:32 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/network-security/network-security.service.ts[0m:[93m116[0m:[93m30[0m - [91merror[0m[90m TS1127: [0mInvalid character.
+
+[7m116[0m         recomendaciones.push(✅ Sitio no es phishing conocido');
+[7m   [0m [91m                             ~[0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m116[0m:[93m38[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m116[0m         recomendaciones.push(✅ Sitio no es phishing conocido');
+[7m   [0m [91m                                     ~~[0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m116[0m:[93m41[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m116[0m         recomendaciones.push(✅ Sitio no es phishing conocido');
+[7m   [0m [91m                                        ~~[0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m116[0m:[93m44[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m116[0m         recomendaciones.push(✅ Sitio no es phishing conocido');
+[7m   [0m [91m                                           ~~~~~~~~[0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m116[0m:[93m53[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m116[0m         recomendaciones.push(✅ Sitio no es phishing conocido');
+[7m   [0m [91m                                                    ~~~~~~~~[0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m116[0m:[93m61[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m116[0m         recomendaciones.push(✅ Sitio no es phishing conocido');
+[7m   [0m [91m                                                            ~~~[0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m116[0m:[93m64[0m - [91merror[0m[90m TS1002: [0mUnterminated string literal.
+
+[7m116[0m         recomendaciones.push(✅ Sitio no es phishing conocido');
+[7m   [0m [91m                                                               [0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m117[0m:[93m7[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m117[0m       }
+[7m   [0m [91m      ~[0m
+
+[[90m3:42:32 PM[0m] Found 8 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:42:47 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/network-security/network-security.service.ts[0m:[93m116[0m:[93m30[0m - [91merror[0m[90m TS1127: [0mInvalid character.
+
+[7m116[0m         recomendaciones.push(✅ Sitio no es phishing conocido');
+[7m   [0m [91m                             ~[0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m116[0m:[93m38[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m116[0m         recomendaciones.push(✅ Sitio no es phishing conocido');
+[7m   [0m [91m                                     ~~[0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m116[0m:[93m41[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m116[0m         recomendaciones.push(✅ Sitio no es phishing conocido');
+[7m   [0m [91m                                        ~~[0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m116[0m:[93m44[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m116[0m         recomendaciones.push(✅ Sitio no es phishing conocido');
+[7m   [0m [91m                                           ~~~~~~~~[0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m116[0m:[93m53[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m116[0m         recomendaciones.push(✅ Sitio no es phishing conocido');
+[7m   [0m [91m                                                    ~~~~~~~~[0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m116[0m:[93m61[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m116[0m         recomendaciones.push(✅ Sitio no es phishing conocido');
+[7m   [0m [91m                                                            ~~~[0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m116[0m:[93m64[0m - [91merror[0m[90m TS1002: [0mUnterminated string literal.
+
+[7m116[0m         recomendaciones.push(✅ Sitio no es phishing conocido');
+[7m   [0m [91m                                                               [0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m117[0m:[93m7[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m117[0m       }
+[7m   [0m [91m      ~[0m
+
+[[90m3:42:47 PM[0m] Found 8 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:42:52 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/network-security/network-security.service.ts[0m:[93m116[0m:[93m30[0m - [91merror[0m[90m TS1127: [0mInvalid character.
+
+[7m116[0m         recomendaciones.push(✅ Sitio no es phishing conocido');
+[7m   [0m [91m                             ~[0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m116[0m:[93m38[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m116[0m         recomendaciones.push(✅ Sitio no es phishing conocido');
+[7m   [0m [91m                                     ~~[0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m116[0m:[93m41[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m116[0m         recomendaciones.push(✅ Sitio no es phishing conocido');
+[7m   [0m [91m                                        ~~[0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m116[0m:[93m44[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m116[0m         recomendaciones.push(✅ Sitio no es phishing conocido');
+[7m   [0m [91m                                           ~~~~~~~~[0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m116[0m:[93m53[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m116[0m         recomendaciones.push(✅ Sitio no es phishing conocido');
+[7m   [0m [91m                                                    ~~~~~~~~[0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m116[0m:[93m61[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m116[0m         recomendaciones.push(✅ Sitio no es phishing conocido');
+[7m   [0m [91m                                                            ~~~[0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m116[0m:[93m64[0m - [91merror[0m[90m TS1002: [0mUnterminated string literal.
+
+[7m116[0m         recomendaciones.push(✅ Sitio no es phishing conocido');
+[7m   [0m [91m                                                               [0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m117[0m:[93m7[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m117[0m       }
+[7m   [0m [91m      ~[0m
+
+[[90m3:42:52 PM[0m] Found 8 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:43:09 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m3:43:09 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +20ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTurnosModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEstadoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAlarmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMusicModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mContentFilterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mLocationModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppBlockerModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mNotificationsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSdFilesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCameraModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSelfUpdateModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mScreenVisionModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEmergencyModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGeofencingModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFocusModeModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTasksModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDeviceDiagnosticsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mNetworkSecurityModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mComandoVozModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBloqueoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebhookModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mIntelligenceModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +183ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTurnosController {/api/turnos}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId/analizar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBloqueoController {/api/bloqueo}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:bloqueoId, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:usuarioId/activos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mWebhookController {/api/webhook}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker/estado/:bloqueoId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEstadoController {/api/estado}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/bloqueos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/turnos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/sitios/bloqueados, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mComandoVozController {/api/comando-voz}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/comando-voz, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAlarmController {/api/alarmas}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/pendientes/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/verificar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mIntelligenceController {/api/v1/intelligence}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/search, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/answer, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/chat, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mMusicController {/api/v1/music}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/play, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/pause, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/next, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/previous, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/volume, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mContentFilterController {/api/v1/content-filter}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/blocked-domains, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mLocationController {/api/v1/location}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/save, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/navigate, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/search, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/nearby, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppBlockerController {/api/v1/app-blocker}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mNotificationsController {/api/v1/notifications}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/receive, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/unannounced, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/announce/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/configure-voice-apps, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSdFilesController {/api/v1/sd-files}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/index, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/search, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/list-by-type, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/statistics, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/clear, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCameraController {/api/v1/camera}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/register-photo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/recent-photos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/statistics, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSelfUpdateController {/api/v1/self-update}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/analyze-command, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/approve/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/reject/:id, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/self-update/system-info, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mScreenVisionController {/api/v1/screen-vision}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/analyze, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/screen-vision, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEmergencyController {/api/v1/emergency}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/emergency/contact/add, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/emergency/contacts, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/emergency/contact/:contactoId, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/emergency/sos/activate, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/emergency/sos/cancel, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/emergency/sos/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGeofencingController {/api/v1/geofencing}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/geofencing/create, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/geofencing/list, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/geofencing/detect, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/geofencing/recordatorios/:geofenceId, PUT} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/geofencing/delete/:geofenceId, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFocusModeController {/api/v1/focus-mode}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/focus-mode/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/focus-mode/current, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/focus-mode/complete/:sesionId, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/focus-mode/stats, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/focus-mode/allowed-apps, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTasksController {/api/v1/tasks}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/tasks/add, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/tasks/list, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/tasks/complete/:tareaId, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/tasks/delete/:tareaId, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/tasks/location/:ubicacion, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/tasks/reminder-voice, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/tasks/priority/:tareaId, PUT} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mDeviceDiagnosticsController {/api/v1/device-diagnostics}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/device-diagnostics/register, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/device-diagnostics/latest, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/device-diagnostics/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/device-diagnostics/recommendations, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/device-diagnostics/clear-cache, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mNetworkSecurityController {/api/v1/network-security}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/network-security/analyze-wifi, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/network-security/check-phishing, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/network-security/vpn-recommendation, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:10 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/network-security/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:11 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1051ms[39m
+✅ ARGOS Backend running on http://0.0.0.0:3000
+📚 API Documentation: http://localhost:3000/api-docs
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:38 PM [32m    LOG[39m [38;5;3m[EmergencyService] [39m[32m🚨 SOS ACTIVADO para usuario_1 en 4.711, -74.0721[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:38 PM [32m    LOG[39m [38;5;3m[GeofencingService] [39m[32mCreando geofence Casa en 4.711, -74.0721[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:38 PM [32m    LOG[39m [38;5;3m[FocusModeService] [39m[32m📄 Focus Mode activado para usuario_1 - 60min[39m
+[32m[Nest] 1099  - [39m04/09/2026, 3:43:39 PM [32m    LOG[39m [38;5;3m[TasksService] [39m[32mAgregando tarea: Hacer ejercicio[39m

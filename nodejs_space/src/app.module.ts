@@ -17,6 +17,12 @@ import { SdFilesModule } from './sd-files/sd-files.module';
 import { CameraModule } from './camera/camera.module';
 import { SelfUpdateModule } from './self-update/self-update.module';
 import { ScreenVisionModule } from './screen-vision/screen-vision.module';
+import { EmergencyModule } from './emergency/emergency.module';
+import { GeofencingModule } from './geofencing/geofencing.module';
+import { FocusModeModule } from './focus-mode/focus-mode.module';
+import { TasksModule } from './tasks/tasks.module';
+import { DeviceDiagnosticsModule } from './device-diagnostics/device-diagnostics.module';
+import { NetworkSecurityModule } from './network-security/network-security.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
@@ -41,6 +47,12 @@ import { AppService } from './app.service';
     CameraModule,
     SelfUpdateModule,
     ScreenVisionModule,
+    EmergencyModule,
+    GeofencingModule,
+    FocusModeModule,
+    TasksModule,
+    DeviceDiagnosticsModule,
+    NetworkSecurityModule,
   ],
   controllers: [AppController],
   providers: [AppService, PrismaService],
