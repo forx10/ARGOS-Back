@@ -15,6 +15,8 @@ import { AppBlockerModule } from './app-blocker/app-blocker.module';
 import { NotificationsModule } from './notifications/notifications.module';
 import { SdFilesModule } from './sd-files/sd-files.module';
 import { CameraModule } from './camera/camera.module';
+import { SelfUpdateModule } from './self-update/self-update.module';
+import { ScreenVisionModule } from './screen-vision/screen-vision.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
@@ -37,6 +39,8 @@ import { AppService } from './app.service';
     NotificationsModule,
     SdFilesModule,
     CameraModule,
+    SelfUpdateModule,
+    ScreenVisionModule,
   ],
   controllers: [AppController],
   providers: [AppService, PrismaService],

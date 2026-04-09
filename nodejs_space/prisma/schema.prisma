@@ -153,3 +153,38 @@ model foto_camara {
   @@index([usuario_id])
   @@index([timestamp])
 }
+
+// Tabla de solicitudes de actualización (Self-Update)
+model solicitud_actualizacion {
+  id                    Int      @id @default(autoincrement())
+  usuario_id            String   @db.VarChar(255)
+  tipo_comando          String   @db.VarChar(100)
+  descripcion           String   @db.Text
+  razon                 String   @db.Text
+  estado                String   @db.VarChar(50)   // pendiente, aprobado, rechazado
+  opcion_seleccionada   String?  @db.VarChar(255)
+  notas                 String?  @db.Text
+  creado_en             DateTime @default(now())
+  actualizado_en        DateTime @updatedAt
+
+  @@index([usuario_id])
+  @@index([estado])
+  @@index([creado_en])
+}
+
+// Tabla de capturas de pantalla (Screen Vision)
+model captura_pantalla {
+  id              Int      @id @default(autoincrement())
+  usuario_id      String   @db.VarChar(255)
+  imagen_base64   String   @db.Text
+  contexto        String?  @db.Text
+  analizada       Boolean  @default(false)
+  analisis        String?  @db.Text
+  sugerencias     String[]  @default([])
+  capturada_en    DateTime @default(now())
+  analizada_en    DateTime?
+
+  @@index([usuario_id])
+  @@index([analizada])
+  @@index([capturada_en])
+}

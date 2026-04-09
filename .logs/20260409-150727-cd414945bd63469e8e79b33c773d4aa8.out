@@ -1,0 +1,376 @@
+➤ YN0000: · Yarn 4.13.0
+➤ YN0000: ┌ Resolution step
+➤ YN0085: │ + axios@npm:1.15.0, follow-redirects@npm:1.15.11, proxy-from-env@npm:2.1.0
+➤ YN0000: └ Completed in 0s 267ms
+➤ YN0000: ┌ Post-resolution validation
+➤ YN0002: │ nodejs_space@workspace:. doesn't provide webpack (p687b73), requested by ts-loader.
+➤ YN0086: │ Some peer dependencies are incorrectly met by your project; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code.
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Fetch step
+➤ YN0013: │ A package was added to the project (+ 2.34 MiB).
+➤ YN0000: └ Completed in 0s 465ms
+➤ YN0000: ┌ Link step
+➤ YN0000: └ Completed in 0s 657ms
+➤ YN0000: · Done with warnings in 1s 478ms
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+
+✔ Generated Prisma Client (v6.7.0) to ./node_modules/.prisma/client in 82ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Want real-time updates to your database without manual polling? Discover how with Pulse: https://pris.ly/tip-0-pulse
+
+Starting server...
+[2J[3J[H[[90m3:07:30 PM[0m] Starting compilation in watch mode...
+
+[[90m3:07:32 PM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +16ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTurnosModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEstadoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAlarmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMusicModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mContentFilterModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mLocationModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppBlockerModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mNotificationsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSdFilesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCameraModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mComandoVozModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBloqueoModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mWebhookModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mIntelligenceModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +160ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTurnosController {/api/turnos}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId/analizar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/turnos/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBloqueoController {/api/bloqueo}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:bloqueoId, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/bloqueo/:usuarioId/activos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mWebhookController {/api/webhook}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/webhook/tasker/estado/:bloqueoId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEstadoController {/api/estado}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/bloqueos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/:usuarioId/turnos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/estado/sitios/bloqueados, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mComandoVozController {/api/comando-voz}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/comando-voz, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAlarmController {/api/alarmas}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/pendientes/:usuarioId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/alarmas/verificar, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mIntelligenceController {/api/v1/intelligence}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/search, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/answer, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/intelligence/chat, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mMusicController {/api/v1/music}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/play, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/pause, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/next, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/previous, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/volume, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/music/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mContentFilterController {/api/v1/content-filter}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/status, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/content-filter/blocked-domains, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mLocationController {/api/v1/location}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/save, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/navigate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/search, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/location/nearby, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppBlockerController {/api/v1/app-blocker}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/activate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/deactivate, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/app-blocker/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mNotificationsController {/api/v1/notifications}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/receive, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/unannounced, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/announce/:id, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/configure-voice-apps, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/notifications/history, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSdFilesController {/api/v1/sd-files}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/index, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/search, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/list-by-type, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/statistics, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/sd-files/clear, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mCameraController {/api/v1/camera}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/register-photo, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/recent-photos, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:33 PM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/v1/camera/statistics, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 693  - [39m04/09/2026, 3:07:34 PM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +642ms[39m
+✅ ARGOS Backend running on http://0.0.0.0:3000
+📚 API Documentation: http://localhost:3000/api-docs
+[2J[3J[H[[90m3:08:04 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/self-update/self-update.controller.ts[0m:[93m49[0m:[93m9[0m - [91merror[0m[90m TS4053: [0mReturn type of public method from exported class has or is using name 'UpdateOption' from external module "/home/ubuntu/argos_backend/nodejs_space/src/self-update/self-update.service" but cannot be named.
+
+[7m49[0m   async analyzeCommand(@Body() body: AnalyzeCommandDto) {
+[7m  [0m [91m        ~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.service.ts[0m:[93m49[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'solicitud_actualizacion' does not exist on type 'PrismaService'.
+
+[7m49[0m       const request = await this.prisma.solicitud_actualizacion.create({
+[7m  [0m [91m                                        ~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.service.ts[0m:[93m213[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'solicitud_actualizacion' does not exist on type 'PrismaService'.
+
+[7m213[0m       const request = await this.prisma.solicitud_actualizacion.update({
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.service.ts[0m:[93m246[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'solicitud_actualizacion' does not exist on type 'PrismaService'.
+
+[7m246[0m       await this.prisma.solicitud_actualizacion.update({
+[7m   [0m [91m                        ~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.service.ts[0m:[93m269[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'solicitud_actualizacion' does not exist on type 'PrismaService'.
+
+[7m269[0m       const updates = await this.prisma.solicitud_actualizacion.findMany({
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.service.ts[0m:[93m277[0m:[93m31[0m - [91merror[0m[90m TS7006: [0mParameter 'u' implicitly has an 'any' type.
+
+[7m277[0m         updates: updates.map((u) => ({
+[7m   [0m [91m                              ~[0m
+
+[[90m3:08:04 PM[0m] Found 6 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:08:32 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m33[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'captura_pantalla' does not exist on type 'PrismaService'.
+
+[7m33[0m       const screenshot = await this.prisma.captura_pantalla.create({
+[7m  [0m [91m                                           ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m46[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'captura_pantalla' does not exist on type 'PrismaService'.
+
+[7m46[0m       await this.prisma.captura_pantalla.update({
+[7m  [0m [91m                        ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m221[0m:[93m45[0m - [91merror[0m[90m TS2339: [0mProperty 'captura_pantalla' does not exist on type 'PrismaService'.
+
+[7m221[0m       const screenshots = await this.prisma.captura_pantalla.findMany({
+[7m   [0m [91m                                            ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m229[0m:[93m39[0m - [91merror[0m[90m TS7006: [0mParameter 's' implicitly has an 'any' type.
+
+[7m229[0m         screenshots: screenshots.map((s) => ({
+[7m   [0m [91m                                      ~[0m
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m251[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'captura_pantalla' does not exist on type 'PrismaService'.
+
+[7m251[0m       const screenshot = await this.prisma.captura_pantalla.findUnique({
+[7m   [0m [91m                                           ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m278[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'captura_pantalla' does not exist on type 'PrismaService'.
+
+[7m278[0m       await this.prisma.captura_pantalla.delete({
+[7m   [0m [91m                        ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m297[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'captura_pantalla' does not exist on type 'PrismaService'.
+
+[7m297[0m       const result = await this.prisma.captura_pantalla.deleteMany({
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.controller.ts[0m:[93m49[0m:[93m9[0m - [91merror[0m[90m TS4053: [0mReturn type of public method from exported class has or is using name 'UpdateOption' from external module "/home/ubuntu/argos_backend/nodejs_space/src/self-update/self-update.service" but cannot be named.
+
+[7m49[0m   async analyzeCommand(@Body() body: AnalyzeCommandDto) {
+[7m  [0m [91m        ~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.service.ts[0m:[93m49[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'solicitud_actualizacion' does not exist on type 'PrismaService'.
+
+[7m49[0m       const request = await this.prisma.solicitud_actualizacion.create({
+[7m  [0m [91m                                        ~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.service.ts[0m:[93m213[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'solicitud_actualizacion' does not exist on type 'PrismaService'.
+
+[7m213[0m       const request = await this.prisma.solicitud_actualizacion.update({
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.service.ts[0m:[93m246[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'solicitud_actualizacion' does not exist on type 'PrismaService'.
+
+[7m246[0m       await this.prisma.solicitud_actualizacion.update({
+[7m   [0m [91m                        ~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.service.ts[0m:[93m269[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'solicitud_actualizacion' does not exist on type 'PrismaService'.
+
+[7m269[0m       const updates = await this.prisma.solicitud_actualizacion.findMany({
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.service.ts[0m:[93m277[0m:[93m31[0m - [91merror[0m[90m TS7006: [0mParameter 'u' implicitly has an 'any' type.
+
+[7m277[0m         updates: updates.map((u) => ({
+[7m   [0m [91m                              ~[0m
+
+[[90m3:08:32 PM[0m] Found 13 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:08:43 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/app.module.ts[0m:[93m23[0m:[93m10[0m - [91merror[0m[90m TS1127: [0mInvalid character.
+
+[7m23[0m @Module({\n  imports: [
+[7m  [0m [91m         [0m
+
+[96msrc/app.module.ts[0m:[93m23[0m:[93m14[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m23[0m @Module({\n  imports: [
+[7m  [0m [91m             ~~~~~~~[0m
+
+[96msrc/self-update/self-update.controller.ts[0m:[93m49[0m:[93m9[0m - [91merror[0m[90m TS4053: [0mReturn type of public method from exported class has or is using name 'UpdateOption' from external module "/home/ubuntu/argos_backend/nodejs_space/src/self-update/self-update.service" but cannot be named.
+
+[7m49[0m   async analyzeCommand(@Body() body: AnalyzeCommandDto) {
+[7m  [0m [91m        ~~~~~~~~~~~~~~[0m
+
+[[90m3:08:43 PM[0m] Found 3 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:08:45 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m33[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'captura_pantalla' does not exist on type 'PrismaService'.
+
+[7m33[0m       const screenshot = await this.prisma.captura_pantalla.create({
+[7m  [0m [91m                                           ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m46[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'captura_pantalla' does not exist on type 'PrismaService'.
+
+[7m46[0m       await this.prisma.captura_pantalla.update({
+[7m  [0m [91m                        ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m221[0m:[93m45[0m - [91merror[0m[90m TS2339: [0mProperty 'captura_pantalla' does not exist on type 'PrismaService'.
+
+[7m221[0m       const screenshots = await this.prisma.captura_pantalla.findMany({
+[7m   [0m [91m                                            ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m229[0m:[93m39[0m - [91merror[0m[90m TS7006: [0mParameter 's' implicitly has an 'any' type.
+
+[7m229[0m         screenshots: screenshots.map((s) => ({
+[7m   [0m [91m                                      ~[0m
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m251[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'captura_pantalla' does not exist on type 'PrismaService'.
+
+[7m251[0m       const screenshot = await this.prisma.captura_pantalla.findUnique({
+[7m   [0m [91m                                           ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m278[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'captura_pantalla' does not exist on type 'PrismaService'.
+
+[7m278[0m       await this.prisma.captura_pantalla.delete({
+[7m   [0m [91m                        ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m297[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'captura_pantalla' does not exist on type 'PrismaService'.
+
+[7m297[0m       const result = await this.prisma.captura_pantalla.deleteMany({
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.controller.ts[0m:[93m49[0m:[93m9[0m - [91merror[0m[90m TS4053: [0mReturn type of public method from exported class has or is using name 'UpdateOption' from external module "/home/ubuntu/argos_backend/nodejs_space/src/self-update/self-update.service" but cannot be named.
+
+[7m49[0m   async analyzeCommand(@Body() body: AnalyzeCommandDto) {
+[7m  [0m [91m        ~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.service.ts[0m:[93m49[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'solicitud_actualizacion' does not exist on type 'PrismaService'.
+
+[7m49[0m       const request = await this.prisma.solicitud_actualizacion.create({
+[7m  [0m [91m                                        ~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.service.ts[0m:[93m213[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'solicitud_actualizacion' does not exist on type 'PrismaService'.
+
+[7m213[0m       const request = await this.prisma.solicitud_actualizacion.update({
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.service.ts[0m:[93m246[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'solicitud_actualizacion' does not exist on type 'PrismaService'.
+
+[7m246[0m       await this.prisma.solicitud_actualizacion.update({
+[7m   [0m [91m                        ~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.service.ts[0m:[93m269[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'solicitud_actualizacion' does not exist on type 'PrismaService'.
+
+[7m269[0m       const updates = await this.prisma.solicitud_actualizacion.findMany({
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.service.ts[0m:[93m277[0m:[93m31[0m - [91merror[0m[90m TS7006: [0mParameter 'u' implicitly has an 'any' type.
+
+[7m277[0m         updates: updates.map((u) => ({
+[7m   [0m [91m                              ~[0m
+
+[[90m3:08:45 PM[0m] Found 13 errors. Watching for file changes.
+
+[2J[3J[H[[90m3:08:48 PM[0m] File change detected. Starting incremental compilation...
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m33[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'captura_pantalla' does not exist on type 'PrismaService'.
+
+[7m33[0m       const screenshot = await this.prisma.captura_pantalla.create({
+[7m  [0m [91m                                           ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m46[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'captura_pantalla' does not exist on type 'PrismaService'.
+
+[7m46[0m       await this.prisma.captura_pantalla.update({
+[7m  [0m [91m                        ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m221[0m:[93m45[0m - [91merror[0m[90m TS2339: [0mProperty 'captura_pantalla' does not exist on type 'PrismaService'.
+
+[7m221[0m       const screenshots = await this.prisma.captura_pantalla.findMany({
+[7m   [0m [91m                                            ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m229[0m:[93m39[0m - [91merror[0m[90m TS7006: [0mParameter 's' implicitly has an 'any' type.
+
+[7m229[0m         screenshots: screenshots.map((s) => ({
+[7m   [0m [91m                                      ~[0m
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m251[0m:[93m44[0m - [91merror[0m[90m TS2339: [0mProperty 'captura_pantalla' does not exist on type 'PrismaService'.
+
+[7m251[0m       const screenshot = await this.prisma.captura_pantalla.findUnique({
+[7m   [0m [91m                                           ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m278[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'captura_pantalla' does not exist on type 'PrismaService'.
+
+[7m278[0m       await this.prisma.captura_pantalla.delete({
+[7m   [0m [91m                        ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m297[0m:[93m40[0m - [91merror[0m[90m TS2339: [0mProperty 'captura_pantalla' does not exist on type 'PrismaService'.
+
+[7m297[0m       const result = await this.prisma.captura_pantalla.deleteMany({
+[7m   [0m [91m                                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.controller.ts[0m:[93m49[0m:[93m9[0m - [91merror[0m[90m TS4053: [0mReturn type of public method from exported class has or is using name 'UpdateOption' from external module "/home/ubuntu/argos_backend/nodejs_space/src/self-update/self-update.service" but cannot be named.
+
+[7m49[0m   async analyzeCommand(@Body() body: AnalyzeCommandDto) {
+[7m  [0m [91m        ~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.service.ts[0m:[93m49[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'solicitud_actualizacion' does not exist on type 'PrismaService'.
+
+[7m49[0m       const request = await this.prisma.solicitud_actualizacion.create({
+[7m  [0m [91m                                        ~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.service.ts[0m:[93m213[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'solicitud_actualizacion' does not exist on type 'PrismaService'.
+
+[7m213[0m       const request = await this.prisma.solicitud_actualizacion.update({
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.service.ts[0m:[93m246[0m:[93m25[0m - [91merror[0m[90m TS2339: [0mProperty 'solicitud_actualizacion' does not exist on type 'PrismaService'.
+
+[7m246[0m       await this.prisma.solicitud_actualizacion.update({
+[7m   [0m [91m                        ~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.service.ts[0m:[93m269[0m:[93m41[0m - [91merror[0m[90m TS2339: [0mProperty 'solicitud_actualizacion' does not exist on type 'PrismaService'.
+
+[7m269[0m       const updates = await this.prisma.solicitud_actualizacion.findMany({
+[7m   [0m [91m                                        ~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.service.ts[0m:[93m277[0m:[93m31[0m - [91merror[0m[90m TS7006: [0mParameter 'u' implicitly has an 'any' type.
+
+[7m277[0m         updates: updates.map((u) => ({
+[7m   [0m [91m                              ~[0m
+
+[[90m3:08:48 PM[0m] Found 13 errors. Watching for file changes.
+
