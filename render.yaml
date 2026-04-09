@@ -4,8 +4,9 @@ services:
     env: node
     region: oregon
     plan: free
-    buildCommand: cd nodejs_space && yarn install && yarn build && yarn prisma generate
-    startCommand: cd nodejs_space && yarn start:prod
+    rootDir: nodejs_space
+    buildCommand: yarn install && yarn build && yarn prisma generate
+    startCommand: yarn start:prod
     envVars:
       - key: NODE_VERSION
         value: 18.18.0
