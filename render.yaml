@@ -1,12 +1,11 @@
 services:
   - type: web
     name: argos-backend
-    env: node
+    env: docker
     region: oregon
     plan: free
-    rootDir: nodejs_space
-    buildCommand: yarn install && yarn prisma generate && yarn prisma migrate deploy && yarn build
-    startCommand: yarn start:prod
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
     envVars:
       - key: NODE_VERSION
         value: 18.18.0

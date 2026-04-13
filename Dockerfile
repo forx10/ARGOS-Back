@@ -11,6 +11,10 @@ COPY nodejs_space ./
 # Instalar dependencias
 RUN yarn install
 
+# Build argument para DATABASE_URL con valor por defecto para build
+ARG DATABASE_URL="postgresql://placeholder:placeholder@localhost:5432/placeholder?schema=public"
+ENV DATABASE_URL=${DATABASE_URL}
+
 # Generar Prisma Client (ANTES de build)
 RUN yarn prisma generate
 
