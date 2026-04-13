@@ -29,5 +29,5 @@ RUN yarn build
 # Exponer puerto
 EXPOSE 3000
 
-# Comando de inicio - migrar BD y arrancar (DATABASE_URL viene de Render env vars)
-CMD ["sh", "-c", "npx prisma migrate deploy && node dist/src/main.js"]
+# Comando de inicio (DATABASE_URL viene de Render env vars en runtime)
+CMD ["sh", "-c", "echo \"DATABASE_URL starts with: $(echo $DATABASE_URL | head -c 15)...\" && npx prisma migrate deploy || echo 'WARN: migrate skipped' && node dist/src/main.js"]
