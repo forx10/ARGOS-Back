@@ -17,15 +17,11 @@ RUN echo 'nodeLinker: node-modules' > .yarnrc.yml
 # Instalar dependencias
 RUN yarn install
 
-# Build argument para DATABASE_URL con valor por defecto para build
-ARG DATABASE_URL="postgresql://placeholder:placeholder@localhost:5432/placeholder?schema=public"
-ENV DATABASE_URL=${DATABASE_URL}
-
 # Corregir output path de Prisma para Docker (puede venir con path absoluto)
 RUN sed -i 's|output.*=.*"/home/ubuntu.*"|output = "../node_modules/.prisma/client"|' prisma/schema.prisma
 
-# Generar Prisma Client (ANTES de build)
-RUN yarn prisma generate
+# Generar Prisma Client con DATABASE_URL temporal (solo para build, no se persiste)
+RUN DATABASE_URL="postgresql://placeholder:placeholder@localhost:5432/placeholder" yarn prisma generate
 
 # Construir aplicación
 RUN yarn build
@@ -33,5 +29,5 @@ RUN yarn build
 # Exponer puerto
 EXPOSE 3000
 
-# Comando de inicio - migrar BD y arrancar
-CMD ["sh", "-c", "yarn prisma migrate deploy; node dist/src/main.js"]
+# Comando de inicio - migrar BD y arrancar (DATABASE_URL viene de Render env vars)
+CMD ["sh", "-c", "npx prisma migrate deploy && node dist/src/main.js"]
