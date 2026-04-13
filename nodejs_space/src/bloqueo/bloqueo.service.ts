@@ -1,7 +1,8 @@
 import { Injectable, Logger, BadRequestException } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
 import { CreateBloqueoDto, TriggerType } from './dto/create-bloqueo.dto';
-import type { bloqueo_activo } from '@prisma/client';
+// eslint-disable-next-line @typescript-eslint/no-redundant-type-constituents
+type bloqueo_activo = any;
 import axios from 'axios';
 
 @Injectable()

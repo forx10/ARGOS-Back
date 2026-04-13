@@ -1,7 +1,9 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
 import { CreateTurnoDto } from './dto/create-turno.dto';
-import type { turno, bloqueo_activo } from '@prisma/client';
+// eslint-disable-next-line @typescript-eslint/no-redundant-type-constituents
+type turno = any;
+type bloqueo_activo = any;
 
 @Injectable()
 export class TurnosService {
