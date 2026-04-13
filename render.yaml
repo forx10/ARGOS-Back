@@ -5,7 +5,7 @@ services:
     region: oregon
     plan: free
     rootDir: nodejs_space
-    buildCommand: yarn install && yarn build && yarn prisma generate
+    buildCommand: yarn install && yarn prisma generate && yarn prisma migrate deploy && yarn build
     startCommand: yarn start:prod
     envVars:
       - key: NODE_VERSION
@@ -13,4 +13,8 @@ services:
       - key: DATABASE_URL
         sync: false
       - key: ABACUSAI_API_KEY
+        sync: false
+      - key: AUTOREMOTE_USER_KEY
+        sync: false
+      - key: AUTOREMOTE_BASE_URL
         sync: false
