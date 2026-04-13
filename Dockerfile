@@ -8,6 +8,12 @@ WORKDIR /app
 # Copiar todo el proyecto nodejs_space
 COPY nodejs_space ./
 
+# Asegurar que yarn.lock es un archivo regular (no symlink)
+RUN test -f yarn.lock || touch yarn.lock
+
+# Configurar Yarn para Docker (sin global cache)
+RUN echo 'nodeLinker: node-modules' > .yarnrc.yml
+
 # Instalar dependencias
 RUN yarn install
 
