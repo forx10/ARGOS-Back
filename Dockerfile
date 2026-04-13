@@ -21,6 +21,9 @@ RUN yarn install
 ARG DATABASE_URL="postgresql://placeholder:placeholder@localhost:5432/placeholder?schema=public"
 ENV DATABASE_URL=${DATABASE_URL}
 
+# Corregir output path de Prisma para Docker (puede venir con path absoluto)
+RUN sed -i 's|output.*=.*"/home/ubuntu.*"|output = "../node_modules/.prisma/client"|' prisma/schema.prisma
+
 # Generar Prisma Client (ANTES de build)
 RUN yarn prisma generate
 
@@ -30,5 +33,5 @@ RUN yarn build
 # Exponer puerto
 EXPOSE 3000
 
-# Comando de inicio
-CMD ["node", "dist/src/main.js"]
+# Comando de inicio - migrar BD y arrancar
+CMD ["sh", "-c", "yarn prisma migrate deploy; node dist/src/main.js"]
