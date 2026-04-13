@@ -50,7 +50,7 @@ export class ContentFilterService {
       this.logger.log(`Activating UNBREAKABLE adult content blocking for user: ${userId} for ${hours} hours`);
 
       // Block all adult domains
-      const blockedDomains = [];
+      const blockedDomains: string[] = [];
       for (const domain of this.adultDomains) {
         try {
           const exists = await this.prisma.sitio_bloqueado.findFirst({

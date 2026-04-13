@@ -70,7 +70,7 @@ export class AlarmService {
 
     this.logger.log(`Alarmas vencidas encontradas: ${alarmasVencidas.length}`);
 
-    const resultados = [];
+    const resultados: any[] = [];
 
     for (const alarma of alarmasVencidas) {
       try {

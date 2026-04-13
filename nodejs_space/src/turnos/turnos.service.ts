@@ -1,7 +1,7 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
 import { CreateTurnoDto } from './dto/create-turno.dto';
-import { turno, bloqueo_activo } from '@prisma/client';
+import type { turno, bloqueo_activo } from '@prisma/client';
 
 @Injectable()
 export class TurnosService {

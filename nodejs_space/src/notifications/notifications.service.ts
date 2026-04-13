@@ -58,7 +58,7 @@ export class NotificationsService {
       });
 
       // Generate voice message if enabled
-      let voiceMessage = null;
+      let voiceMessage: string | null = null;
       if (shouldAnnounce) {
         voiceMessage = this.generateVoiceMessage(data);
       }

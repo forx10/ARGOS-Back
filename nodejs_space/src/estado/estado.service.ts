@@ -47,7 +47,7 @@ export class EstadoService {
       },
     });
 
-    let turnoActualData = null;
+    let turnoActualData: any = null;
     if (turnoActual && horaActual >= turnoActual.hora_inicio && horaActual < turnoActual.hora_fin) {
       turnoActualData = turnoActual;
     }

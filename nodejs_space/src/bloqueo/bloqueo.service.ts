@@ -1,7 +1,7 @@
 import { Injectable, Logger, BadRequestException } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
 import { CreateBloqueoDto, TriggerType } from './dto/create-bloqueo.dto';
-import { bloqueo_activo } from '@prisma/client';
+import type { bloqueo_activo } from '@prisma/client';
 import axios from 'axios';
 
 @Injectable()

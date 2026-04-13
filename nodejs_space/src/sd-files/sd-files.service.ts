@@ -24,7 +24,7 @@ export class SdFilesService {
     try {
       this.logger.log(`Indexing ${files.length} files for user: ${userId}`);
 
-      const indexed = [];
+      const indexed: any[] = [];
       for (const file of files) {
         const created = await this.prisma.archivo_sd.create({
           data: {
