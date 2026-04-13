@@ -46,3 +46,4 @@ prisma/migrations/
 # Miscellaneous
 .env.example
 .cache/
+nodejs_space/node_modules

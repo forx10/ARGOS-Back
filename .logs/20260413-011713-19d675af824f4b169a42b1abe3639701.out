@@ -1,0 +1,30 @@
+[main ea1c109] Simplify Dockerfile and fix yarn.lock
+ 29 files changed, 189 insertions(+), 8051 deletions(-)
+ create mode 100644 .logs/20260413-011340-ce7540dfe1ef4704bdca457c39adfed3.retcode
+ create mode 100644 .logs/20260413-011628-0ceafc1a55af475e88ed0d1b3e20f2bc.err
+ create mode 100644 .logs/20260413-011628-0ceafc1a55af475e88ed0d1b3e20f2bc.out
+ create mode 100644 .logs/20260413-011628-0ceafc1a55af475e88ed0d1b3e20f2bc.retcode
+ create mode 100644 .logs/20260413-011628-1d2ae6de4a794eee8c74142e8dfb42e6.err
+ create mode 100644 .logs/20260413-011628-1d2ae6de4a794eee8c74142e8dfb42e6.out
+ create mode 100644 .logs/20260413-011628-1d2ae6de4a794eee8c74142e8dfb42e6.retcode
+ create mode 100644 .logs/20260413-011628-3ce677143e244f178045525a8b7b0d6a.err
+ create mode 100644 .logs/20260413-011628-3ce677143e244f178045525a8b7b0d6a.out
+ create mode 100644 .logs/20260413-011628-3ce677143e244f178045525a8b7b0d6a.retcode
+ create mode 100644 .logs/20260413-011628-72267ef3acc3413087ff88c3ff927b95.err
+ create mode 100644 .logs/20260413-011628-72267ef3acc3413087ff88c3ff927b95.out
+ create mode 100644 .logs/20260413-011628-72267ef3acc3413087ff88c3ff927b95.retcode
+ create mode 100644 .logs/20260413-011628-75bcca1eecdf4d0e83650ee3b16f7327.err
+ create mode 100644 .logs/20260413-011628-75bcca1eecdf4d0e83650ee3b16f7327.out
+ create mode 100644 .logs/20260413-011628-75bcca1eecdf4d0e83650ee3b16f7327.retcode
+ create mode 100644 .logs/20260413-011633-1138fc9e1f9042d396474daf3d5ab1ed.err
+ create mode 100644 .logs/20260413-011633-1138fc9e1f9042d396474daf3d5ab1ed.out
+ create mode 100644 .logs/20260413-011633-1138fc9e1f9042d396474daf3d5ab1ed.retcode
+ create mode 100644 .logs/20260413-011633-d066fcddab334c7ca50c8cb571bd6fcd.err
+ create mode 100644 .logs/20260413-011633-d066fcddab334c7ca50c8cb571bd6fcd.out
+ create mode 100644 .logs/20260413-011654-4af0d21b64e34ba59bf475be38e007dc.err
+ create mode 100644 .logs/20260413-011654-4af0d21b64e34ba59bf475be38e007dc.out
+ create mode 100644 .logs/20260413-011654-4af0d21b64e34ba59bf475be38e007dc.retcode
+ create mode 100644 .logs/20260413-011713-19d675af824f4b169a42b1abe3639701.err
+ create mode 100644 .logs/20260413-011713-19d675af824f4b169a42b1abe3639701.out
+ mode change 100644 => 120000 nodejs_space/yarn.lock
+###ea1c10936e900b665777f61da956db8df028b5ad###

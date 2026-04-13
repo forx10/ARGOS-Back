@@ -148,3 +148,577 @@
 [32m[Nest] 1922  - [39m04/13/2026, 1:16:37 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1015ms[39m
 ✅ ARGOS Backend running on http://0.0.0.0:3000
 📚 API Documentation: http://localhost:3000/api-docs
+[2J[3J[H[[90m1:19:48 AM[0m] File change detected. Starting incremental compilation...
+
+[96mscripts/safe-seed.ts[0m:[93m2[0m:[93m16[0m - [91merror[0m[90m TS2307: [0mCannot find module 'fs' or its corresponding type declarations.
+
+[7m2[0m import fs from "fs";
+[7m [0m [91m               ~~~~[0m
+
+[96mscripts/safe-seed.ts[0m:[93m3[0m:[93m18[0m - [91merror[0m[90m TS2307: [0mCannot find module 'path' or its corresponding type declarations.
+
+[7m3[0m import path from "path";
+[7m [0m [91m                 ~~~~~~[0m
+
+[96mscripts/safe-seed.ts[0m:[93m4[0m:[93m26[0m - [91merror[0m[90m TS2307: [0mCannot find module 'child_process' or its corresponding type declarations.
+
+[7m4[0m import { execSync } from "child_process";
+[7m [0m [91m                         ~~~~~~~~~~~~~~~[0m
+
+[96mscripts/safe-seed.ts[0m:[93m7[0m:[93m33[0m - [91merror[0m[90m TS2580: [0mCannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+
+[7m7[0m   const seedFile = path.resolve(process.cwd(), "scripts/seed.ts");
+[7m [0m [91m                                ~~~~~~~[0m
+
+[96mscripts/safe-seed.ts[0m:[93m21[0m:[93m5[0m - [91merror[0m[90m TS2580: [0mCannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+
+[7m21[0m     process.exit(1);
+[7m  [0m [91m    ~~~~~~~[0m
+
+[96msrc/alarmas/alarm.controller.ts[0m:[93m1[0m:[93m60[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Controller, Get, Post, Delete, Body, Param } from '@nestjs/common';
+[7m [0m [91m                                                           ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/alarmas/alarm.controller.ts[0m:[93m2[0m:[93m52[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m2[0m import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
+[7m [0m [91m                                                   ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/alarmas/alarm.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger } from '@nestjs/common';
+[7m [0m [91m                                   ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/alarmas/alarm.service.ts[0m:[93m112[0m:[93m30[0m - [91merror[0m[90m TS2580: [0mCannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+
+[7m112[0m     const taskerWebhookUrl = process.env.TASKER_WEBHOOK_URL;
+[7m   [0m [91m                             ~~~~~~~[0m
+
+[96msrc/alarmas/dto/crear-alarma.dto.ts[0m:[93m1[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m1[0m import { ApiProperty } from '@nestjs/swagger';
+[7m [0m [91m                            ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/alarmas/dto/crear-alarma.dto.ts[0m:[93m2[0m:[93m62[0m - [91merror[0m[90m TS2307: [0mCannot find module 'class-validator' or its corresponding type declarations.
+
+[7m2[0m import { IsString, IsDateString, IsOptional, IsObject } from 'class-validator';
+[7m [0m [91m                                                             ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app-blocker/app-blocker.controller.ts[0m:[93m1[0m:[93m79[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Controller, Post, Get, Body, Query, HttpException, HttpStatus } from '@nestjs/common';
+[7m [0m [91m                                                                              ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app-blocker/app-blocker.controller.ts[0m:[93m2[0m:[93m71[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m2[0m import { ApiTags, ApiOperation, ApiResponse, ApiBody, ApiQuery } from '@nestjs/swagger';
+[7m [0m [91m                                                                      ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app-blocker/app-blocker.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app-blocker/app-blocker.service.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger } from '@nestjs/common';
+[7m [0m [91m                                   ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app.controller.ts[0m:[93m1[0m:[93m33[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Controller, Get } from '@nestjs/common';
+[7m [0m [91m                                ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app.module.ts[0m:[93m2[0m:[93m30[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/config' or its corresponding type declarations.
+
+[7m2[0m import { ConfigModule } from '@nestjs/config';
+[7m [0m [91m                             ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/app.service.ts[0m:[93m1[0m:[93m28[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable } from '@nestjs/common';
+[7m [0m [91m                           ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/bloqueo/bloqueo.controller.ts[0m:[93m1[0m:[93m82[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Controller, Post, Get, Delete, Body, Param, Logger, ParseIntPipe } from '@nestjs/common';
+[7m [0m [91m                                                                                 ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/bloqueo/bloqueo.controller.ts[0m:[93m2[0m:[93m61[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m2[0m import { ApiTags, ApiOperation, ApiResponse, ApiBody } from '@nestjs/swagger';
+[7m [0m [91m                                                            ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/bloqueo/bloqueo.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/bloqueo/bloqueo.service.ts[0m:[93m1[0m:[93m57[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger, BadRequestException } from '@nestjs/common';
+[7m [0m [91m                                                        ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/bloqueo/bloqueo.service.ts[0m:[93m10[0m:[93m39[0m - [91merror[0m[90m TS2580: [0mCannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+
+[7m10[0m   private readonly taskerWebhookUrl = process.env.TASKER_WEBHOOK_URL || '';
+[7m  [0m [91m                                      ~~~~~~~[0m
+
+[96msrc/bloqueo/dto/create-bloqueo.dto.ts[0m:[93m1[0m:[93m65[0m - [91merror[0m[90m TS2307: [0mCannot find module 'class-validator' or its corresponding type declarations.
+
+[7m1[0m import { IsArray, IsString, IsOptional, IsNumber, IsEnum } from 'class-validator';
+[7m [0m [91m                                                                ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/camera/camera.controller.ts[0m:[93m1[0m:[93m94[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Controller, Post, Get, Delete, Body, Query, Param, HttpException, HttpStatus } from '@nestjs/common';
+[7m [0m [91m                                                                                             ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/camera/camera.controller.ts[0m:[93m2[0m:[93m81[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m2[0m import { ApiTags, ApiOperation, ApiResponse, ApiBody, ApiQuery, ApiParam } from '@nestjs/swagger';
+[7m [0m [91m                                                                                ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/camera/camera.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/camera/camera.service.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger } from '@nestjs/common';
+[7m [0m [91m                                   ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.controller.ts[0m:[93m1[0m:[93m40[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Controller, Post, Body } from '@nestjs/common';
+[7m [0m [91m                                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.controller.ts[0m:[93m2[0m:[93m52[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m2[0m import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
+[7m [0m [91m                                                   ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger } from '@nestjs/common';
+[7m [0m [91m                                   ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/comando-voz.service.ts[0m:[93m140[0m:[93m38[0m - [91merror[0m[90m TS2580: [0mCannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+
+[7m140[0m             Authorization: `Bearer ${process.env.ABACUSAI_API_KEY}`,
+[7m   [0m [91m                                     ~~~~~~~[0m
+
+[96msrc/comando-voz/dto/comando-voz.dto.ts[0m:[93m1[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m1[0m import { ApiProperty } from '@nestjs/swagger';
+[7m [0m [91m                            ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/comando-voz/dto/comando-voz.dto.ts[0m:[93m2[0m:[93m38[0m - [91merror[0m[90m TS2307: [0mCannot find module 'class-validator' or its corresponding type declarations.
+
+[7m2[0m import { IsString, IsOptional } from 'class-validator';
+[7m [0m [91m                                     ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/content-filter/content-filter.controller.ts[0m:[93m1[0m:[93m73[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Controller, Post, Get, Query, HttpException, HttpStatus } from '@nestjs/common';
+[7m [0m [91m                                                                        ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/content-filter/content-filter.controller.ts[0m:[93m2[0m:[93m62[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m2[0m import { ApiTags, ApiOperation, ApiResponse, ApiQuery } from '@nestjs/swagger';
+[7m [0m [91m                                                             ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/content-filter/content-filter.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/content-filter/content-filter.service.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger } from '@nestjs/common';
+[7m [0m [91m                                   ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/device-diagnostics/device-diagnostics.controller.ts[0m:[93m9[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m9[0m } from '@nestjs/common';
+[7m [0m [91m       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/device-diagnostics/device-diagnostics.controller.ts[0m:[93m10[0m:[93m71[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m10[0m import { ApiTags, ApiOperation, ApiResponse, ApiBody, ApiQuery } from '@nestjs/swagger';
+[7m  [0m [91m                                                                      ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/device-diagnostics/device-diagnostics.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/device-diagnostics/device-diagnostics.service.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger } from '@nestjs/common';
+[7m [0m [91m                                   ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/emergency/emergency.controller.ts[0m:[93m11[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m11[0m } from '@nestjs/common';
+[7m  [0m [91m       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/emergency/emergency.controller.ts[0m:[93m12[0m:[93m71[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m12[0m import { ApiTags, ApiOperation, ApiResponse, ApiBody, ApiQuery } from '@nestjs/swagger';
+[7m  [0m [91m                                                                      ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/emergency/emergency.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/emergency/emergency.service.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger } from '@nestjs/common';
+[7m [0m [91m                                   ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/estado/estado.controller.ts[0m:[93m1[0m:[93m48[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Controller, Get, Param, Logger } from '@nestjs/common';
+[7m [0m [91m                                               ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/estado/estado.controller.ts[0m:[93m2[0m:[93m52[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m2[0m import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
+[7m [0m [91m                                                   ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/estado/estado.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/estado/estado.service.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger } from '@nestjs/common';
+[7m [0m [91m                                   ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/focus-mode/focus-mode.controller.ts[0m:[93m10[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m10[0m } from '@nestjs/common';
+[7m  [0m [91m       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/focus-mode/focus-mode.controller.ts[0m:[93m11[0m:[93m71[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m11[0m import { ApiTags, ApiOperation, ApiResponse, ApiBody, ApiQuery } from '@nestjs/swagger';
+[7m  [0m [91m                                                                      ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/focus-mode/focus-mode.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/focus-mode/focus-mode.service.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger } from '@nestjs/common';
+[7m [0m [91m                                   ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/geofencing/geofencing.controller.ts[0m:[93m12[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m12[0m } from '@nestjs/common';
+[7m  [0m [91m       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/geofencing/geofencing.controller.ts[0m:[93m13[0m:[93m71[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m13[0m import { ApiTags, ApiOperation, ApiResponse, ApiBody, ApiQuery } from '@nestjs/swagger';
+[7m  [0m [91m                                                                      ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/geofencing/geofencing.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/geofencing/geofencing.service.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger } from '@nestjs/common';
+[7m [0m [91m                                   ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/intelligence/intelligence.controller.ts[0m:[93m1[0m:[93m67[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Controller, Post, Body, HttpException, HttpStatus } from '@nestjs/common';
+[7m [0m [91m                                                                  ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/intelligence/intelligence.controller.ts[0m:[93m2[0m:[93m61[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m2[0m import { ApiTags, ApiOperation, ApiResponse, ApiBody } from '@nestjs/swagger';
+[7m [0m [91m                                                            ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/intelligence/intelligence.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/intelligence/intelligence.service.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger } from '@nestjs/common';
+[7m [0m [91m                                   ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/intelligence/intelligence.service.ts[0m:[93m2[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/config' or its corresponding type declarations.
+
+[7m2[0m import { ConfigService } from '@nestjs/config';
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/location/location.controller.ts[0m:[93m1[0m:[93m79[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Controller, Post, Get, Body, Query, HttpException, HttpStatus } from '@nestjs/common';
+[7m [0m [91m                                                                              ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/location/location.controller.ts[0m:[93m2[0m:[93m71[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m2[0m import { ApiTags, ApiOperation, ApiResponse, ApiBody, ApiQuery } from '@nestjs/swagger';
+[7m [0m [91m                                                                      ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/location/location.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/location/location.service.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger } from '@nestjs/common';
+[7m [0m [91m                                   ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/main.ts[0m:[93m1[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/core' or its corresponding type declarations.
+
+[7m1[0m import { NestFactory } from '@nestjs/core';
+[7m [0m [91m                            ~~~~~~~~~~~~~~[0m
+
+[96msrc/main.ts[0m:[93m2[0m:[93m48[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m2[0m import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
+[7m [0m [91m                                               ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/main.ts[0m:[93m4[0m:[93m49[0m - [91merror[0m[90m TS2307: [0mCannot find module 'express' or its corresponding type declarations.
+
+[7m4[0m import { Request, Response, NextFunction } from 'express';
+[7m [0m [91m                                                ~~~~~~~~~[0m
+
+[96msrc/main.ts[0m:[93m49[0m:[93m9[0m - [91merror[0m[90m TS2580: [0mCannot find name 'require'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+
+[7m49[0m         require('swagger-ui-dist/swagger-ui-bundle'),
+[7m  [0m [91m        ~~~~~~~[0m
+
+[96msrc/main.ts[0m:[93m50[0m:[93m9[0m - [91merror[0m[90m TS2580: [0mCannot find name 'require'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+
+[7m50[0m         require('swagger-ui-dist/swagger-ui-standalone-preset'),
+[7m  [0m [91m        ~~~~~~~[0m
+
+[96msrc/music/music.controller.ts[0m:[93m1[0m:[93m79[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Controller, Post, Get, Body, Query, HttpException, HttpStatus } from '@nestjs/common';
+[7m [0m [91m                                                                              ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/music/music.controller.ts[0m:[93m2[0m:[93m71[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m2[0m import { ApiTags, ApiOperation, ApiResponse, ApiBody, ApiQuery } from '@nestjs/swagger';
+[7m [0m [91m                                                                      ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/music/music.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/music/music.service.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger } from '@nestjs/common';
+[7m [0m [91m                                   ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/network-security/network-security.controller.ts[0m:[93m9[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m9[0m } from '@nestjs/common';
+[7m [0m [91m       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/network-security/network-security.controller.ts[0m:[93m10[0m:[93m71[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m10[0m import { ApiTags, ApiOperation, ApiResponse, ApiBody, ApiQuery } from '@nestjs/swagger';
+[7m  [0m [91m                                                                      ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/network-security/network-security.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/network-security/network-security.service.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger } from '@nestjs/common';
+[7m [0m [91m                                   ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.controller.ts[0m:[93m1[0m:[93m86[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Controller, Post, Get, Body, Query, Param, HttpException, HttpStatus } from '@nestjs/common';
+[7m [0m [91m                                                                                     ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.controller.ts[0m:[93m2[0m:[93m81[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m2[0m import { ApiTags, ApiOperation, ApiResponse, ApiBody, ApiQuery, ApiParam } from '@nestjs/swagger';
+[7m [0m [91m                                                                                ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/notifications/notifications.service.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger } from '@nestjs/common';
+[7m [0m [91m                                   ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/prisma/prisma.service.ts[0m:[93m1[0m:[93m59[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, OnModuleInit, OnModuleDestroy } from '@nestjs/common';
+[7m [0m [91m                                                          ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/screen-vision/screen-vision.controller.ts[0m:[93m1[0m:[93m94[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Controller, Post, Get, Delete, Body, Query, Param, HttpException, HttpStatus } from '@nestjs/common';
+[7m [0m [91m                                                                                             ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/screen-vision/screen-vision.controller.ts[0m:[93m2[0m:[93m81[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m2[0m import { ApiTags, ApiOperation, ApiResponse, ApiBody, ApiQuery, ApiParam } from '@nestjs/swagger';
+[7m [0m [91m                                                                                ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/screen-vision/screen-vision.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m1[0m:[93m63[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger, HttpException, HttpStatus } from '@nestjs/common';
+[7m [0m [91m                                                              ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/screen-vision/screen-vision.service.ts[0m:[93m14[0m:[93m35[0m - [91merror[0m[90m TS2580: [0mCannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node`.
+
+[7m14[0m   private readonly visionApiKey = process.env.ABACUSAI_API_KEY;
+[7m  [0m [91m                                  ~~~~~~~[0m
+
+[96msrc/sd-files/sd-files.controller.ts[0m:[93m1[0m:[93m87[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Controller, Post, Get, Delete, Body, Query, HttpException, HttpStatus } from '@nestjs/common';
+[7m [0m [91m                                                                                      ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/sd-files/sd-files.controller.ts[0m:[93m2[0m:[93m71[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m2[0m import { ApiTags, ApiOperation, ApiResponse, ApiBody, ApiQuery } from '@nestjs/swagger';
+[7m [0m [91m                                                                      ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/sd-files/sd-files.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/sd-files/sd-files.service.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger } from '@nestjs/common';
+[7m [0m [91m                                   ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.controller.ts[0m:[93m1[0m:[93m86[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Controller, Post, Get, Body, Query, Param, HttpException, HttpStatus } from '@nestjs/common';
+[7m [0m [91m                                                                                     ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.controller.ts[0m:[93m2[0m:[93m81[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m2[0m import { ApiTags, ApiOperation, ApiResponse, ApiBody, ApiQuery, ApiParam } from '@nestjs/swagger';
+[7m [0m [91m                                                                                ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/self-update/self-update.service.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger } from '@nestjs/common';
+[7m [0m [91m                                   ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/tasks/tasks.controller.ts[0m:[93m12[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m12[0m } from '@nestjs/common';
+[7m  [0m [91m       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/tasks/tasks.controller.ts[0m:[93m13[0m:[93m71[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m13[0m import { ApiTags, ApiOperation, ApiResponse, ApiBody, ApiQuery } from '@nestjs/swagger';
+[7m  [0m [91m                                                                      ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/tasks/tasks.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/tasks/tasks.service.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger } from '@nestjs/common';
+[7m [0m [91m                                   ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/turnos/dto/create-turno.dto.ts[0m:[93m1[0m:[93m49[0m - [91merror[0m[90m TS2307: [0mCannot find module 'class-validator' or its corresponding type declarations.
+
+[7m1[0m import { IsString, IsDateString, Matches } from 'class-validator';
+[7m [0m [91m                                                ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/turnos/turnos.controller.ts[0m:[93m1[0m:[93m60[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Controller, Post, Get, Body, Param, Logger } from '@nestjs/common';
+[7m [0m [91m                                                           ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/turnos/turnos.controller.ts[0m:[93m2[0m:[93m52[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m2[0m import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
+[7m [0m [91m                                                   ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/turnos/turnos.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/turnos/turnos.service.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger } from '@nestjs/common';
+[7m [0m [91m                                   ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/webhook/webhook.controller.ts[0m:[93m1[0m:[93m74[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Controller, Post, Get, Body, Param, Logger, ParseIntPipe } from '@nestjs/common';
+[7m [0m [91m                                                                         ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/webhook/webhook.controller.ts[0m:[93m2[0m:[93m52[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/swagger' or its corresponding type declarations.
+
+[7m2[0m import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
+[7m [0m [91m                                                   ~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/webhook/webhook.module.ts[0m:[93m1[0m:[93m24[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Module } from '@nestjs/common';
+[7m [0m [91m                       ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/webhook/webhook.service.ts[0m:[93m1[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '@nestjs/common' or its corresponding type declarations.
+
+[7m1[0m import { Injectable, Logger } from '@nestjs/common';
+[7m [0m [91m                                   ~~~~~~~~~~~~~~~~[0m
+
+[[90m1:19:49 AM[0m] Found 114 errors. Watching for file changes.
+
