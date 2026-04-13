@@ -4,7 +4,7 @@ services:
     env: docker
     region: oregon
     plan: free
-    dockerfilePath: ./Dockerfile
+    dockerfilePath: Dockerfile
     dockerContext: .
     envVars:
       - key: NODE_VERSION
