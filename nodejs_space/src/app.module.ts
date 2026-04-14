@@ -23,6 +23,8 @@ import { FocusModeModule } from './focus-mode/focus-mode.module';
 import { TasksModule } from './tasks/tasks.module';
 import { DeviceDiagnosticsModule } from './device-diagnostics/device-diagnostics.module';
 import { NetworkSecurityModule } from './network-security/network-security.module';
+import { UserProfileModule } from './user-profile/user-profile.module';
+import { PcBridgeModule } from './pc-bridge/pc-bridge.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
@@ -53,6 +55,8 @@ import { AppService } from './app.service';
     TasksModule,
     DeviceDiagnosticsModule,
     NetworkSecurityModule,
+    UserProfileModule,
+    PcBridgeModule,
   ],
   controllers: [AppController],
   providers: [AppService, PrismaService],

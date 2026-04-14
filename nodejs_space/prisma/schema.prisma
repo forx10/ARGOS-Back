@@ -311,3 +311,73 @@ model monitor_red {
   @@index([usuario_id])
   @@index([timestamp])
 }
+
+// ================================
+// PERFIL DE USUARIO Y PERSONALIZACIÓN
+// ================================
+model perfil_usuario {
+  id                  Int      @id @default(autoincrement())
+  usuario_id          String   @unique @db.VarChar(255)
+  nombre_usuario      String   @db.VarChar(255)        // "Luis", "María", etc.
+  nombre_asistente    String   @default("ARGOS") @db.VarChar(255)  // "Jarvis", "Friday", etc.
+  wake_word           String   @default("ARGOS") @db.VarChar(255)  // Palabra de activación
+  genero_voz          String   @default("mujer") @db.VarChar(10)   // "hombre" o "mujer"
+  idioma              String   @default("es") @db.VarChar(10)
+  saludo_personalizado String? @db.Text                // "Hola Luis, ¿en qué te ayudo?"
+  personalidad        String   @default("profesional") @db.VarChar(50) // "profesional", "amigable", "formal"
+  configurado         Boolean  @default(false)          // Si ya completó el onboarding
+  creado_en           DateTime @default(now())
+  actualizado_en      DateTime @updatedAt
+
+  @@index([usuario_id])
+}
+
+// ================================
+// PC BRIDGE - Integración con Computadora
+// ================================
+model pc_conexion {
+  id              Int      @id @default(autoincrement())
+  usuario_id      String   @db.VarChar(255)
+  nombre_pc       String   @db.VarChar(255)           // "Mi PC Trabajo", "Laptop Casa"
+  pc_id           String   @unique @db.VarChar(255)   // Identificador único del PC
+  estado          String   @default("desconectado") @db.VarChar(50)  // "conectado", "desconectado"
+  ultimo_ping     DateTime?
+  ip_local        String?  @db.VarChar(50)
+  sistema_operativo String? @db.VarChar(100)
+  creado_en       DateTime @default(now())
+  actualizado_en  DateTime @updatedAt
+
+  @@index([usuario_id])
+  @@index([pc_id])
+}
+
+model sitio_habitual {
+  id              Int      @id @default(autoincrement())
+  usuario_id      String   @db.VarChar(255)
+  nombre          String   @db.VarChar(255)           // "Gmail", "YouTube", "GitHub"
+  url             String   @db.Text                    // "https://gmail.com"
+  categoria       String   @default("general") @db.VarChar(100) // "trabajo", "personal", "entretenimiento"
+  orden           Int      @default(0)                 // Orden de apertura
+  abrir_al_inicio Boolean  @default(false)             // Abrir automáticamente al conectar PC
+  creado_en       DateTime @default(now())
+  actualizado_en  DateTime @updatedAt
+
+  @@index([usuario_id])
+  @@index([categoria])
+}
+
+model comando_pc {
+  id              Int      @id @default(autoincrement())
+  usuario_id      String   @db.VarChar(255)
+  pc_id           String   @db.VarChar(255)
+  tipo_comando    String   @db.VarChar(100)           // "abrir_sitios", "abrir_app", "ejecutar", "escribir"
+  parametros      Json                                  // {urls: [...], app: "code", texto: "..."}
+  estado          String   @default("pendiente") @db.VarChar(50) // "pendiente", "ejecutado", "error"
+  resultado       String?  @db.Text
+  creado_en       DateTime @default(now())
+  ejecutado_en    DateTime?
+
+  @@index([usuario_id])
+  @@index([pc_id])
+  @@index([estado])
+}
