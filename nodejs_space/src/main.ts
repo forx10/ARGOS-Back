@@ -45,10 +45,6 @@ async function bootstrap() {
       docExpansion: 'list',
       filter: true,
       showRequestHeaders: true,
-      presets: [
-        require('swagger-ui-dist/swagger-ui-bundle'),
-        require('swagger-ui-dist/swagger-ui-standalone-preset'),
-      ],
     },
   });
 
