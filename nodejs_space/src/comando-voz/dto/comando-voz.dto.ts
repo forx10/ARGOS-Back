@@ -1,28 +1,38 @@
-import { ApiProperty } from '@nestjs/swagger';
+import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { IsString, IsOptional } from 'class-validator';
 
 export class ComandoVozDto {
-  @ApiProperty({
-    description: 'ID del usuario',
-    example: 'usuario_1',
-  })
+  @ApiProperty({ example: 'usuario_1', description: 'ID del usuario' })
   @IsString()
   usuarioId: string;
 
   @ApiProperty({
-    description:
-      'Texto del comando de voz. Ejemplos: "ARGOS bloquea Instagram por 2 horas", "ARGOS agregar alarma a las 4:15am para turno 1", "ARGOS hoy a las 3 voy a estudiar"',
-    example: 'ARGOS bloquea Instagram por 2 horas',
+    example: 'bloquea Instagram por 2 horas',
+    description: 'Texto del comando de voz (ya convertido de voz a texto por AutoVoice)',
   })
   @IsString()
   texto: string;
 
-  @ApiProperty({
-    description:
-      'Audio del comando en base64 (opcional, si se usa reconocimiento de voz)',
-    required: false,
-  })
+  @ApiPropertyOptional({ description: 'Audio en base64 (opcional)' })
   @IsOptional()
   @IsString()
   audioBase64?: string;
+}
+
+export class ComandoUnificadoDto {
+  @ApiProperty({ example: 'usuario_1' })
+  @IsString()
+  usuarioId: string;
+
+  @ApiProperty({
+    example: 'Jarvis bloquea Instagram por 2 horas',
+    description: 'Comando completo de voz incluyendo wake word',
+  })
+  @IsString()
+  comando: string;
+
+  @ApiPropertyOptional({ example: 'pc_luis_001', description: 'ID de la PC si hay una conectada' })
+  @IsOptional()
+  @IsString()
+  pcId?: string;
 }
