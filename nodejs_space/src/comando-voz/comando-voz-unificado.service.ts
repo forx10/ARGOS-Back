@@ -1,5 +1,6 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
+import { TtsService } from '../tts/tts.service';
 import { ComandoUnificadoDto } from './dto/comando-voz.dto';
 
 interface AccionDetectada {
@@ -16,7 +17,10 @@ export class ComandoVozUnificadoService {
   private readonly AUTOREMOTE_BASE = process.env.AUTOREMOTE_BASE_URL || 'https://autoremotejoaomgcd.appspot.com';
   private readonly AUTOREMOTE_KEY = process.env.AUTOREMOTE_USER_KEY || '';
 
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly ttsService: TtsService,
+  ) {}
 
   /**
    * ENDPOINT PRINCIPAL - Recibe CUALQUIER comando de voz y lo enruta al módulo correcto.
@@ -464,20 +468,40 @@ Responde SOLO con JSON válido:
   }
 
   /**
-   * Envía respuesta de voz vía AutoRemote para que Tasker la hable
+   * Envía respuesta de voz vía AutoRemote.
+   * NUEVO: Genera audio MP3 con Edge TTS y envía la URL para que Tasker la reproduzca.
+   * Formato: argos_audio=:=URL_DEL_AUDIO=:=TEXTO_RESPUESTA
+   * Fallback: Si falla TTS, envía texto para que Tasker use Say (TTS local)
    */
   private async enviarRespuestaAutoRemote(mensaje: string, generoVoz: string) {
     if (!this.AUTOREMOTE_KEY) {
       this.logger.warn('AUTOREMOTE_USER_KEY no configurada');
       return;
     }
+
     try {
-      const payload = `argos_hablar=:=${generoVoz}=:=${mensaje}`;
+      // Determinar voz según perfil del usuario
+      const vozId = generoVoz === 'mujer' ? 'salome' : 'jarvis';
+
+      // Generar audio con Edge TTS
+      const { audioUrl } = await this.ttsService.generarAudio(mensaje, vozId);
+
+      // Enviar URL del audio al teléfono
+      // Formato: argos_audio=:=URL=:=TEXTO (texto como fallback/subtítulo)
+      const payload = `argos_audio=:=${audioUrl}=:=${mensaje}`;
       const url = `${this.AUTOREMOTE_BASE}/sendmessage?key=${this.AUTOREMOTE_KEY}&message=${encodeURIComponent(payload)}`;
-      this.logger.log(`Enviando a AutoRemote: ${payload.substring(0, 100)}...`);
+      this.logger.log(`Enviando audio TTS a AutoRemote: ${audioUrl}`);
       await fetch(url, { method: 'GET' });
     } catch (error) {
-      this.logger.error(`Error enviando a AutoRemote: ${error.message}`);
+      this.logger.error(`Error generando TTS, usando fallback texto: ${error.message}`);
+      // Fallback: enviar texto para que Tasker use Say (TTS local del dispositivo)
+      try {
+        const fallbackPayload = `argos_hablar=:=${generoVoz}=:=${mensaje}`;
+        const fallbackUrl = `${this.AUTOREMOTE_BASE}/sendmessage?key=${this.AUTOREMOTE_KEY}&message=${encodeURIComponent(fallbackPayload)}`;
+        await fetch(fallbackUrl, { method: 'GET' });
+      } catch (fallbackError) {
+        this.logger.error(`Error en fallback AutoRemote: ${fallbackError.message}`);
+      }
     }
   }
 

@@ -6,8 +6,10 @@ import { PrismaService } from '../prisma/prisma.service';
 import { AlarmService } from '../alarmas/alarm.service';
 import { BloqueoService } from '../bloqueo/bloqueo.service';
 import { TurnosService } from '../turnos/turnos.service';
+import { TtsModule } from '../tts/tts.module';
 
 @Module({
+  imports: [TtsModule],
   controllers: [ComandoVozController],
   providers: [
     ComandoVozService,

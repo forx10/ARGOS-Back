@@ -25,6 +25,7 @@ import { DeviceDiagnosticsModule } from './device-diagnostics/device-diagnostics
 import { NetworkSecurityModule } from './network-security/network-security.module';
 import { UserProfileModule } from './user-profile/user-profile.module';
 import { PcBridgeModule } from './pc-bridge/pc-bridge.module';
+import { TtsModule } from './tts/tts.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
@@ -57,6 +58,7 @@ import { AppService } from './app.service';
     NetworkSecurityModule,
     UserProfileModule,
     PcBridgeModule,
+    TtsModule,
   ],
   controllers: [AppController],
   providers: [AppService, PrismaService],
