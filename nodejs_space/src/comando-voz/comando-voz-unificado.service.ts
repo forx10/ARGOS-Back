@@ -109,8 +109,8 @@ CATEGORÍAS DISPONIBLES:
    Params: { accion: "agregar|listar|completar", titulo: "...", prioridad: "alta|media|baja" }
 
 6. "pc" - Comandos para la computadora
-   Ejemplos: "vamos a la PC", "abre mis sitios de trabajo", "abre Chrome", "cierra todo en la PC"
-   Params: { tipoComando: "abrir_sitios|abrir_sitios_categoria|abrir_app|cerrar_todo", categoria: "trabajo", app: "chrome" }
+   Ejemplos: "vamos a la PC", "abre mis sitios de trabajo", "abre Chrome", "cierra todo en la PC", "apaga la PC", "busca en Google recetas de pasta", "entra a YouTube y busca música relajante"
+   Params: { tipoComando: "abrir_sitios|abrir_sitios_categoria|abrir_app|cerrar_todo|apagar_pc|reiniciar_pc|suspender_pc|bloquear_pc|buscar_web|interactuar_web", categoria: "trabajo", app: "chrome", query: "recetas de pasta", url: "https://youtube.com", acciones: [{"tipo":"click","selector":"input#search"},{"tipo":"escribir","texto":"música relajante"},{"tipo":"click","selector":"button#search-icon-legacy"}] }
 
 7. "emergencia" - Activar SOS
    Ejemplos: "emergencia", "SOS", "llama a la policía"
