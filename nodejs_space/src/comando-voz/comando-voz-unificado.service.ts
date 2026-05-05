@@ -60,7 +60,7 @@ export class ComandoVozUnificadoService {
 
     // 5. Enviar respuesta por AutoRemote para que Tasker la diga en voz alta
     if (resultado.respuestaVoz) {
-      await this.enviarRespuestaAutoRemote(resultado.respuestaVoz, perfil.generoVoz);
+      await this.enviarRespuestaAutoRemote(resultado.respuestaVoz, perfil.vozId, perfil.generoVoz);
     }
 
     return {
@@ -131,8 +131,10 @@ CATEGORÍAS DISPONIBLES:
     Params: { accion: "play|pause|next|prev" }
 
 11. "perfil" - Cambiar configuración del asistente
-    Ejemplos: "cámbiate el nombre a Friday", "quiero voz de mujer"
-    Params: { nombreAsistente: "Friday", generoVoz: "mujer" }
+    Ejemplos: "cámbiate el nombre a Friday", "quiero voz de mujer", "cambia tu voz a la española", "usa la voz de Dalia"
+    Params: { nombreAsistente: "Friday", generoVoz: "mujer", vozId: "salome" }
+    Voces disponibles: jarvis (hombre colombiano grave), gonzalo (hombre colombiano), alvaro (hombre español), jorge (hombre mexicano), salome (mujer colombiana), elvira (mujer española), dalia (mujer mexicana)
+    Si el usuario pide "voz de hombre" sin especificar, usa vozId="jarvis". Si pide "voz de mujer", usa vozId="salome".
 
 12. "conversacion" - Pregunta general o charla casual
     Ejemplos: "qué hora es", "cuéntame un chiste", "cómo está el clima"
@@ -385,6 +387,17 @@ Responde SOLO con JSON válido:
           updateData.wake_word = parametros.nombreAsistente.toLowerCase();
         }
         if (parametros.generoVoz) updateData.genero_voz = parametros.generoVoz;
+        if (parametros.vozId) {
+          // Validar que la voz existe
+          const vozValida = this.ttsService.listarVoces().find(v => v.id === parametros.vozId);
+          if (vozValida) {
+            updateData.voz_id = parametros.vozId;
+            updateData.genero_voz = vozValida.genero;
+          }
+        } else if (parametros.generoVoz && !parametros.vozId) {
+          // Si solo cambió género, asignar voz default del género
+          updateData.voz_id = parametros.generoVoz === 'mujer' ? 'salome' : 'jarvis';
+        }
 
         if (Object.keys(updateData).length > 0) {
           await this.prisma.perfil_usuario.update({
@@ -438,6 +451,7 @@ Responde SOLO con JSON válido:
         nombreAsistente: perfil.nombre_asistente,
         wakeWord: perfil.wake_word,
         generoVoz: perfil.genero_voz,
+        vozId: perfil.voz_id || (perfil.genero_voz === 'mujer' ? 'salome' : 'jarvis'),
         personalidad: perfil.personalidad,
       };
     }
@@ -445,7 +459,8 @@ Responde SOLO con JSON válido:
       nombreUsuario: 'Usuario',
       nombreAsistente: 'ARGOS',
       wakeWord: 'argos',
-      generoVoz: 'mujer',
+      generoVoz: 'hombre',
+      vozId: 'jarvis',
       personalidad: 'profesional',
     };
   }
@@ -473,15 +488,15 @@ Responde SOLO con JSON válido:
    * Formato: argos_audio=:=URL_DEL_AUDIO=:=TEXTO_RESPUESTA
    * Fallback: Si falla TTS, envía texto para que Tasker use Say (TTS local)
    */
-  private async enviarRespuestaAutoRemote(mensaje: string, generoVoz: string) {
+  private async enviarRespuestaAutoRemote(mensaje: string, vozId: string, generoVoz: string) {
     if (!this.AUTOREMOTE_KEY) {
       this.logger.warn('AUTOREMOTE_USER_KEY no configurada');
       return;
     }
 
     try {
-      // Determinar voz según perfil del usuario
-      const vozId = generoVoz === 'mujer' ? 'salome' : 'jarvis';
+      // Usar la voz seleccionada por el usuario en su perfil
+      this.logger.log(`Generando TTS con voz: ${vozId} (género: ${generoVoz})`);
 
       // Generar audio con Edge TTS
       const { audioUrl } = await this.ttsService.generarAudio(mensaje, vozId);

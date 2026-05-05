@@ -15,10 +15,19 @@ export class SetupProfileDto {
   @IsString()
   nombreAsistente?: string;
 
-  @ApiPropertyOptional({ example: 'mujer', description: 'Género de voz: hombre o mujer', enum: ['hombre', 'mujer'] })
+  @ApiPropertyOptional({ example: 'hombre', description: 'Género de voz: hombre o mujer', enum: ['hombre', 'mujer'] })
   @IsOptional()
   @IsIn(['hombre', 'mujer'])
   generoVoz?: string;
+
+  @ApiPropertyOptional({
+    example: 'jarvis',
+    description: 'ID de la voz TTS. Opciones: jarvis (hombre colombiano grave), gonzalo (hombre colombiano), alvaro (hombre español), jorge (hombre mexicano), salome (mujer colombiana), elvira (mujer española), dalia (mujer mexicana)',
+    enum: ['jarvis', 'gonzalo', 'alvaro', 'jorge', 'salome', 'elvira', 'dalia'],
+  })
+  @IsOptional()
+  @IsString()
+  vozId?: string;
 
   @ApiPropertyOptional({ example: 'amigable', description: 'Personalidad del asistente', enum: ['profesional', 'amigable', 'formal'] })
   @IsOptional()
@@ -36,6 +45,15 @@ export class UpdateProfileDto {
   @IsOptional()
   @IsIn(['hombre', 'mujer'])
   generoVoz?: string;
+
+  @ApiPropertyOptional({
+    example: 'jarvis',
+    description: 'ID de la voz TTS',
+    enum: ['jarvis', 'gonzalo', 'alvaro', 'jorge', 'salome', 'elvira', 'dalia'],
+  })
+  @IsOptional()
+  @IsString()
+  vozId?: string;
 
   @ApiPropertyOptional({ example: 'formal', enum: ['profesional', 'amigable', 'formal'] })
   @IsOptional()

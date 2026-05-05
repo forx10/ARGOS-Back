@@ -321,7 +321,8 @@ model perfil_usuario {
   nombre_usuario      String   @db.VarChar(255)        // "Luis", "María", etc.
   nombre_asistente    String   @default("ARGOS") @db.VarChar(255)  // "Jarvis", "Friday", etc.
   wake_word           String   @default("ARGOS") @db.VarChar(255)  // Palabra de activación
-  genero_voz          String   @default("mujer") @db.VarChar(10)   // "hombre" o "mujer"
+  genero_voz          String   @default("hombre") @db.VarChar(10)   // "hombre" o "mujer"
+  voz_id              String   @default("jarvis") @db.VarChar(50)   // ID de la voz TTS (jarvis, salome, alvaro, etc.)
   idioma              String   @default("es") @db.VarChar(10)
   saludo_personalizado String? @db.Text                // "Hola Luis, ¿en qué te ayudo?"
   personalidad        String   @default("profesional") @db.VarChar(50) // "profesional", "amigable", "formal"

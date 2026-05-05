@@ -1,20 +1,29 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
+import { TtsService, VOCES_ARGOS } from '../tts/tts.service';
 import { SetupProfileDto, UpdateProfileDto } from './dto/setup-profile.dto';
 
 @Injectable()
 export class UserProfileService {
   private readonly logger = new Logger(UserProfileService.name);
 
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(
+    private readonly prisma: PrismaService,
+    private readonly ttsService: TtsService,
+  ) {}
 
   // Configuración inicial (onboarding)
   async setupProfile(dto: SetupProfileDto) {
     this.logger.log(`Configurando perfil para ${dto.usuarioId}`);
 
     const nombreAsistente = dto.nombreAsistente || 'ARGOS';
-    const generoVoz = dto.generoVoz || 'mujer';
+    const generoVoz = dto.generoVoz || 'hombre';
+    const vozId = dto.vozId || (generoVoz === 'mujer' ? 'salome' : 'jarvis');
     const personalidad = dto.personalidad || 'profesional';
+
+    // Validar que la voz existe
+    const vozInfo = VOCES_ARGOS.find(v => v.id === vozId);
+    const vozFinal = vozInfo ? vozId : (generoVoz === 'mujer' ? 'salome' : 'jarvis');
 
     // Generar saludo personalizado
     const saludo = this.generarSaludo(dto.nombreUsuario, nombreAsistente, personalidad);
@@ -26,6 +35,7 @@ export class UserProfileService {
         nombre_asistente: nombreAsistente,
         wake_word: nombreAsistente.toLowerCase(),
         genero_voz: generoVoz,
+        voz_id: vozFinal,
         personalidad,
         saludo_personalizado: saludo,
         configurado: true,
@@ -36,22 +46,19 @@ export class UserProfileService {
         nombre_asistente: nombreAsistente,
         wake_word: nombreAsistente.toLowerCase(),
         genero_voz: generoVoz,
+        voz_id: vozFinal,
         personalidad,
         saludo_personalizado: saludo,
         configurado: true,
       },
     });
 
+    const vozDesc = VOCES_ARGOS.find(v => v.id === vozFinal);
     return {
       perfil,
-      mensaje: `¡Perfecto ${dto.nombreUsuario}! A partir de ahora me llamo ${nombreAsistente}. Puedes activarme diciendo "${nombreAsistente}". Mi voz será de ${generoVoz}.`,
-      taskerConfig: {
-        wakeWord: nombreAsistente.toLowerCase(),
-        voiceGender: generoVoz,
-        autoVoiceKeyword: nombreAsistente.toLowerCase(),
-        ttsEngine: generoVoz === 'mujer' ? 'es-US-language' : 'es-US-language',
-        ttsVoice: generoVoz === 'mujer' ? 'es-us-x-sfb-local' : 'es-us-x-sfb-local',
-      },
+      mensaje: `¡Perfecto ${dto.nombreUsuario}! A partir de ahora me llamo ${nombreAsistente}. Puedes activarme diciendo "${nombreAsistente}". Mi voz será "${vozDesc?.nombre || vozFinal}" (${vozDesc?.descripcion || generoVoz}).`,
+      vozSeleccionada: vozDesc,
+      vocesDisponibles: VOCES_ARGOS,
     };
   }
 
@@ -92,6 +99,15 @@ export class UserProfileService {
       updateData.wake_word = dto.nombreAsistente.toLowerCase();
     }
     if (dto.generoVoz) updateData.genero_voz = dto.generoVoz;
+    if (dto.vozId) {
+      const vozValida = VOCES_ARGOS.find(v => v.id === dto.vozId);
+      if (vozValida) {
+        updateData.voz_id = dto.vozId;
+        updateData.genero_voz = vozValida.genero;
+      }
+    } else if (dto.generoVoz && !dto.vozId) {
+      updateData.voz_id = dto.generoVoz === 'mujer' ? 'salome' : 'jarvis';
+    }
     if (dto.personalidad) {
       updateData.personalidad = dto.personalidad;
       updateData.saludo_personalizado = this.generarSaludo(
@@ -107,12 +123,16 @@ export class UserProfileService {
       data: updateData,
     });
 
+    const vozActual = VOCES_ARGOS.find(v => v.id === updated.voz_id);
     return {
       perfil: updated,
       mensaje: `Listo, configuración actualizada.`,
+      vozActual,
+      vocesDisponibles: VOCES_ARGOS,
       taskerConfig: {
         wakeWord: updated.wake_word,
         voiceGender: updated.genero_voz,
+        vozId: updated.voz_id,
         autoVoiceKeyword: updated.wake_word,
       },
     };
@@ -136,6 +156,8 @@ export class UserProfileService {
     return {
       wakeWord: perfil.wake_word,
       voiceGender: perfil.genero_voz,
+      vozId: perfil.voz_id,
+      vozInfo: VOCES_ARGOS.find(v => v.id === perfil.voz_id),
       nombreUsuario: perfil.nombre_usuario,
       nombreAsistente: perfil.nombre_asistente,
       saludo: perfil.saludo_personalizado,
