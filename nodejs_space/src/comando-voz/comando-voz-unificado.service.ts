@@ -30,6 +30,12 @@ export class ComandoVozUnificadoService {
     const { usuarioId, comando, pcId } = dto;
     this.logger.log(`Comando recibido de ${usuarioId}: "${comando}"`);
 
+    // 0. Auto-expirar bloqueos viejos
+    await this.prisma.bloqueo_activo.updateMany({
+      where: { estado: 'activo', tiempo_fin: { lt: new Date() } },
+      data: { estado: 'expirado' },
+    }).catch(() => {});
+
     // 1. Obtener perfil del usuario (nombre, wake word, voz, zona horaria, preferencias)
     const perfil = await this.obtenerPerfil(usuarioId);
 
@@ -181,11 +187,12 @@ CATEGORÍAS DISPONIBLES:
     Ejemplos: "pon música", "siguiente canción", "pausa"
     Params: { accion: "play|pause|next|prev" }
 
-11. "perfil" - Cambiar configuración del asistente
-    Ejemplos: "cámbiate el nombre a Friday", "quiero voz de mujer", "cambia tu voz a la española", "usa la voz de Dalia"
-    Params: { nombreAsistente: "Friday", generoVoz: "mujer", vozId: "salome" }
+11. "perfil" - Cambiar configuración del asistente O cómo el usuario quiere ser llamado
+    Ejemplos: "cámbiate el nombre a Friday", "quiero voz de mujer", "llámame señor", "dime jefe", "refierete a mi como comandante"
+    Params: { nombreAsistente: "Friday", generoVoz: "mujer", vozId: "salome", nombreUsuario: "Señor" }
     Voces disponibles: jarvis (hombre colombiano grave), gonzalo (hombre colombiano), alvaro (hombre español), jorge (hombre mexicano), salome (mujer colombiana), elvira (mujer española), dalia (mujer mexicana)
     Si el usuario pide "voz de hombre" sin especificar, usa vozId="jarvis". Si pide "voz de mujer", usa vozId="salome".
+    IMPORTANTE: Si dice "llámame X", "dime X", "refierete a mi como X", usa categoria "perfil" con nombreUsuario="X".
 
 12. "conversacion" - Pregunta general o charla casual
     Ejemplos: "qué hora es", "cuéntame un chiste", "cómo está el clima"
@@ -413,18 +420,65 @@ Responde SOLO con JSON válido:
       }
 
       case 'estado': {
+        // Primero expirar bloqueos viejos
+        await this.prisma.bloqueo_activo.updateMany({
+          where: { estado: 'activo', tiempo_fin: { lt: new Date() } },
+          data: { estado: 'expirado' },
+        });
+
         const bloqueos = await this.prisma.bloqueo_activo.findMany({
           where: { usuario_id: usuarioId, estado: 'activo' },
         });
         const tareasPendientes = await this.prisma.tarea.count({
           where: { usuario_id: usuarioId, completada: false },
         });
-        return {
-          exito: true,
-          respuestaVoz,
-          accion: 'estado',
-          detalles: { bloqueosActivos: bloqueos.length, tareasPendientes },
-        };
+
+        // Generar respuesta detallada para que el LLM la use
+        let detalleBloqueos = 'No hay apps bloqueadas actualmente.';
+        if (bloqueos.length > 0) {
+          const listaApps = bloqueos.flatMap(b => b.apps_bloqueadas).join(', ');
+          const listaSitios = bloqueos.flatMap(b => b.sitios_bloqueados).join(', ');
+          detalleBloqueos = `Apps bloqueadas: ${listaApps || 'ninguna'}. Sitios bloqueados: ${listaSitios || 'ninguno'}.`;
+        }
+
+        // Usar LLM para generar respuesta natural con los datos
+        try {
+          const estadoResp = await fetch('https://apps.abacus.ai/v1/chat/completions', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${process.env.ABACUSAI_API_KEY}`,
+            },
+            body: JSON.stringify({
+              messages: [{
+                role: 'user',
+                content: `Eres ${perfil.nombreAsistente}. Tu usuario es ${perfil.nombreUsuario}. Personalidad: ${perfil.personalidad}.
+${perfil.preferencias ? `Preferencias: ${perfil.preferencias}` : ''}
+Dame una respuesta de voz BREVE (máximo 2 oraciones) con este estado:
+- ${detalleBloqueos}
+- Tareas pendientes: ${tareasPendientes}
+- Bloqueos activos: ${bloqueos.length}
+Responde SOLO el texto que dirás en voz alta. Sé ${perfil.personalidad}.`,
+              }],
+              stream: false,
+            }),
+          });
+          const estadoData = await estadoResp.json();
+          const respNatural = estadoData.choices[0].message.content;
+          return {
+            exito: true,
+            respuestaVoz: respNatural,
+            accion: 'estado',
+            detalles: { bloqueosActivos: bloqueos.length, tareasPendientes, bloqueos },
+          };
+        } catch {
+          return {
+            exito: true,
+            respuestaVoz: respuestaVoz || detalleBloqueos,
+            accion: 'estado',
+            detalles: { bloqueosActivos: bloqueos.length, tareasPendientes },
+          };
+        }
       }
 
       case 'focus': {
@@ -447,6 +501,10 @@ Responde SOLO con JSON válido:
 
       case 'perfil': {
         const updateData: any = {};
+        if (parametros.nombreUsuario) {
+          updateData.nombre_usuario = parametros.nombreUsuario;
+          this.logger.log(`Cambiando nombre de usuario a: ${parametros.nombreUsuario}`);
+        }
         if (parametros.nombreAsistente) {
           updateData.nombre_asistente = parametros.nombreAsistente;
           updateData.wake_word = parametros.nombreAsistente.toLowerCase();
@@ -524,28 +582,35 @@ Responde de forma ${perfil.personalidad}, breve y útil. Máximo 2 oraciones. Si
   // ========== UTILIDADES ==========
 
   private async obtenerPerfil(usuarioId: string) {
-    const perfil = await this.prisma.perfil_usuario.findUnique({ where: { usuario_id: usuarioId } });
-    if (perfil) {
-      return {
-        nombreUsuario: perfil.nombre_usuario,
-        nombreAsistente: perfil.nombre_asistente,
-        wakeWord: perfil.wake_word,
-        generoVoz: perfil.genero_voz,
-        vozId: perfil.voz_id || (perfil.genero_voz === 'mujer' ? 'salome' : 'jarvis'),
-        personalidad: perfil.personalidad,
-        zonaHoraria: (perfil as any).zona_horaria || 'America/Bogota',
-        preferencias: (perfil as any).preferencias || null,
-      };
+    let perfil = await this.prisma.perfil_usuario.findUnique({ where: { usuario_id: usuarioId } });
+
+    // Auto-crear perfil si no existe (evita que quede como "Usuario")
+    if (!perfil) {
+      this.logger.warn(`Perfil no encontrado para ${usuarioId}, creando uno por defecto`);
+      perfil = await this.prisma.perfil_usuario.create({
+        data: {
+          usuario_id: usuarioId,
+          nombre_usuario: 'Señor',
+          nombre_asistente: 'Jarvis',
+          wake_word: 'jarvis',
+          genero_voz: 'hombre',
+          voz_id: 'jarvis',
+          personalidad: 'amigable',
+          zona_horaria: 'America/Bogota',
+          configurado: false,
+        },
+      });
     }
+
     return {
-      nombreUsuario: 'Usuario',
-      nombreAsistente: 'ARGOS',
-      wakeWord: 'argos',
-      generoVoz: 'hombre',
-      vozId: 'jarvis',
-      personalidad: 'profesional',
-      zonaHoraria: 'America/Bogota',
-      preferencias: null,
+      nombreUsuario: perfil.nombre_usuario,
+      nombreAsistente: perfil.nombre_asistente,
+      wakeWord: perfil.wake_word,
+      generoVoz: perfil.genero_voz,
+      vozId: perfil.voz_id || (perfil.genero_voz === 'mujer' ? 'salome' : 'jarvis'),
+      personalidad: perfil.personalidad,
+      zonaHoraria: (perfil as any).zona_horaria || 'America/Bogota',
+      preferencias: (perfil as any).preferencias || null,
     };
   }
 

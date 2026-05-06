@@ -1,0 +1,97 @@
+[31m[Nest] 985  - [39m05/06/2026, 6:22:57 PM [31m  ERROR[39m [38;5;3m[ExceptionsHandler] [39mPrismaClientKnownRequestError: 
+Invalid `this.prisma.perfil_usuario.findUnique()` invocation in
+/home/ubuntu/argos_backend/nodejs_space/src/comando-voz/comando-voz-unificado.service.ts:585:51
+
+  582 // ========== UTILIDADES ==========
+  583 
+  584 private async obtenerPerfil(usuarioId: string) {
+→ 585   let perfil = await this.prisma.perfil_usuario.findUnique(
+The column `perfil_usuario.voz_id` does not exist in the current database.
+    at zn.handleRequestError (/opt/hostedapp/node/root/nodejs/node_modules/[4m.prisma[24m/client/runtime/library.js:124:7459)
+    at zn.handleAndLogRequestError (/opt/hostedapp/node/root/nodejs/node_modules/[4m.prisma[24m/client/runtime/library.js:124:6784)
+    at zn.request (/opt/hostedapp/node/root/nodejs/node_modules/[4m.prisma[24m/client/runtime/library.js:124:6491)
+    at async l (/opt/hostedapp/node/root/nodejs/node_modules/[4m.prisma[24m/client/runtime/library.js:133:9778)
+    at async ComandoVozUnificadoService.obtenerPerfil [90m(/home/ubuntu/argos_backend/nodejs_space/[39msrc/comando-voz/comando-voz-unificado.service.ts:585:18[90m)[39m
+    at async ComandoVozUnificadoService.procesarComandoUnificado [90m(/home/ubuntu/argos_backend/nodejs_space/[39msrc/comando-voz/comando-voz-unificado.service.ts:40:20[90m)[39m
+    at async /opt/hostedapp/node/root/nodejs/node_modules/[4m@nestjs[24m/core/router/router-execution-context.js:46:28
+    at async /opt/hostedapp/node/root/nodejs/node_modules/[4m@nestjs[24m/core/router/router-proxy.js:9:17 {
+  code: [32m'P2022'[39m,
+  meta: {
+    modelName: [32m'perfil_usuario'[39m,
+    column: [32m'perfil_usuario.voz_id'[39m
+  },
+  clientVersion: [32m'6.7.0'[39m
+}
+[31m[Nest] 985  - [39m05/06/2026, 6:23:16 PM [31m  ERROR[39m [38;5;3m[ExceptionsHandler] [39mPrismaClientKnownRequestError: 
+Invalid `this.prisma.perfil_usuario.findUnique()` invocation in
+/home/ubuntu/argos_backend/nodejs_space/src/comando-voz/comando-voz-unificado.service.ts:585:51
+
+  582 // ========== UTILIDADES ==========
+  583 
+  584 private async obtenerPerfil(usuarioId: string) {
+→ 585   let perfil = await this.prisma.perfil_usuario.findUnique(
+The column `perfil_usuario.voz_id` does not exist in the current database.
+    at zn.handleRequestError (/opt/hostedapp/node/root/nodejs/node_modules/[4m.prisma[24m/client/runtime/library.js:124:7459)
+    at zn.handleAndLogRequestError (/opt/hostedapp/node/root/nodejs/node_modules/[4m.prisma[24m/client/runtime/library.js:124:6784)
+    at zn.request (/opt/hostedapp/node/root/nodejs/node_modules/[4m.prisma[24m/client/runtime/library.js:124:6491)
+    at async l (/opt/hostedapp/node/root/nodejs/node_modules/[4m.prisma[24m/client/runtime/library.js:133:9778)
+    at async ComandoVozUnificadoService.obtenerPerfil [90m(/home/ubuntu/argos_backend/nodejs_space/[39msrc/comando-voz/comando-voz-unificado.service.ts:585:18[90m)[39m
+    at async ComandoVozUnificadoService.procesarComandoUnificado [90m(/home/ubuntu/argos_backend/nodejs_space/[39msrc/comando-voz/comando-voz-unificado.service.ts:40:20[90m)[39m
+    at async /opt/hostedapp/node/root/nodejs/node_modules/[4m@nestjs[24m/core/router/router-execution-context.js:46:28
+    at async /opt/hostedapp/node/root/nodejs/node_modules/[4m@nestjs[24m/core/router/router-proxy.js:9:17 {
+  code: [32m'P2022'[39m,
+  meta: {
+    modelName: [32m'perfil_usuario'[39m,
+    column: [32m'perfil_usuario.voz_id'[39m
+  },
+  clientVersion: [32m'6.7.0'[39m
+}
+[31m[Nest] 985  - [39m05/06/2026, 6:23:34 PM [31m  ERROR[39m [38;5;3m[ExceptionsHandler] [39mPrismaClientKnownRequestError: 
+Invalid `this.prisma.perfil_usuario.findUnique()` invocation in
+/home/ubuntu/argos_backend/nodejs_space/src/comando-voz/comando-voz-unificado.service.ts:585:51
+
+  582 // ========== UTILIDADES ==========
+  583 
+  584 private async obtenerPerfil(usuarioId: string) {
+→ 585   let perfil = await this.prisma.perfil_usuario.findUnique(
+The column `perfil_usuario.voz_id` does not exist in the current database.
+    at zn.handleRequestError (/opt/hostedapp/node/root/nodejs/node_modules/[4m.prisma[24m/client/runtime/library.js:124:7459)
+    at zn.handleAndLogRequestError (/opt/hostedapp/node/root/nodejs/node_modules/[4m.prisma[24m/client/runtime/library.js:124:6784)
+    at zn.request (/opt/hostedapp/node/root/nodejs/node_modules/[4m.prisma[24m/client/runtime/library.js:124:6491)
+    at async l (/opt/hostedapp/node/root/nodejs/node_modules/[4m.prisma[24m/client/runtime/library.js:133:9778)
+    at async ComandoVozUnificadoService.obtenerPerfil [90m(/home/ubuntu/argos_backend/nodejs_space/[39msrc/comando-voz/comando-voz-unificado.service.ts:585:18[90m)[39m
+    at async ComandoVozUnificadoService.procesarComandoUnificado [90m(/home/ubuntu/argos_backend/nodejs_space/[39msrc/comando-voz/comando-voz-unificado.service.ts:40:20[90m)[39m
+    at async /opt/hostedapp/node/root/nodejs/node_modules/[4m@nestjs[24m/core/router/router-execution-context.js:46:28
+    at async /opt/hostedapp/node/root/nodejs/node_modules/[4m@nestjs[24m/core/router/router-proxy.js:9:17 {
+  code: [32m'P2022'[39m,
+  meta: {
+    modelName: [32m'perfil_usuario'[39m,
+    column: [32m'perfil_usuario.voz_id'[39m
+  },
+  clientVersion: [32m'6.7.0'[39m
+}
+[31m[Nest] 985  - [39m05/06/2026, 6:23:48 PM [31m  ERROR[39m [38;5;3m[ExceptionsHandler] [39mPrismaClientKnownRequestError: 
+Invalid `this.prisma.perfil_usuario.findUnique()` invocation in
+/home/ubuntu/argos_backend/nodejs_space/src/comando-voz/comando-voz-unificado.service.ts:585:51
+
+  582 // ========== UTILIDADES ==========
+  583 
+  584 private async obtenerPerfil(usuarioId: string) {
+→ 585   let perfil = await this.prisma.perfil_usuario.findUnique(
+The column `perfil_usuario.voz_id` does not exist in the current database.
+    at zn.handleRequestError (/opt/hostedapp/node/root/nodejs/node_modules/[4m.prisma[24m/client/runtime/library.js:124:7459)
+    at zn.handleAndLogRequestError (/opt/hostedapp/node/root/nodejs/node_modules/[4m.prisma[24m/client/runtime/library.js:124:6784)
+    at zn.request (/opt/hostedapp/node/root/nodejs/node_modules/[4m.prisma[24m/client/runtime/library.js:124:6491)
+    at async l (/opt/hostedapp/node/root/nodejs/node_modules/[4m.prisma[24m/client/runtime/library.js:133:9778)
+    at async ComandoVozUnificadoService.obtenerPerfil [90m(/home/ubuntu/argos_backend/nodejs_space/[39msrc/comando-voz/comando-voz-unificado.service.ts:585:18[90m)[39m
+    at async ComandoVozUnificadoService.procesarComandoUnificado [90m(/home/ubuntu/argos_backend/nodejs_space/[39msrc/comando-voz/comando-voz-unificado.service.ts:40:20[90m)[39m
+    at async /opt/hostedapp/node/root/nodejs/node_modules/[4m@nestjs[24m/core/router/router-execution-context.js:46:28
+    at async /opt/hostedapp/node/root/nodejs/node_modules/[4m@nestjs[24m/core/router/router-proxy.js:9:17 {
+  code: [32m'P2022'[39m,
+  meta: {
+    modelName: [32m'perfil_usuario'[39m,
+    column: [32m'perfil_usuario.voz_id'[39m
+  },
+  clientVersion: [32m'6.7.0'[39m
+}
+Terminated
