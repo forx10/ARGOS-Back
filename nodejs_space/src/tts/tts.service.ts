@@ -26,7 +26,7 @@ export const VOCES_ARGOS: VoceDisponible[] = [
     genero: 'hombre',
     locale: 'es-CO',
     edgeVoice: 'es-CO-GonzaloNeural',
-    pitch: '-10Hz',   // Más grave para sonar como JARVIS
+    pitch: '-25Hz',   // Mucho más grave para sonar como JARVIS
     rate: '-5%',       // Ligeramente más lento, calmado
     descripcion: 'Voz masculina grave y calmada estilo JARVIS',
   },

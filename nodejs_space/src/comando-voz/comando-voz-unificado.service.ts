@@ -30,25 +30,20 @@ export class ComandoVozUnificadoService {
     const { usuarioId, comando, pcId } = dto;
     this.logger.log(`Comando recibido de ${usuarioId}: "${comando}"`);
 
-    // 1. Obtener perfil del usuario (nombre, wake word, voz)
+    // 1. Obtener perfil del usuario (nombre, wake word, voz, zona horaria, preferencias)
     const perfil = await this.obtenerPerfil(usuarioId);
 
     // 2. Limpiar el wake word del comando
     const comandoLimpio = this.limpiarWakeWord(comando, perfil.wakeWord);
     this.logger.log(`Comando limpio: "${comandoLimpio}"`);
 
-    // 3. Guardar en historial
-    await this.prisma.comandos_voz.create({
-      data: {
-        usuario_id: usuarioId,
-        texto: comando,
-      },
-    });
+    // 3. Obtener historial reciente para contexto (últimos 10 mensajes)
+    const historial = await this.obtenerHistorialReciente(usuarioId, 10);
 
-    // 4. Clasificar y ejecutar con LLM
+    // 4. Clasificar y ejecutar con LLM (con contexto e historial)
     let resultado: any;
     try {
-      resultado = await this.clasificarYEjecutar(usuarioId, comandoLimpio, pcId || null, perfil);
+      resultado = await this.clasificarYEjecutar(usuarioId, comandoLimpio, pcId || null, perfil, historial);
     } catch (error) {
       this.logger.error(`Error procesando comando: ${error.message}`);
       resultado = {
@@ -58,10 +53,28 @@ export class ComandoVozUnificadoService {
       };
     }
 
-    // 5. Enviar respuesta por AutoRemote para que Tasker la diga en voz alta
+    // 5. Guardar en historial CON la respuesta y categoría
+    await this.prisma.comandos_voz.create({
+      data: {
+        usuario_id: usuarioId,
+        texto: comando,
+        respuesta: resultado.respuestaVoz || null,
+        categoria: resultado.accion || null,
+      },
+    });
+
+    // 6. Aprender preferencias del usuario si aplica
+    if (resultado.preferenciasAprendidas) {
+      await this.actualizarPreferencias(usuarioId, resultado.preferenciasAprendidas);
+    }
+
+    // 7. Enviar respuesta por AutoRemote para que Tasker la diga en voz alta
     if (resultado.respuestaVoz) {
       await this.enviarRespuestaAutoRemote(resultado.respuestaVoz, perfil.vozId, perfil.generoVoz);
     }
+
+    // 8. Enviar orden de seguir escuchando 15 segundos más
+    await this.enviarOrdenAutoRemote('argos_escuchar=:=15');
 
     return {
       exito: resultado.exito,
@@ -83,9 +96,47 @@ export class ComandoVozUnificadoService {
     comando: string,
     pcId: string | null,
     perfil: any,
+    historial: Array<{ texto: string; respuesta: string | null; timestamp: Date }> = [],
   ) {
-    const prompt = `Eres ${perfil.nombreAsistente}, un asistente personal inteligente. Tu usuario se llama ${perfil.nombreUsuario}.
+    // Obtener fecha/hora actual en la zona horaria del usuario
+    const ahora = new Date();
+    const opciones: Intl.DateTimeFormatOptions = {
+      timeZone: perfil.zonaHoraria || 'America/Bogota',
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: true,
+    };
+    const fechaHoraLocal = ahora.toLocaleString('es-CO', opciones);
+
+    // Construir contexto de historial
+    let historialTexto = '';
+    if (historial.length > 0) {
+      historialTexto = '\n\nHISTORIAL RECIENTE DE CONVERSACIÓN (para que tengas contexto):\n';
+      historial.forEach((h) => {
+        historialTexto += `- Usuario dijo: "${h.texto}"`;
+        if (h.respuesta) historialTexto += ` → Tú respondiste: "${h.respuesta}"`;
+        historialTexto += '\n';
+      });
+    }
+
+    // Preferencias aprendidas del usuario
+    const prefsTexto = perfil.preferencias
+      ? `\n\nPREFERENCIAS DEL USUARIO (aprendidas de conversaciones anteriores):\n${perfil.preferencias}\nRESPETA estas preferencias siempre.`
+      : '';
+
+    const prompt = `Eres ${perfil.nombreAsistente}, un asistente personal inteligente tipo JARVIS de Iron Man.
+Tu usuario se llama ${perfil.nombreUsuario}.
 Tu personalidad es ${perfil.personalidad}.
+
+FECHA Y HORA ACTUAL: ${fechaHoraLocal}
+ZONA HORARIA: ${perfil.zonaHoraria || 'America/Bogota'}
+${prefsTexto}
+${historialTexto}
 
 Analiza este comando de voz y clasifícalo:
 
@@ -152,11 +203,18 @@ MAPEO DE APPS (nombre común → package name):
 - Reddit: com.reddit.frontpage
 - Telegram: org.telegram.messenger
 
+IMPORTANTE:
+- Si el usuario te pide que le llames de alguna forma (señor, jefe, amigo, etc.), HAZLO inmediatamente y en todas las respuestas futuras.
+- Si el usuario pregunta la hora, la fecha, el día, etc., USA la información de FECHA Y HORA ACTUAL que tienes arriba.
+- Si detectas una preferencia nueva del usuario (cómo quiere ser llamado, estilo de respuesta, etc.), inclúyela en "preferenciasAprendidas".
+- USA EL HISTORIAL para mantener el contexto de la conversación. Si el usuario dice "eso" o "lo mismo", entiende a qué se refiere.
+
 Responde SOLO con JSON válido:
 {
   "categoria": "...",
   "parametros": { ... },
-  "respuestaVoz": "Respuesta natural y corta que dirás en voz alta al usuario. Usa su nombre (${perfil.nombreUsuario}) cuando sea apropiado. Sé ${perfil.personalidad}."
+  "respuestaVoz": "Respuesta natural y corta que dirás en voz alta. Usa el nombre del usuario o el apelativo que prefiera. Sé ${perfil.personalidad}. Si pregunta la hora, DILE LA HORA ACTUAL.",
+  "preferenciasAprendidas": "Descripción de la preferencia aprendida (ej: 'Le gusta que le digan señor'). Null si no hay nueva preferencia."
 }`;
 
     try {
@@ -178,7 +236,14 @@ Responde SOLO con JSON válido:
       this.logger.log(`Clasificación LLM: ${JSON.stringify(clasificacion)}`);
 
       // Ejecutar según categoría
-      return await this.ejecutarAccion(usuarioId, clasificacion, pcId, perfil);
+      const resultado = await this.ejecutarAccion(usuarioId, clasificacion, pcId, perfil);
+
+      // Propagar preferencias aprendidas
+      if (clasificacion.preferenciasAprendidas && clasificacion.preferenciasAprendidas !== 'null' && clasificacion.preferenciasAprendidas !== null) {
+        (resultado as any).preferenciasAprendidas = clasificacion.preferenciasAprendidas;
+      }
+
+      return resultado;
     } catch (error) {
       this.logger.error(`Error LLM: ${error.message}`);
       return {
@@ -409,24 +474,39 @@ Responde SOLO con JSON válido:
       }
 
       case 'conversacion': {
-        // Usar Intelligence para responder preguntas generales
+        // Usar Intelligence para responder preguntas generales CON CONTEXTO
         try {
+          // Construir historial de mensajes para el LLM
+          const mensajes: Array<{ role: string; content: string }> = [
+            {
+              role: 'system',
+              content: `Eres ${perfil.nombreAsistente}, un asistente personal tipo JARVIS de Iron Man.
+Tu usuario se llama ${perfil.nombreUsuario}.
+Personalidad: ${perfil.personalidad}.
+Fecha y hora actual: ${new Date().toLocaleString('es-CO', { timeZone: perfil.zonaHoraria || 'America/Bogota', weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: true })}
+Zona horaria: ${perfil.zonaHoraria || 'America/Bogota'}
+${perfil.preferencias ? `Preferencias del usuario: ${perfil.preferencias}` : ''}
+Responde de forma ${perfil.personalidad}, breve y útil. Máximo 2 oraciones. Si pregunta la hora o fecha, DILE LA HORA/FECHA ACTUAL.`,
+            },
+          ];
+
+          // Agregar historial reciente como contexto conversacional
+          const histReciente = await this.obtenerHistorialReciente(usuarioId, 6);
+          histReciente.forEach((h) => {
+            mensajes.push({ role: 'user', content: h.texto });
+            if (h.respuesta) mensajes.push({ role: 'assistant', content: h.respuesta });
+          });
+
+          // Agregar la pregunta actual
+          mensajes.push({ role: 'user', content: parametros.pregunta || '' });
+
           const chatResp = await fetch('https://apps.abacus.ai/v1/chat/completions', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
               Authorization: `Bearer ${process.env.ABACUSAI_API_KEY}`,
             },
-            body: JSON.stringify({
-              messages: [
-                {
-                  role: 'system',
-                  content: `Eres ${perfil.nombreAsistente}, un asistente personal. Tu usuario se llama ${perfil.nombreUsuario}. Responde de forma ${perfil.personalidad}, breve y útil. Máximo 2 oraciones.`,
-                },
-                { role: 'user', content: parametros.pregunta || clasificacion.parametros?.pregunta || '' },
-              ],
-              stream: false,
-            }),
+            body: JSON.stringify({ messages: mensajes, stream: false }),
           });
           const chatData = await chatResp.json();
           const respuesta = chatData.choices[0].message.content;
@@ -453,6 +533,8 @@ Responde SOLO con JSON válido:
         generoVoz: perfil.genero_voz,
         vozId: perfil.voz_id || (perfil.genero_voz === 'mujer' ? 'salome' : 'jarvis'),
         personalidad: perfil.personalidad,
+        zonaHoraria: (perfil as any).zona_horaria || 'America/Bogota',
+        preferencias: (perfil as any).preferencias || null,
       };
     }
     return {
@@ -462,7 +544,57 @@ Responde SOLO con JSON válido:
       generoVoz: 'hombre',
       vozId: 'jarvis',
       personalidad: 'profesional',
+      zonaHoraria: 'America/Bogota',
+      preferencias: null,
     };
+  }
+
+  /**
+   * Obtiene los últimos N mensajes del historial de comandos de voz
+   */
+  private async obtenerHistorialReciente(
+    usuarioId: string,
+    cantidad: number,
+  ): Promise<Array<{ texto: string; respuesta: string | null; timestamp: Date }>> {
+    try {
+      const registros = await this.prisma.comandos_voz.findMany({
+        where: { usuario_id: usuarioId },
+        orderBy: { timestamp: 'desc' },
+        take: cantidad,
+        select: { texto: true, respuesta: true, timestamp: true },
+      });
+      // Revertir para que el orden sea cronológico (más antiguo primero)
+      return registros.reverse();
+    } catch (error) {
+      this.logger.error(`Error obteniendo historial: ${error.message}`);
+      return [];
+    }
+  }
+
+  /**
+   * Agrega una preferencia aprendida al perfil del usuario
+   */
+  private async actualizarPreferencias(usuarioId: string, nuevaPreferencia: string) {
+    try {
+      const perfil = await this.prisma.perfil_usuario.findUnique({
+        where: { usuario_id: usuarioId },
+        select: { preferencias: true },
+      });
+
+      const existentes = (perfil as any)?.preferencias || '';
+      const actualizado = existentes
+        ? `${existentes}\n- ${nuevaPreferencia}`
+        : `- ${nuevaPreferencia}`;
+
+      await this.prisma.perfil_usuario.update({
+        where: { usuario_id: usuarioId },
+        data: { preferencias: actualizado } as any,
+      });
+
+      this.logger.log(`Preferencia guardada para ${usuarioId}: ${nuevaPreferencia}`);
+    } catch (error) {
+      this.logger.error(`Error actualizando preferencias: ${error.message}`);
+    }
   }
 
   private limpiarWakeWord(comando: string, wakeWord: string): string {

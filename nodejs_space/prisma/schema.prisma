@@ -81,6 +81,8 @@ model comandos_voz {
   id           Int      @id @default(autoincrement())
   usuario_id   String   @db.VarChar(255)
   texto        String   @db.Text
+  respuesta    String?  @db.Text       // Respuesta que dio el asistente
+  categoria    String?  @db.VarChar(50) // Categoría clasificada (bloqueo, pc, conversacion, etc.)
   audio_base64 String?  @db.Text
   parsed_data  Json?    // Resultado del parseo con LLM
   timestamp    DateTime @default(now())
@@ -326,6 +328,8 @@ model perfil_usuario {
   idioma              String   @default("es") @db.VarChar(10)
   saludo_personalizado String? @db.Text                // "Hola Luis, ¿en qué te ayudo?"
   personalidad        String   @default("profesional") @db.VarChar(50) // "profesional", "amigable", "formal"
+  zona_horaria        String   @default("America/Bogota") @db.VarChar(50) // Zona horaria del usuario
+  preferencias        String?  @db.Text                // Preferencias aprendidas: "le gusta que le digan señor", etc.
   configurado         Boolean  @default(false)          // Si ya completó el onboarding
   creado_en           DateTime @default(now())
   actualizado_en      DateTime @updatedAt
